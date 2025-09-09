@@ -114,11 +114,11 @@ const DropDown = ({ list }: { list: { title: string; link: string }[] }) => {
   };
 
   return (
-    <ul className="hidden peer-checked:block pl-4 pb-2 space-y-2 text-sm text-accent/80 font-light ">
+    <ul className="hidden peer-checked:block pl-4 pb-2 space-y-2 text-sm text ">
       {list.map((item) => (
         <li key={item.title} title={item.title}>
           <Link
-            className="pb-0.5 px-1 text-[15px] underline underline-offset-1"
+            className="pb-0.5 px-1 text-[15px] "
             href={item.link}
             onClick={closeSidebar} // Close sidebar on link click
           >

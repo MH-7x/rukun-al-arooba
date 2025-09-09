@@ -192,3 +192,31 @@ main {
   list-style-type: circle;
   list-style-position: inside;
 }
+
+.grid-wrapper {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(to right, #c07d531f 1px, transparent 1px),
+    linear-gradient(to bottom, #c07d531f 1px, transparent 1px);
+  background-size: 20px 30px;
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+}

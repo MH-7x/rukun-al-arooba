@@ -1,8 +1,10 @@
 import { ReactNode } from "react";
 
 function FAQs({
+  title,
   Faqs,
 }: {
+  title?: string;
   Faqs: {
     question: string;
     answer: string | ReactNode;
@@ -18,8 +20,8 @@ function FAQs({
           <p className="mt-4 text-sm leading-7 text-gray-500 font-regular">
             F.A.Q
           </p>
-          <h2 className="text-3xl sm:text-4xl leading-normal font-semibold text-primary headline">
-            Frequently Asked Questions
+          <h2 className="text-2xl sm:text-4xl leading-normal font-semibold text-primary headline">
+            {title ? title : "Frequently Asked Questions"}
           </h2>
         </div>
 

@@ -67,7 +67,10 @@ const DesktopNav = () => {
                     </Link>
                   </NavigationMenuLink>
                 </li>
-                <ListItem href="/docs" title="Used Furniture Buyers">
+                <ListItem
+                  href="/used-furniture-buyers-in-dubai"
+                  title="Used Furniture Buyers"
+                >
                   Furniture & Home Appliance Buyers in Sharjah and UAE.
                 </ListItem>
                 <ListItem href="/docs" title="Used Furniture Sellers">

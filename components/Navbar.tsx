@@ -57,7 +57,7 @@ export default function Navbar() {
       } transition-all duration-300 ease-in-out z-50 fixed top-0 left-0 right-0 bg-white shadow-md`}
     >
       {/* top section */}
-      <div className="grid md:grid-cols-3 grid-cols-1 md:px-0 px-3 w-full items-center md:py-2 py-1">
+      <div className="grid md:grid-cols-3 grid-cols-1 md:px-0 px-3 w-full items-center md:py-2 pb-1">
         {/* address */}
         <div className="md:block hidden">
           <div className="text-[#353535]">
