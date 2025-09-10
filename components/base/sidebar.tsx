@@ -36,7 +36,10 @@ export const Sidebar = () => {
           </label>
           <DropDown
             list={[
-              { title: "Used Furniture Buyers", link: "#" },
+              {
+                title: "Used Furniture Buyers",
+                link: "/used-furniture-buyers-in-dubai",
+              },
               { title: "Used Furniture Sellers", link: "#" },
             ]}
           />
@@ -87,7 +90,7 @@ export const Sidebar = () => {
 
         {/* OTHER LINKS */}
         <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
-          <Link onClick={closeSidebar} href={"/about-us"}>
+          <Link onClick={closeSidebar} href={"/how-we-work"}>
             How We Work
           </Link>
         </li>
