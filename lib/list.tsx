@@ -451,3 +451,123 @@ export const ufdFaqs = [
     ),
   },
 ];
+
+export const hwwFaqs = [
+  {
+    question: "How quickly will I get a quote?",
+    answer: (
+      <>
+        <p>
+          If you contact us on WhatsApp with clear photos, we typically reply
+          within <strong>5–10 minutes</strong>. This quick response covers
+          straightforward items where photos are sufficient to assess condition.
+        </p>
+        <p>
+          For home inspections or large lots we may need to visit the property —
+          those quotes are usually finalized within <strong>24 hours</strong>,
+          depending on location, item volume and current inspection bookings.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide pickup?",
+    answer: (
+      <>
+        <p>
+          Yes — we coordinate pickup through our trusted partner movers. All
+          pickups are arranged to ensure secure handling from your door to our
+          workshop or delivery address.
+        </p>
+        <ul className="list-disc list-inside mt-2">
+          <li>Secure, insured handling by vetted movers</li>
+          <li>Competitive rates and transparent pickup fees</li>
+          <li>
+            Free pickup may apply for minimum orders or certain locations — ask
+            for details
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>
+          We accept multiple secure payment methods to make transactions
+          convenient:
+        </p>
+        <ul className="list-disc list-inside mt-2">
+          <li>Cash</li>
+          <li>Online bank deposit / transfer</li>
+          <li>Bank checks</li>
+          <li>Card payments for in-store purchases (secure terminal)</li>
+        </ul>
+        <p className="mt-2">
+          All payment options and any applicable fees will be shown on your
+          invoice.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you refurbish items before selling?",
+    answer: (
+      <>
+        <p>
+          Yes — every item we list goes through our refurbishment process to
+          meet a consistent “like-new” standard. Refurbishment helps maximise
+          value and buyer confidence.
+        </p>
+        <p className="mt-2">Typical steps include:</p>
+        <ul className="list-disc list-inside mt-2">
+          <li>Deep cleaning and sanitization</li>
+          <li>Minor repairs and part replacements</li>
+          <li>Polishing and surface restoration</li>
+          <li>Final quality control inspection before listing</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    question: "Can I return an item?",
+    answer: (
+      <>
+        <p>
+          We offer a satisfaction warranty on most purchases — for example,{" "}
+          <strong>14 days</strong> (please confirm exact duration at time of
+          sale). Return eligibility and any conditions will be specified on your
+          invoice.
+        </p>
+        <p className="mt-2">
+          Returns may be subject to inspection, original condition and
+          reasonable use rules. To start a return, contact our support team with
+          your invoice number and photos of the item.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy single items or full-home/office lots?",
+    answer: (
+      <>
+        <p>
+          We buy both single pieces and bulk lots — we handle everything from
+          one-off sofas to full-home or office clearances.
+        </p>
+        <ul className="list-disc list-inside mt-2">
+          <li>Single items: sofas, beds, dining sets, appliances, etc.</li>
+          <li>
+            Bulk purchases: house clearances, office decommissions, hotel or
+            project lots
+          </li>
+        </ul>
+        <p className="mt-2">
+          For large or commercial lots we provide a tailored commercial quote —
+          contact us with details and photos for a fast, transparent proposal.
+        </p>
+      </>
+    ),
+  },
+];

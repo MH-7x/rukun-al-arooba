@@ -6,7 +6,7 @@ import { locationList, servicesList } from "@/lib/list";
 
 const Footer = () => {
   return (
-    <footer className="mt-36 relative">
+    <footer className=" relative">
       <svg
         className="absolute inset-0 w-full h-full -z-10 opacity-30"
         xmlns="http://www.w3.org/2000/svg"
@@ -285,7 +285,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-                    href="#"
+                    href="/how-we-work"
                   >
                     How We Work
                   </a>

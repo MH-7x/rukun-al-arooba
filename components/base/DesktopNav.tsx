@@ -127,7 +127,7 @@ const DesktopNav = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/docs">How We Work</Link>
+              <Link href="/how-we-work">How We Work</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem className="text-[#353535]">

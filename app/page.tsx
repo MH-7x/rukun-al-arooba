@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUpRight, CheckCircleIcon, Phone } from "lucide-react";
 import Link from "next/link";
 import FAQs from "@/components/base/FAQs";
 import { HomeFaqs } from "@/lib/list";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
 const servicesList: {
   title: string;
@@ -219,6 +220,20 @@ const features = [
   },
 ];
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Used Furniture in Sharjah | Buy & Sell Second-Hand Furniture",
+      desc: "Buy or sell used furniture in Sharjah at Rukun Al Arooba. With 20+ years of trusted service, we offer quality pieces, easy returns, and fast support 5-10 min",
+    },
+    image: {
+      path: "/modern-furniture-showroom-sharjah.jpg",
+      alt: "rukun al arooba used furniture in sharjah",
+    },
+    path: "",
+  },
+});
+
 export default function Home() {
   return (
     <>
@@ -302,9 +317,11 @@ export default function Home() {
               width={50}
               height={50}
             />
-            <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
-              I Want To Buy Used Furniture <ArrowUpRight className="inline" />
-            </h3>
+            <Link href={"/used-furniture-buyers-in-dubai"}>
+              <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
+                I Want To Buy Used Furniture <ArrowUpRight className="inline" />
+              </h3>
+            </Link>
           </div>
           <div className="flex items-center gap-x-3 mx-auto">
             <Image
