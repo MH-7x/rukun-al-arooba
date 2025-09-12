@@ -87,6 +87,11 @@ export const locationList = [
     link: "#",
   },
   {
+    title: "Used Furniture Abu Shagara",
+    desc: "Quality used furniture and appliances available in Abu Shagara.",
+    link: "/abu-shagara-used-furniture-market",
+  },
+  {
     title: "Used Furniture in mussafah",
     desc: "Quality used furniture and appliances available in mussafah.",
     link: "#",
