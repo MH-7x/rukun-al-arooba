@@ -104,7 +104,7 @@ export const HomeFaqs = [
       <>
         <p>
           Lightning fast! Contact us via WhatsApp with photos of your furniture,
-          and you`&lsquo;ll receive a valuation within 5-10 minutes during
+          and you&lsquo;ll receive a valuation within 5-10 minutes during
           business hours.
         </p>
         <p>
@@ -132,7 +132,7 @@ export const HomeFaqs = [
           almost any piece back to its former glory.
         </p>
         <p>
-          The condition affects our offer price, but we`&lsquo;re interested in
+          The condition affects our offer price, but we&lsquo;re interested in
           furniture that others might reject.
         </p>
       </>
@@ -143,7 +143,7 @@ export const HomeFaqs = [
     answer: (
       <>
         <p>
-          We`&lsquo;re one of the few used furniture dealers offering multiple
+          We&lsquo;re one of the few used furniture dealers offering multiple
           payment options. We accept cash, online bank transfers, certified bank
           checks, and even digital wallet payments.
         </p>
@@ -187,7 +187,7 @@ export const HomeFaqs = [
       <>
         <p>
           We specialize in office clearances and bulk commercial furniture
-          purchases. Whether you`&lsquo;re closing an office, relocating, or
+          purchases. Whether you&lsquo;re closing an office, relocating, or
           upgrading, we handle everything professionally and discreetly.
         </p>
         <p>
@@ -203,7 +203,7 @@ export const HomeFaqs = [
     answer: (
       <>
         <p>
-          The difference is night and day. We`&lsquo;re a registered business
+          The difference is night and day. We&lsquo;re a registered business
           with a physical showroom, offering warranties, quality restoration,
           and professional service.
         </p>
@@ -238,7 +238,7 @@ export const HomeFaqs = [
         <p>
           We explain our valuation to every seller, showing how each factor
           affects the price. This transparency is rare in the industry, where
-          most buyers simply throw out a low number hoping you`&lsquo;ll accept.
+          most buyers simply throw out a low number hoping you&lsquo;ll accept.
         </p>
       </>
     ),
@@ -287,9 +287,9 @@ export const HomeFaqs = [
     answer: (
       <>
         <p>
-          We offer a 7-day return window for any furniture that doesn`&lsquo;t
+          We offer a 7-day return window for any furniture that doesn&lsquo;t
           meet your expectations. Simply contact us, let us see the
-          furniture`&lsquo;s condition, and if everything looks good, then we
+          furniture&lsquo;s condition, and if everything looks good, then we
           will return the furniture and give you instant cash for it.
         </p>
       </>

@@ -97,7 +97,7 @@ const CTA = ({
               </svg>{" "}
               WhatsApp Us{" "}
             </Button>
-            <Link href={"#types-of-furniture-we-buy"}>
+            <Link href={"/contact-us"}>
               <Button variant={"secondary"} size={"lg"}>
                 Contact Us <ArrowUpRight />
               </Button>

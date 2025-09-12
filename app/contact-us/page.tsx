@@ -35,7 +35,7 @@ export default function ContactForm() {
       />
       <div className="md:w-11/12 mx-auto  grid grid-cols-1 lg:grid-cols-12 items-start gap-6 mt-16 ">
         {/* Left contact card */}
-        <aside className="lg:col-span-4 bg-white p-4 rounded-2xl shadow-sm border">
+        <aside className="lg:col-span-4 bg-secondary p-4 rounded-2xl shadow-sm border">
           <h2 className="font-medium text-lg">Our Info</h2>
           <p className="text-sm text-gray-600 mt-2">
             Rukun Al Arooba — Used Furniture Buyers & Sellers

@@ -1,11 +1,13 @@
 import Image from "next/image";
-import heroImage from "../public/used-furniture-in-sharjah-b.jpg";
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, ArrowUpRight, CheckCircleIcon, Phone } from "lucide-react";
 import Link from "next/link";
 import FAQs from "@/components/base/FAQs";
 import { HomeFaqs } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import HeroSection from "@/components/base/HeroSection";
+import BuySellSection from "@/components/base/BuySellSection";
 
 const servicesList: {
   title: string;
@@ -18,7 +20,7 @@ const servicesList: {
     desc: (
       <>
         <p>
-          Beyond furniture, we`&lsquo;re trusted used appliance buyers and
+          Beyond furniture, we&lsquo;re trusted used appliance buyers and
           sellers in Sharjah.
         </p>
         <p>
@@ -50,7 +52,7 @@ const servicesList: {
         </p>
         <p>
           Each sofa undergoes deep cleaning and reupholstering when needed,
-          ensuring you get furniture that`&lsquo;s both beautiful and hygienic.
+          ensuring you get furniture that&lsquo;s both beautiful and hygienic.
         </p>
       </>
     ),
@@ -70,7 +72,7 @@ const servicesList: {
         <p>Create your dream bedroom without breaking the bank.</p>
         <p>
           Our used beds for sale include everything from single beds perfect for
-          children`&lsquo;s rooms to luxurious king-size sets with matching
+          children&lsquo;s rooms to luxurious king-size sets with matching
           furniture. Every bedroom piece is sanitized and restored to ensure
           peaceful, comfortable sleep.
         </p>
@@ -117,7 +119,7 @@ const servicesList: {
           complete office solutions.
         </p>
         <p>
-          Whether you`&lsquo;re setting up a home office or furnishing an entire
+          Whether you&lsquo;re setting up a home office or furnishing an entire
           corporate space, our commercial-grade furniture offers durability and
           professionalism at unbeatable prices.
         </p>
@@ -137,7 +139,7 @@ const servicesList: {
     desc: (
       <>
         <p>
-          Enjoy Sharjah`&lsquo;s beautiful weather with our weather-resistant
+          Enjoy Sharjah&lsquo;s beautiful weather with our weather-resistant
           outdoor furniture collection.
         </p>
         <p>
@@ -163,13 +165,13 @@ const features = [
     description: (
       <>
         <p>
-          We don`&lsquo;t just throw out a number – we explain how we arrived at
+          We don&lsquo;t just throw out a number – we explain how we arrived at
           our valuation.
         </p>
         <p>
           Factors like original brand, current condition, market demand, and
           restoration requirements are clearly communicated, so you understand
-          exactly what determines your furniture`&lsquo;s value.
+          exactly what determines your furniture&lsquo;s value.
         </p>
       </>
     ),
@@ -238,106 +240,9 @@ export default function Home() {
   return (
     <>
       <main>
-        <section
-          id="used-furniture-in-sharjah"
-          className="w-full h-[500px] bg-red-300 relative "
-        >
-          <Image
-            src={heroImage}
-            placeholder="blur"
-            loading="eager"
-            alt="rukun al arooba used furniture in sharjah"
-            fill
-            className="absolute object-cover object-center"
-          />
-          <div
-            id="content"
-            className="md:px-16 absolute top-0 left-0 w-full h-full flex items-center justify-between flex-wrap"
-          >
-            <div className="bg-white/80  md:p-10 py-10 px-3 md:-mt-20 mt-14 md:w-[560px] rounded-2xl">
-              <h1 className="headline text-4xl/tight font-bold">
-                <span className="border-b-4 border-[#ffdb5e]">
-                  {" "}
-                  Rukun Al Arooba
-                </span>{" "}
-                <span className="block blue"> Used Furniture in Sharjah</span>
-              </h1>
-              <p className="headline mt-5 ">
-                Looking for quality used furniture in Sharjah? Welcome to Rukun
-                Al Arooba Used Furniture, where over 20 years of experience
-                meets modern convenience.
-              </p>
-              <Button className="mt-5" size={"lg"}>
-                {" "}
-                <svg
-                  fill="#ffffff"
-                  version="1.1"
-                  viewBox="0 0 30.667 30.667"
-                  xmlSpace="preserve"
-                  stroke="#ffffff"
-                >
-                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    {" "}
-                    <g>
-                      {" "}
-                      <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017 c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382 c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076 c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427 c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437 c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536 c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609 c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611 c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787 c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739 C23.307,19.268,23.307,18.533,23.214,18.38z"></path>{" "}
-                    </g>{" "}
-                  </g>
-                </svg>{" "}
-                WhatsApp Us{" "}
-              </Button>
-            </div>
-            <div className="bg-white/90  drop-shadow-2xl md:mx-0 mx-auto md:h-96 h-80 rounded-full md:w-96 w-80 md:mt-64 mt-16 p-5 ">
-              <Image
-                src={"/Picture1.png"}
-                alt="Rukun Al Arooba Business Profile Screenshort"
-                width={260}
-                className="mx-auto "
-                height={260}
-                quality={100}
-              />
-            </div>
-          </div>
-        </section>
+        <HeroSection />
 
-        <section
-          id="buy-sell-section"
-          className="md:mt-60 mt-[480px] w-full md:px-20 blue-bg md:p-5 px-5 p-8 grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-8 "
-        >
-          <div className="flex items-center gap-x-3 mx-auto ">
-            <Image
-              src={"/buy-used-furniture.svg"}
-              alt="buy-furniture-svg-icon"
-              width={50}
-              height={50}
-            />
-            <Link href={"/contact-us"}>
-              <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
-                I Want To Buy Used Furniture <ArrowUpRight className="inline" />
-              </h3>
-            </Link>
-          </div>
-          <div className="flex items-center gap-x-3 mx-auto">
-            <Image
-              src={"/sell-used-furniture.svg"}
-              alt="buy-furniture-svg-icon"
-              width={50}
-              height={50}
-            />
-            <Link href={"/used-furniture-buyers-in-dubai"}>
-              {" "}
-              <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
-                I Want To Sell My Furniture <ArrowUpRight className="inline" />
-              </h3>
-            </Link>
-          </div>
-        </section>
+        <BuySellSection />
 
         <section
           className="max-w-6xl  shadow-2xl rounded-2xl shadow-[#144e5a]/5 mx-auto md:p-10 px-3 mt-36 text relative"
@@ -345,7 +250,7 @@ export default function Home() {
         >
           <div className="grid md:grid-cols-2 gap-5">
             <p>
-              We`&lsquo;re located on Al Estiqlal Street in central Sharjah.
+              We&lsquo;re located on Al Estiqlal Street in central Sharjah.
               Unlike many online listings, we are a government-registered
               business with a physical showroom{" "}
               <Link
@@ -359,15 +264,26 @@ export default function Home() {
             </p>
             <p>
               Whether you want to buy used furniture in Sharjah at unbeatable
-              prices or sell your furniture for instant cash, we guarantee a
-              response within 5-10 minutes and same-day service for all Sharjah
-              residents.
+              prices or{" "}
+              <Link
+                className="underline underline-offset-2"
+                href={"/used-furniture-buyers-in-dubai"}
+              >
+                sell your furniture for instant cash
+              </Link>
+              , we guarantee a response within 5-10 minutes and same-day service
+              for all Sharjah residents.
             </p>
           </div>
           <p className="md:text-center md:px-48 mt-5">
             Unlike freelance dealers and online-only platforms, we are committed
-            to quality and transparency as second-hand furniture buyers in
-            Sharjah.
+            to quality and transparency as{" "}
+            <Link
+              className="underline underline-offset-2"
+              href={"/used-furniture-buyers-in-dubai"}
+            >
+              second-hand furniture buyers in Sharjah.
+            </Link>{" "}
           </p>
           <dl className="grid w-full gap-8 mx-auto blue sm:grid-cols-4 mt-10">
             <div className="flex flex-col items-center justify-center pb-3 border-b-2 border-[#ffdb5e]">
@@ -470,8 +386,8 @@ export default function Home() {
             <Link className="border-b border-[#ffdb5e]" href={"#"}>
               finding trustworthy used furniture shops in Sharjah
             </Link>{" "}
-            can be challenging. Here`&lsquo;s what sets us apart from every
-            other furniture dealer in the UAE:
+            can be challenging. Here&lsquo;s what sets us apart from every other
+            furniture dealer in the UAE:
           </p>
 
           <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-16 mt-20 md:ml-20">
@@ -480,7 +396,7 @@ export default function Home() {
                 Officially Registered Business with Physical Showroom
               </h3>
               <p className="mt-3 text">
-                We`&lsquo;re not hiding behind a website or WhatsApp number.
+                We&lsquo;re not hiding behind a website or WhatsApp number.
                 Rukun Al Arooba has been an officially registered company with
                 the UAE government since 2018, with our trade license
                 prominently displayed in our showroom.
@@ -505,7 +421,7 @@ export default function Home() {
                 </p>
                 <p className="text">
                   Having a physical location means you can count on us to be
-                  here now and in the future. We`&lsquo;re not a pop-up online
+                  here now and in the future. We&lsquo;re not a pop-up online
                   dealer that could vanish at any time.
                 </p>
               </details>
@@ -557,7 +473,7 @@ export default function Home() {
                   that we value your time.
                 </p>
                 <p className="text">
-                  Whether you`&lsquo;re moving tomorrow or planning ahead, our
+                  Whether you&lsquo;re moving tomorrow or planning ahead, our
                   same-day service for Sharjah residents means you can sell your
                   furniture and receive cash payment within hours, not days.
                 </p>
@@ -573,7 +489,7 @@ export default function Home() {
               Quality Restoration Process
             </h3>
             <p className="mt-3 text">
-              Here`&lsquo;s what most second hand furniture dealers won`&lsquo;t
+              Here&lsquo;s what most second hand furniture dealers won&lsquo;t
               tell you: they buy furniture and resell it exactly as-is, with all
               its scratches, stains, and wobbles.
             </p>
@@ -663,13 +579,13 @@ export default function Home() {
             <p className="mt-5 text-white text-shadow-2xs max-w-2xl md:text-lg">
               Our store and inventory are a one-stop shop for your home needs.
               We buy and sell a diverse range of items at great prices, ensuring
-              you find exactly what you`&lsquo;re looking for, whether for your
+              you find exactly what you&lsquo;re looking for, whether for your
               home or office.
             </p>
             <div className="mt-5 flex gap-x-3">
               <Button size={"lg"}>WhatsApp Us</Button>
               <Button variant={"secondary"} size={"lg"}>
-                Contact Us
+                Visit To Store
               </Button>
             </div>
           </div>
@@ -696,6 +612,10 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+              <Button variant={"secondary"} className="mt-5">
+                Contact For {service.title}
+              </Button>
+
               <Image
                 src={service.src}
                 width={130}
@@ -721,17 +641,23 @@ export default function Home() {
           <div className="max-w-3xl mt-5  text">
             <p>
               Need to{" "}
-              <span className="border-b border-[#ffdb5e]">
+              <Link
+                href={"used-furniture-buyers-in-sharjah"}
+                className="border-b border-[#ffdb5e]"
+              >
                 sell used furniture in Sharjah
-              </span>{" "}
-              quickly and fairly? We`&lsquo;ve streamlined the entire process to
+              </Link>{" "}
+              quickly and fairly? We&lsquo;ve streamlined the entire process to
               make selling your furniture as easy as sending a message.
             </p>
             <p>
               As professional{" "}
-              <span className="border-b border-[#ffdb5e]">
+              <Link
+                href={"used-furniture-buyers-in-sharjah"}
+                className="border-b border-[#ffdb5e]"
+              >
                 second-hand furniture buyers in Sharjah
-              </span>{" "}
+              </Link>{" "}
               , we purchase everything from single pieces to complete home
               contents, offering the best prices in the market.
             </p>
@@ -761,9 +687,9 @@ export default function Home() {
                   </h4>
                   <p className="mt-2 text-sm text">
                     Send photos via WhatsApp or fill out our online form.
-                    Include basic details about your furniture`&lsquo;s
-                    condition and location. Our team reviews submissions
-                    immediately during business hours.
+                    Include basic details about your furniture&lsquo;s condition
+                    and location. Our team reviews submissions immediately
+                    during business hours.
                   </p>
                 </div>
               </li>
@@ -818,16 +744,21 @@ export default function Home() {
           className="md:w-11/12 w-full mx-auto mt-36 grid md:grid-cols-2 grid-cols-1 gap-10 items-center md:px-0 px-3"
         >
           <div>
-            <h3 className="headline md:text-4xl/tight text-3xl/tight font-bold">
-              <span className="border-b-4 border-[#ffdb5e]">
-                What Type Furniture
-              </span>{" "}
-              <span className="block blue"> We Buy in Sharjah</span>
-            </h3>
-
+            <Link
+              href={
+                "/used-furniture-buyers-in-sharjah#types-of-furniture-we-buy"
+              }
+            >
+              <h3 className="headline md:text-4xl/tight text-3xl/tight font-bold">
+                <span className="border-b-4 border-[#ffdb5e]">
+                  What Type Furniture
+                </span>{" "}
+                <span className="block blue"> We Buy in Sharjah</span>
+              </h3>
+            </Link>
             <p className="mt-5 text">
               As comprehensive furniture buyers in Sharjah, we purchase almost
-              everything for your home. Don`&lsquo;t worry about condition – we
+              everything for your home. Don&lsquo;t worry about condition – we
               have in-house restoration capabilities that allow us to buy
               furniture others might reject:
             </p>
@@ -843,8 +774,8 @@ export default function Home() {
               </li>
               <li className="text">
                 <span className="font-medium">Any Condition Accepted</span>:
-                Minor scratches, fading, or wear don`&lsquo;t affect our
-                interest – we restore everything
+                Minor scratches, fading, or wear don&lsquo;t affect our interest
+                – we restore everything
               </li>
               <li className="text">
                 <span className="font-medium">Office Clearances</span>:Closing
@@ -902,9 +833,9 @@ export default function Home() {
             <div>
               <p className="text">
                 In a market where many buyers try to undervalue your furniture,
-                we stand out through transparency and fairness. Here`&lsquo;s
-                why thousands of Sharjah residents trust us when they need to
-                sell furniture for cash:
+                we stand out through transparency and fairness. Here&lsquo;s why
+                thousands of Sharjah residents trust us when they need to sell
+                furniture for cash:
               </p>
               <Button className="mt-3">About Us</Button>
             </div>
@@ -914,7 +845,7 @@ export default function Home() {
               {features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-start justify-start border-l-2 border-[#c07d53] md:p-8 p-5 hover:bg-gray-50 transition"
+                  className="flex flex-col items-start justify-start border-l-2 border-[#c07d53] md:p-8 p-5 hover:bg-[#c07d5318] transition"
                 >
                   <h3 className="text-lg font-semibold headline mb-2">
                     {feature.title}
@@ -927,123 +858,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section
-          id="Buy-Used-Furniture-in-Sharjah"
-          className="w-full h-[530px] relative mt-36"
-        >
-          <Image
-            src={"/Sustainable-Furniture.jpg"}
-            alt="sustainable furniture shopping with rukun al arooba used furniture"
-            fill
-            className="object-cover object-center"
-          />
-          <div className="absolute  px-3 top-0 left-0 w-full h-full bg-gradient-to-r from-[#144E5A] to-[#144E5A]/50 flex flex-col items-start justify-center md:px-20">
-            <h2 className="text-white md:text-5xl text-3xl font-bold text-shadow-2xs">
-              Sustainable Furniture Shopping <br className="md:block hidden" />{" "}
-              - Environmental Impact
-            </h2>
-            <p className="mt-7 text-white text-shadow-2xs max-w-3xl md:text-lg">
-              Choose sustainability. Choose second-hand. Choose a better future
-              for the UAE.
-            </p>
-            <p className="mt-2 text-white text-shadow-2xs max-w-3xl md:text-lg">
-              At Rukun Al Arooba, we`&lsquo;re more than just used furniture
-              dealers– we`&lsquo;re environmental champions. Every piece of
-              furniture we restore and resell represents a victory against waste
-              and unnecessary consumption.
-            </p>
-            <div className="mt-7  flex gap-x-3">
-              <Button size={"lg"}>WhatsApp Us</Button>
-              <Button variant={"secondary"} size={"lg"}>
-                Contact Us
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="md:px-0 px-3 mt-36 max-w-4xl mx-auto border-b-4 pb-5">
-          <h3 className="md:text-4xl text-3xl headline  font-bold">
-            Reducing Furniture Waste in the UAE
-          </h3>
-          <p className="mt-7 text">
-            The UAE generates thousands of tons of furniture waste annually,
-            with perfectly usable pieces ending up in landfills simply because
-            they`&lsquo;re no longer &ldquo;new.&ldquo;
-          </p>
-          <p className="mt-2 text">
-            When you choose sustainable furniture shopping in Sharjah with us,
-            you`&lsquo;re actively participating in the solution:
-          </p>
-          <ul className="mt-5 list-disc ml-5 text">
-            <li>
-              <span className="font-medium">Landfill Diversion: </span>
-              Every restored piece is one less item in our overflowing waste
-              facilities.
-            </li>
-            <li>
-              <span className="font-medium"> Carbon Footprint Reduction: </span>
-              Buying used furniture eliminates the carbon emissions from
-              manufacturing and shipping new pieces.
-            </li>
-            <li>
-              <span className="font-medium"> Resource Conservation: </span>
-              Reusing furniture preserves forests, reduces water consumption,
-              and minimizes chemical use.
-            </li>
-            <li>
-              <span className="font-medium">Supporting Circular Economy: </span>
-              Your purchase keeps money and resources circulating within the UAE
-              economy
-            </li>
-          </ul>
-          <p className="mt-2 text">
-            Studies show that furniture production is one of the most
-            resource-intensive industries globally. By choosing restored,
-            quality used furniture, you`&lsquo;re making an environmental
-            statement without sacrificing style or quality.
-          </p>
-        </section>
-
-        <section className="md:px-0 px-3 mt-20 max-w-4xl mx-auto border-b-4 pb-5">
-          <h3 className="md:text-4xl text-3xl headline  font-bold">
-            Quality Over Quantity Philosophy
-          </h3>
-          <p className="mt-7 text">
-            Our restoration process doesn`&lsquo;t just make furniture look good
-            – it extends its lifespan by years, sometimes decades. This
-            commitment to quality means:
-          </p>
-
-          <ul className="mt-5 list-disc ml-5 text">
-            <li>
-              <span className="font-medium">
-                {" "}
-                Extended Furniture Lifespan:{" "}
-              </span>
-              Professional restoration adds years of use to furniture that might
-              otherwise be discarded
-            </li>
-            <li>
-              <span className="font-medium">
-                Reduced Demand for New Production:{" "}
-              </span>
-              Every purchase of used furniture reduces demand for new
-              manufacturing
-            </li>
-            <li>
-              <span className="font-medium"> Community Impact: </span>
-              Affordable quality furniture helps families furnish homes without
-              financial strain
-            </li>
-            <li>
-              <span className="font-medium">Cultural Preservation: </span>
-              We restore and preserve traditional Arabic furniture styles that
-              might otherwise be lost
-            </li>
-          </ul>
-        </section>
-
         <section className="mt-36 md:w-11/12 mx-auto w-full md:px-0 px-3">
           <h2 className="font-bold md:text-4xl/tight text-3xl/tight blue">
             <span className="border-b headline border-[#ffdb5e]">
@@ -1053,8 +867,8 @@ export default function Home() {
           </h2>
           <p className="max-w-4xl text mt-5">
             While our showroom is in Sharjah, our services extend across the
-            entire UAE. We`&lsquo;re your trusted furniture buyers and sellers
-            wherever you`&lsquo;re located:
+            entire UAE. We&lsquo;re your trusted furniture buyers and sellers
+            wherever you&lsquo;re located:
           </p>
           <div className="mt-20">
             <h3 className="headline text-3xl font-bold text-center border-b-2 border-[#ffdb5e]  max-w-md pb-3 mx-auto">
@@ -1063,9 +877,11 @@ export default function Home() {
             <div className="mt-10 grid md:grid-cols-11 min-h-96 grid-cols-1 gap-7">
               <div className="col-span-4  md:text-right">
                 <div className="border-b-2 border-[#c07d53] pb-5">
-                  <h3 className="font-bold headline text-lg">
-                    Used Furniture in Sharjah
-                  </h3>
+                  <Link href={"/used-furniture-buyers-in-sharjah"}>
+                    <h3 className="font-bold headline text-lg">
+                      Used Furniture Buyers in Sharjah
+                    </h3>
+                  </Link>{" "}
                   <p className="text mt-2 text-sm ">
                     Our home base with same-day service. Visit our Al Estiqlal
                     Street showroom any day of the week, or request immediate
@@ -1079,9 +895,9 @@ export default function Home() {
                   </h3>
                   <p className="text mt-2 text-sm ">
                     - Scheduled pickups and deliveries for the capital. Whether
-                    you`&lsquo;re in the city center, Yas Island, or Reem
-                    Island, we provide professional service for buying and
-                    selling second hand furniture in Abu Dhabi.
+                    you&lsquo;re in the city center, Yas Island, or Reem Island,
+                    we provide professional service for buying and selling
+                    second hand furniture in Abu Dhabi.
                   </p>
                 </div>
                 <div className="border-b-2 border-[#c07d53] pb-5 mt-5">
@@ -1138,7 +954,7 @@ export default function Home() {
                       scheduled for Fujairah residents.
                     </b>
                     <span>
-                      Don`&lsquo;t worry about your used furniture needs, we got
+                      Don&lsquo;t worry about your used furniture needs, we got
                       you cover everywhere in UAE.
                     </span>
                   </p>
@@ -1147,15 +963,130 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section
+          id="Buy-Used-Furniture-in-Sharjah"
+          className="w-full h-[530px] relative mt-36"
+        >
+          <Image
+            src={"/Sustainable-Furniture.jpg"}
+            alt="sustainable furniture shopping with rukun al arooba used furniture"
+            fill
+            className="object-cover object-center"
+          />
+          <div className="absolute  px-3 top-0 left-0 w-full h-full bg-gradient-to-r from-[#144E5A] to-[#144E5A]/50 flex flex-col items-start justify-center md:px-20">
+            <h2 className="text-white md:text-5xl text-3xl font-bold text-shadow-2xs">
+              Sustainable Furniture Shopping <br className="md:block hidden" />{" "}
+              - Environmental Impact
+            </h2>
+            <p className="mt-7 text-white text-shadow-2xs max-w-3xl md:text-lg">
+              Choose sustainability. Choose second-hand. Choose a better future
+              for the UAE.
+            </p>
+            <p className="mt-2 text-white text-shadow-2xs max-w-3xl md:text-lg">
+              At Rukun Al Arooba, we&lsquo;re more than just used furniture
+              dealers– we&lsquo;re environmental champions. Every piece of
+              furniture we restore and resell represents a victory against waste
+              and unnecessary consumption.
+            </p>
+            <div className="mt-7  flex gap-x-3">
+              <Button size={"lg"}>WhatsApp Us</Button>
+              <Button variant={"secondary"} size={"lg"}>
+                Contact Us
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        <section className="md:px-0 px-3 mt-36 max-w-4xl mx-auto border-b-4 pb-5">
+          <h3 className="md:text-4xl text-3xl headline  font-bold">
+            Reducing Furniture Waste in the UAE
+          </h3>
+          <p className="mt-7 text">
+            The UAE generates thousands of tons of furniture waste annually,
+            with perfectly usable pieces ending up in landfills simply because
+            they&lsquo;re no longer &ldquo;new.&ldquo;
+          </p>
+          <p className="mt-2 text">
+            When you choose sustainable furniture shopping in Sharjah with us,
+            you&lsquo;re actively participating in the solution:
+          </p>
+          <ul className="mt-5 list-disc ml-5 text">
+            <li>
+              <span className="font-medium">Landfill Diversion: </span>
+              Every restored piece is one less item in our overflowing waste
+              facilities.
+            </li>
+            <li>
+              <span className="font-medium"> Carbon Footprint Reduction: </span>
+              Buying used furniture eliminates the carbon emissions from
+              manufacturing and shipping new pieces.
+            </li>
+            <li>
+              <span className="font-medium"> Resource Conservation: </span>
+              Reusing furniture preserves forests, reduces water consumption,
+              and minimizes chemical use.
+            </li>
+            <li>
+              <span className="font-medium">Supporting Circular Economy: </span>
+              Your purchase keeps money and resources circulating within the UAE
+              economy
+            </li>
+          </ul>
+          <p className="mt-2 text">
+            Studies show that furniture production is one of the most
+            resource-intensive industries globally. By choosing restored,
+            quality used furniture, you&lsquo;re making an environmental
+            statement without sacrificing style or quality.
+          </p>
+        </section>
+
+        <section className="md:px-0 px-3 mt-20 max-w-4xl mx-auto border-b-4 pb-5">
+          <h3 className="md:text-4xl text-3xl headline  font-bold">
+            Quality Over Quantity Philosophy
+          </h3>
+          <p className="mt-7 text">
+            Our restoration process doesn&lsquo;t just make furniture look good
+            – it extends its lifespan by years, sometimes decades. This
+            commitment to quality means:
+          </p>
+
+          <ul className="mt-5 list-disc ml-5 text">
+            <li>
+              <span className="font-medium">
+                {" "}
+                Extended Furniture Lifespan:{" "}
+              </span>
+              Professional restoration adds years of use to furniture that might
+              otherwise be discarded
+            </li>
+            <li>
+              <span className="font-medium">
+                Reduced Demand for New Production:{" "}
+              </span>
+              Every purchase of used furniture reduces demand for new
+              manufacturing
+            </li>
+            <li>
+              <span className="font-medium"> Community Impact: </span>
+              Affordable quality furniture helps families furnish homes without
+              financial strain
+            </li>
+            <li>
+              <span className="font-medium">Cultural Preservation: </span>
+              We restore and preserve traditional Arabic furniture styles that
+              might otherwise be lost
+            </li>
+          </ul>
+        </section>
 
         <section className="md:px-0 px-3 mt-36 max-w-4xl mx-auto border-b-4 pb-5">
           <h2 className="md:text-4xl text-3xl headline  font-bold">
             Customer Guarantees & Policies
           </h2>
           <p className="mt-7 text">
-            Trust is earned through actions, not words. That`&lsquo;s why we
-            back every transaction with comprehensive guarantees that protect
-            your interests:
+            Trust is earned through actions, not words. That&lsquo;s why we back
+            every transaction with comprehensive guarantees that protect your
+            interests:
           </p>
           <h3 className="font-bold text-3xl text mt-7">Warranty & Returns</h3>
           <p className="mt-5 text">
@@ -1171,12 +1102,12 @@ export default function Home() {
           </ul>
           <div className="text mt-5">
             Not satisfied with your purchase? Our hassle-free return policy
-            allows you to return furniture within 7 days if it doesn`&lsquo;t
+            allows you to return furniture within 7 days if it doesn&lsquo;t
             meet your expectations.
           </div>
 
           <div className="text mt-3">
-            We`&lsquo;ll either exchange it for something else or provide a full
+            We&lsquo;ll either exchange it for something else or provide a full
             refund – your choice. This level of protection is unheard of among
             used furniture shops in Sharjah, where most sales are final.
           </div>
@@ -1191,7 +1122,7 @@ export default function Home() {
             </li>
             <li>
               Price Match Guarantee:Found the same item cheaper elsewhere?
-              We`&lsquo;ll match any verified price from registered dealers
+              We&lsquo;ll match any verified price from registered dealers
             </li>
             <li>
               Bulk Purchase Discounts:Furnishing an entire home or office? Enjoy

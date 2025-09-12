@@ -128,7 +128,7 @@ const Form = () => {
             <label
               className={`px-3 py-2 rounded-lg border ${
                 reason === "sell"
-                  ? "border-primary bg-primary/10"
+                  ? "border-primary bg-[#c07d5323]"
                   : "border-gray-200"
               }`}
             >
@@ -145,7 +145,7 @@ const Form = () => {
             <label
               className={`px-3 py-2 rounded-lg border ${
                 reason === "buy"
-                  ? "border-primary bg-primary/10"
+                  ? "border-primary bg-[#c07d5323]"
                   : "border-gray-200"
               }`}
             >
@@ -162,7 +162,7 @@ const Form = () => {
             <label
               className={`px-3 py-2 rounded-lg border ${
                 reason === "general"
-                  ? "border-primary bg-primary/10"
+                  ? "border-primary bg-[#c07d5323]"
                   : "border-gray-200"
               }`}
             >
@@ -414,7 +414,7 @@ const Form = () => {
             <button
               type="submit"
               disabled={loading}
-              className="px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium disabled:opacity-60"
+              className="px-4 py-2 rounded-lg pri-bg text-white font-medium disabled:opacity-60"
             >
               {loading
                 ? "Sending..."

@@ -536,7 +536,7 @@ const UsedFurnitureBuyersDubai = () => {
         <div>
           <h2 className="headline  md:text-4xl/tight text-3xl/tight font-bold">
             <span className="border-b-4 border-[#ffdb5e]">
-              Areas We Service -
+              Areas We Serve -
             </span>{" "}
             <span className="md:block blue">Used Furniture Buyers In UAE</span>
           </h2>
