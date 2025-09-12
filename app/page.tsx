@@ -317,7 +317,7 @@ export default function Home() {
               width={50}
               height={50}
             />
-            <Link href={"/used-furniture-buyers-in-dubai"}>
+            <Link href={"/contact-us"}>
               <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
                 I Want To Buy Used Furniture <ArrowUpRight className="inline" />
               </h3>
@@ -330,9 +330,12 @@ export default function Home() {
               width={50}
               height={50}
             />
-            <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
-              I Want To Sell My Furniture <ArrowUpRight className="inline" />
-            </h3>
+            <Link href={"/used-furniture-buyers-in-dubai"}>
+              {" "}
+              <h3 className="uppercase font-medium md:text-2xl text-xl text-white hover:underline cursor-pointer ">
+                I Want To Sell My Furniture <ArrowUpRight className="inline" />
+              </h3>
+            </Link>
           </div>
         </section>
 

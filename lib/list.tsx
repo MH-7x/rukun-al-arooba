@@ -57,9 +57,9 @@ export const servicesList = [
 ];
 export const locationList = [
   {
-    title: "Used Furniture in Sharjah",
+    title: "Used Furniture Buyer in Sharjah",
     desc: "Affordable used furniture and appliances available across Sharjah.",
-    link: "#",
+    link: "/used-furniture-buyers-in-sharjah",
   },
   {
     title: "Used Furniture in Dubai",
@@ -566,6 +566,121 @@ export const hwwFaqs = [
         <p className="mt-2">
           For large or commercial lots we provide a tailored commercial quote —
           contact us with details and photos for a fast, transparent proposal.
+        </p>
+      </>
+    ),
+  },
+];
+
+import React from "react";
+
+// The array of FAQs. You can import this directly into your component.
+export const SharjahBuyersFaqs = [
+  {
+    question: "How quickly can you pick up my furniture?",
+    answer: (
+      <>
+        <p>
+          We offer <strong>same-day pickup</strong> for urgent requests and can
+          usually schedule collection <strong>within 24 hours</strong>.
+        </p>
+        <p>
+          Our dedicated fleet and moving partners ensure we can respond quickly
+          to time-sensitive situations like end-of-lease clearances or
+          unexpected relocations.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy damaged or old furniture?",
+    answer: (
+      <>
+        <p>
+          <strong>
+            Yes, we evaluate all furniture regardless of its condition.
+          </strong>{" "}
+          While pristine pieces command higher prices, we often purchase items
+          needing repair, vintage pieces, and even damaged furniture if
+          restoration is viable.
+        </p>
+        <p>
+          Our expertise in furniture restoration in Sharjah means we see
+          potential and value where others might not.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Which areas in Sharjah do you cover?",
+    answer: (
+      <>
+        <p>
+          We cover <strong>all areas of Sharjah without exception.</strong> Our
+          services extend from waterfront properties in Al Khan to villas in Al
+          Ramtha, apartments in Al Nahda, and offices in the Sharjah Airport
+          Free Zone.
+        </p>
+        <p>
+          We are one of the few companies that buy used furniture in Sharjah
+          with truly complete coverage of the emirate.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What documents do I need to sell furniture?",
+    answer: (
+      <>
+        <p>
+          The process is designed to be simple and hassle-free. For individual
+          sellers, we only require a <strong>valid Emirates ID</strong> for
+          verification purposes.
+        </p>
+        <p>
+          For businesses and office clearouts, we can provide formal purchase
+          receipts and any other documentation required for your records.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you determine furniture prices?",
+    answer: (
+      <>
+        <p>
+          Our transparent valuation process considers multiple factors to give
+          you the best possible offer:
+        </p>
+        <ul>
+          <li>
+            <strong>Current Market Demand:</strong> What buyers are actively
+            looking for.
+          </li>
+          <li>
+            <strong>Item Condition:</strong> The physical state, including wear
+            and tear.
+          </li>
+          <li>
+            <strong>Brand and Quality:</strong> The reputation of the
+            manufacturer and materials.
+          </li>
+          <li>
+            <strong>Age and Style:</strong> Whether it&apos;s a modern, vintage,
+            or antique piece.
+          </li>
+          <li>
+            <strong>Restoration Costs:</strong> An estimate of any repairs
+            needed to make it saleable.
+          </li>
+          <li>
+            <strong>Overall Resale Potential:</strong> The item&apos;s
+            attractiveness in the secondhand market.
+          </li>
+        </ul>
+        <p>
+          We are always happy to explain how we arrived at our offer based on
+          these criteria.
         </p>
       </>
     ),
