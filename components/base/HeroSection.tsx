@@ -66,7 +66,6 @@ const HeroSection = () => {
             width={260}
             className="mx-auto "
             height={260}
-            quality={100}
           />
         </div>
       </div>

@@ -691,3 +691,212 @@ export const SharjahBuyersFaqs = [
     ),
   },
 ];
+
+export const ajmanFaqs = [
+  {
+    question: "How do you ensure the quality of your used furniture in Ajman?",
+    answer: (
+      <>
+        <p>
+          At Rukun Al Arooba, every piece of furniture undergoes a
+          comprehensive, multi-step refurbishment process. Unlike the uncertain
+          state of items on online marketplaces, our expert team performs a
+          meticulous inspection for structural integrity, functionality, and
+          aesthetic condition.
+        </p>
+        <p>
+          Any necessary repairs are completed using professional-grade materials
+          and techniques to restore the item to its best possible state.
+          Finally, each piece is thoroughly cleaned and polished.
+        </p>
+        <p>
+          This commitment to quality ensures that when you choose our furniture,
+          you are selecting an item that is not only beautiful but also durable
+          and reliable. The process is designed to eliminate the common risks
+          associated with second-hand purchases and provide you with a product
+          that looks and feels nearly new.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you offer a warranty or guarantee on your pre-owned furniture?",
+    answer: (
+      <>
+        <p>
+          Yes, Rukun Al Arooba is the only used furniture dealer in Ajman to
+          offer a genuine warranty on our purchases. Our confidence in our
+          rigorous quality control process allows us to provide this
+          unparalleled level of protection.
+        </p>
+        <p>
+          The warranty ensures that you are fully protected against unexpected
+          issues, a level of security that is simply unheard of in the
+          traditional second-hand market. Our straightforward return policy
+          further demonstrates our commitment to your complete satisfaction.
+        </p>
+        <p>
+          This guarantee removes the element of risk and provides peace of mind,
+          transforming your purchase into a secure investment.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What types of used furniture can I buy from you in Ajman?",
+    answer: (
+      <>
+        <p>
+          Our constantly updated inventory features a wide and diverse selection
+          of premium used furniture and appliances for both homes and offices
+          throughout Ajman.
+        </p>
+        <ul>
+          <li>Used bedroom furniture – beds, wardrobes, and complete sets</li>
+          <li>
+            Office furniture – executive desks, chairs, and conference tables
+          </li>
+          <li>Living room furniture – sofas, dining tables, and more</li>
+          <li>Household appliances – refrigerators, washing machines, etc.</li>
+        </ul>
+        <p>
+          We invite you to visit our physical showroom on Al Estiqlal Street in
+          Sharjah to explore our curated collection, or you can contact us to
+          inquire about specific items.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How can I be sure the furniture will fit in my space?",
+    answer: (
+      <>
+        <p>
+          One of the most common mistakes when purchasing furniture is
+          misjudging the size of your space. We strongly recommend that you
+          measure the length, width, and height of the area where you plan to
+          place the new furniture, and be sure to also account for doorways,
+          staircases, and hallways to ensure a clear path for delivery.
+        </p>
+        <p>
+          To make this process seamless and stress-free, Rukun Al Arooba offers
+          professional delivery and installation services for complex items. Our
+          team has local expertise and has developed efficient delivery routes
+          covering all of Ajman, ensuring accurate timeframes and competitive
+          pricing tailored to your location.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do I sell my used furniture in Ajman to you?",
+    answer: (
+      <>
+        <p>
+          Selling your used furniture to Rukun Al Arooba is designed to be a
+          simple, fast, and fair process. It&lsquo;s as easy as following these
+          steps:
+        </p>
+        <ol className="list-decimal pl-5">
+          <li>
+            Take a few clear photos of the items you wish to sell and send them
+            to us via WhatsApp.
+          </li>
+          <li>
+            Our expert team will provide a transparent and competitive valuation
+            based on the item&lsquo;s condition, age, and current market value.
+          </li>
+          <li>
+            Once you accept our offer, we will schedule a free, professional
+            pickup at your convenience, with same-day or next-day collection
+            available.
+          </li>
+          <li>
+            You receive immediate cash payment on the spot, with no waiting for
+            checks to clear or dealing with payment risks.
+          </li>
+        </ol>
+        <p>
+          The entire process is designed to be completed in hours rather than
+          weeks.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Why should I sell to you instead of online marketplaces like Dubizzle?",
+    answer: (
+      <>
+        <p>
+          While online marketplaces might seem convenient, the reality for most
+          sellers is frustrating and time-consuming. You are often required to
+          field dozens of messages from time-wasters, engage in endless
+          negotiations with bargain hunters, and coordinate all pickup logistics
+          yourself.
+        </p>
+        <p>
+          Worse, the process exposes you to the security risk of having
+          strangers visit your home with no guarantees. When you work with a
+          professional dealer like Rukun Al Arooba, these concerns are
+          eliminated.
+        </p>
+        <ul>
+          <li>Immediate cash payment at an agreed-upon price</li>
+          <li>Professional and safe removal services</li>
+          <li>Transactions completed in hours, not weeks</li>
+          <li>
+            Government registration and established presence for added security
+          </li>
+        </ul>
+        <p>
+          Our services provide a level of security and convenience that
+          peer-to-peer platforms cannot match.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How quickly can you buy and collect my used furniture?",
+    answer: (
+      <>
+        <p>
+          We understand that when you need to sell your furniture, speed is
+          essential. Our service is designed for maximum efficiency, with
+          same-day or next-day collection available for all of Ajman, including
+          areas like Al Jurf, Al Hamidiyah, Al Rawda, and Ajman Downtown.
+        </p>
+        <p>
+          Our commitment to immediate cash payment on pickup ensures that once
+          an agreement is reached, the entire transaction is completed rapidly,
+          allowing you to reclaim your space and capital without delay.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What types of items do you buy and what is your valuation process?",
+    answer: (
+      <>
+        <p>
+          We are trusted buyers of a wide range of used items, including all
+          types of household and office furniture, as well as appliances. This
+          includes everything from bedroom sets, sofas, and dining tables to
+          refrigerators, washing machines, and office desks.
+        </p>
+        <p>
+          Our valuation process is transparent and fair. Our experienced team,
+          with over 20 years of expertise in the used furniture trade, assesses
+          each item based on its brand, condition, age, and current market
+          value.
+        </p>
+        <p>
+          This professional assessment ensures that you receive the best
+          possible value for your items without any hidden charges or fees.
+        </p>
+      </>
+    ),
+  },
+];
