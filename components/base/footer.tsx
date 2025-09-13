@@ -10,7 +10,7 @@ const Footer = () => {
       <footer className="relative z-10 blue-bg pb-10 pt-20  lg:pt-[120px] mt-20 grid-wrapper text-white">
         <div className="grid-background" />
         <div className="md:w-11/12 mx-auto">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="md:-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
               <div className="mb-10 w-full">
                 <Link
@@ -87,9 +87,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-11/12 mx-auto mt-10 flex items-center justify-between flex-wrap">
+        <div className="md:w-11/12 mx-auto mt-10 flex items-center justify-between flex-wrap md:px-0 px-3">
           <div>
-            <div className="flex gap-x-3 text-sm ">
+            <div className="flex flex-wrap gap-x-3 text-sm ">
               <p className="">
                 Copyright © {new Date().getFullYear()} Rukun Al Arooba
               </p>
@@ -100,14 +100,14 @@ const Footer = () => {
                 Terms & Conditions
               </Link>
             </div>
-            <p className="text-sm">
+            <p className="text-sm md:mt-0 mt-3">
               Develop & Maintenance By{" "}
               <span className="underline underline-offset-2">
                 Mashal Huraira
               </span>
             </p>
           </div>
-          <div className="flex items-center ">
+          <div className="flex items-center md:mt-0 mt-3">
             <a
               href="javascript:void(0)"
               className="mr-3 flex h-8 w-8 items-center justify-center rounded-full border border-stroke text-dark hover:border-primary hover:bg-primary hover:text-white sm:mr-4 lg:mr-3 xl:mr-4"

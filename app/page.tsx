@@ -922,13 +922,19 @@ export default function Home() {
               </div>
               <div className="col-span-4">
                 <div className="border-b-2 border-[#c07d53] pb-5">
-                  <h3 className="font-bold headline text-lg">
-                    Used Furniture in Ajman
-                  </h3>
+                  <Link href={"/used-furniture-in-ajman"}>
+                    <h3 className="font-bold headline text-lg">
+                      Used Furniture in Ajman
+                    </h3>
+                  </Link>
                   <p className="text mt-2 text-sm ">
                     Express service with same-day availability for nearby areas.
                     Our proximity to Ajman means quick response times and
-                    competitive prices for used furniture in Ajman.
+                    competitive prices for{" "}
+                    <Link href={"/used-furniture-in-ajman"}>
+                      used furniture in Ajman
+                    </Link>
+                    .
                   </p>
                 </div>
                 <div className="border-b-2 border-[#c07d53] pb-5 mt-5">
