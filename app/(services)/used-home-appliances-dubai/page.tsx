@@ -3,6 +3,22 @@ import ServiceHero from "@/components/base/ServiceHero";
 import React from "react";
 import "../styling.css";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Used Home Appliances Dubai — Buy & Sell | Rukun Al Arooba",
+      desc: "Buy and sell quality used home appliances Dubai. Fast pickup, warranty, inspection & multiple payments. Visit our Sharjah store or contact via WhatsApp.",
+    },
+    image: {
+      path: "/used-home-appliances-dubai.jpg",
+      alt: "rukun al arooba used home appliances dubai",
+    },
+    path: "/used-home-appliances-dubai",
+  },
+});
+
 const page = () => {
   return (
     <main className="service-page">

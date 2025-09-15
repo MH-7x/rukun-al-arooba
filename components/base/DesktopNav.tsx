@@ -40,7 +40,7 @@ const DesktopNav = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/docs">About Us</Link>
+              <Link href="/about-us">About Us</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 
