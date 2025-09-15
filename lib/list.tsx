@@ -2,7 +2,7 @@ export const servicesList = [
   {
     title: "Used Home Appliances",
     desc: "Explore a wide selection of quality used home appliances at affordable prices.",
-    link: "#",
+    link: "/used-home-appliances-dubai",
   },
   {
     title: "Used Electronics",
