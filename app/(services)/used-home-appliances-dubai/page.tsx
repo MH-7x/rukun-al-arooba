@@ -12,7 +12,7 @@ export const metadata = MetadataTemplate({
       desc: "Buy and sell quality used home appliances Dubai. Fast pickup, warranty, inspection & multiple payments. Visit our Sharjah store or contact via WhatsApp.",
     },
     image: {
-      path: "/used-home-appliances-dubai.jpg",
+      path: "/service/used-home-appliances-dubai.jpg",
       alt: "rukun al arooba used home appliances dubai",
     },
     path: "/used-home-appliances-dubai",

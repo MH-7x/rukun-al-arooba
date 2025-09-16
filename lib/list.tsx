@@ -22,7 +22,7 @@ export const servicesList = [
   {
     title: "Used Beds for Sale",
     desc: "Find comfortable and budget-friendly used beds in excellent condition.",
-    link: "#",
+    link: "/used-beds-for-sale",
   },
   {
     title: "Used Refrigerators",
@@ -895,6 +895,352 @@ export const ajmanFaqs = [
         <p>
           This professional assessment ensures that you receive the best
           possible value for your items without any hidden charges or fees.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const BedsFaqs = [
+  {
+    question:
+      "What types of used beds do you have for sale in Sharjah and Dubai?",
+    answer: (
+      <>
+        <p>
+          We stock a wide range of <strong>used beds for sale</strong> across
+          the UAE — from
+          <strong> king and queen size beds</strong> to <strong>double</strong>,{" "}
+          <strong>single</strong> and
+          <strong>bunk beds</strong>. Most listings include clear photos,
+          dimensions and condition notes so you know exactly what you’re buying.
+          If you need a specific type, use keywords like
+          <em>used king size bed for sale Dubai</em> or{}
+          <em>used bunk bed for sale in Dubai</em>
+          when you message us on WhatsApp for a faster match.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can I buy a used bed with a mattress (used bed and mattress for sale)?",
+    answer: (
+      <>
+        <p>
+          Yes — many of our listings are sold as{" "}
+          <strong>used bed and mattress for sale</strong> packages. We sanitize
+          mattresses professionally and clearly state whether a mattress is
+          included in the product description. If you prefer a new mattress,
+          tell us and we’ll price the bed without one.
+        </p>
+        <p>
+          Tip: Ask for the listing ID and include the phrase{" "}
+          <em>used bed for sale in Sharjah</em> so our team can send exact
+          photos and a mattress condition report immediately.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Are used beds sanitary and safe for children (used bunk beds for sale)?",
+    answer: (
+      <>
+        <p>
+          Absolutely — our safety and sanitation process is strict. All{" "}
+          <strong>used bunk beds for sale</strong>
+          and children’s beds are inspected for structural integrity, reinforced
+          where necessary, and fitted with guard rails if required. Mattresses
+          are steam-cleaned and sanitized before listing.
+        </p>
+        <p>
+          For families, use search phrases like{" "}
+          <em>used bunk bed for sale in Dubai</em> or message us to request a
+          safety checklist and installation guide for the specific bunk bed
+          you’re interested in.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "How much does a used bed cost in Dubai or Abu Dhabi (used bed price Dubai)?",
+    answer: (
+      <>
+        <p>
+          Prices vary by size, material and condition. You’ll find
+          budget-friendly <strong>used beds</strong>
+          and premium like-new options. To get a quick idea, message us with the
+          keywords
+          <em>used bed price Dubai</em> or{}
+          <em>used double bed for sale in Sharjah</em> and we’ll send current
+          listings and price ranges within minutes.
+        </p>
+        <p>
+          We offer transparent pricing, and most items include a short warranty
+          — making pre-owned buying a cost-effective yet safe choice.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Do you deliver used beds across the UAE, including used bed delivery Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes — we deliver across the UAE. Whether you search for{" "}
+          <em>used bed delivery Abu Dhabi</em>,<em>used bed delivery Dubai</em>{" "}
+          or{}
+          <em>used bed delivery Sharjah</em>, we’ll include delivery costs in
+          your instant quote. Our partner, Abu Muhammad Movers, handles pickup
+          and safe delivery.
+        </p>
+        <p>
+          Delivery windows are typically 24–72 hours depending on location;
+          same-day delivery may be available in Sharjah and nearby areas when
+          stock and schedules permit.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "How do I buy a used bed in Dubai or Sharjah (buy used bed Dubai)?",
+    answer: (
+      <>
+        <p>
+          Buying is simple: browse our online inventory or message us on
+          WhatsApp with the phrase
+          <em>buy used bed Dubai</em> plus your preferred size and area. We’ll
+          reply within 5–10 minutes with photos, dimensions and a delivery
+          estimate.
+        </p>
+        <p>
+          You can pay via cash, bank deposit or cheque. We also coordinate
+          pickup and professional installation with our movers so your purchase
+          is hassle-free from order to setup.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question:
+      "Can I sell my used bed to Rukun Al Arooba (sell my used bed for cash Sharjah)?",
+    answer: (
+      <>
+        <p>
+          Yes — we buy used beds across the UAE. Send photos, dimensions and the
+          condition via WhatsApp and include{" "}
+          <em>sell my used bed for cash Sharjah</em> (or your emirate). We’ll
+          give a fair, transparent offer and can arrange pickup through our
+          movers if needed.
+        </p>
+        <p>
+          Selling to us is fast and eliminates listing hassles — you get an
+          instant decision and a professional pickup at a competitive rate.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Do you offer warranty and returns on used beds?",
+    answer: (
+      <>
+        <p>
+          We stand behind selected items with a limited warranty and
+          straightforward return policy. All warranty and return terms are
+          listed on each product and confirmed before purchase — search or
+          message for <em>used beds with warranty for sale</em> to see eligible
+          listings.
+        </p>
+        <p>
+          If an issue arises, contact our support team via WhatsApp and we’ll
+          guide you through inspection, repair or return options depending on
+          the item’s condition and the warranty provided.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Are used beds refurbished or repaired before sale?",
+    answer: (
+      <>
+        <p>
+          Yes — unlike casual sellers, we professionally inspect, repair and
+          polish every piece. Our goal is to make pre-owned beds look and
+          perform like new. We document repairs and list the condition in the
+          product description so you know what was done.
+        </p>
+        <p>
+          Use terms like <em>refurbished beds for sale</em> or{}
+          <em>reconditioned used beds UAE</em> to find items that have undergone
+          restoration.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "Can I view used beds in person at your Sharjah store?",
+    answer: (
+      <>
+        <p>
+          Definitely — visit our main store on{" "}
+          <strong>
+            Al Estiqlal Street, Bu Shaghara, Hay Al Qasimiah, Sharjah
+          </strong>
+          . We recommend messaging first with keywords such as{" "}
+          <em>view used beds in store</em> so our team reserves time to show the
+          exact pieces you’re interested in.
+        </p>
+        <p>
+          Prefer remote shopping? We’ll send extra photos and short videos —
+          just say
+          <em>used bed for sale in Dubai - video</em> in your message.
+        </p>
+      </>
+    ),
+  },
+
+  {
+    question: "What should I check when buying a used double bed or king bed?",
+    answer: (
+      <>
+        <p>
+          Inspect the frame for cracks or loose joints, check slats and
+          hardware, and review mattress condition or sanitization reports. For
+          listings titled <em>used double bed for sale in Sharjah</em>
+          or <em>used king size bed for sale Dubai</em>, we include a condition
+          checklist to help you buy confidently.
+        </p>
+        <ul>
+          <li>Frame & joinery</li>
+          <li>Slat strength & center support</li>
+          <li>Mattress sanitization/log</li>
+          <li>Dimensions and delivery/installation options</li>
+        </ul>
+      </>
+    ),
+  },
+];
+export const BedsBuyersFaqs = [
+  {
+    question: "Who are the trusted used beds buyers in Dubai?",
+    answer: (
+      <>
+        <p>
+          <strong>Rukun Al Arooba</strong> is one of the most trusted{" "}
+          <em>used beds buyers in Dubai</em> with over 20 years of experience in
+          the UAE’s second-hand furniture market. We provide a professional and
+          hassle-free alternative to online classifieds by offering instant
+          responses, transparent pricing, and quick pickup services.
+        </p>
+        <p>
+          Whether you are selling a single bed, bunk bed, or a complete bedroom
+          set, our team ensures a smooth process and fair value for your items.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How can I sell my used bed quickly in Dubai?",
+    answer: (
+      <>
+        <p>
+          Selling your bed to us is designed to be fast and simple. Just send us
+          photos of your bed via WhatsApp or our website, and we’ll reply with
+          an offer within minutes. Once you accept, we arrange same-day or
+          next-day pickup anywhere in Dubai.
+        </p>
+        <p>
+          Our goal is to save you time and effort compared to dealing with
+          buyers on online marketplaces.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What types of beds do you buy in Dubai?",
+    answer: (
+      <>
+        <p>
+          We purchase a wide range of beds, including{" "}
+          <strong>
+            single beds, double beds, king-size beds, bunk beds, and sofa beds
+          </strong>
+          . We also buy bedroom sets and beds with mattresses if they are in
+          hygienic and good condition.
+        </p>
+        <p>
+          If you’re unsure whether your item qualifies, simply share a photo and
+          we’ll confirm instantly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How much can I sell my used bed for in Dubai?",
+    answer: (
+      <>
+        <p>
+          The price of your used bed depends on its{" "}
+          <em>condition, size, material, and current market demand</em>. At
+          Rukun Al Arooba, we offer fair and competitive rates after carefully
+          inspecting your bed.
+        </p>
+        <p>
+          Unlike random buyers, we provide honest valuations and multiple
+          payment options, so you can sell with confidence.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide pickup service when buying used beds?",
+    answer: (
+      <>
+        <p>
+          Yes. We provide{" "}
+          <strong>free pickup service across Dubai and the UAE</strong> when you
+          sell your bed to us. Once you confirm our offer, our team schedules a
+          convenient time to collect your item. We handle the heavy lifting so
+          you don’t have to worry about transport or logistics.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I sell my bed with a mattress included?",
+    answer: (
+      <>
+        <p>
+          Yes, we do buy <strong>used beds with mattresses</strong>, provided
+          the mattress is in clean and hygienic condition. If the mattress
+          doesn’t meet our standards, we may still purchase the bed frame
+          separately.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you only buy used beds in Dubai or across the UAE?",
+    answer: (
+      <>
+        <p>
+          While we are known as reliable <em>used bed buyers in Dubai</em>, we
+          also operate across Sharjah, Abu Dhabi, Ajman, Ras Al Khaimah, and Al
+          Ain. Our pickup service ensures sellers across the UAE can benefit
+          from our fast response and fair offers.
         </p>
       </>
     ),

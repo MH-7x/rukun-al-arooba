@@ -187,7 +187,7 @@ export default function AboutUs() {
         <div className="col-span-1 py-10">
           <h3 className="text-3xl md:text-right blue font-medium">Our Story</h3>
         </div>
-        <div className="col-span-2 py-10 md:text-lg md:border-l-2 border-t-2 border-[#c07d53] md:pl-10 text">
+        <div className="col-span-2 py-10 md:border-t-0 md:text-lg md:border-l-2 border-t-2 border-[#c07d53] md:pl-10 text">
           <p>
             While officially registered in 2018, our journey in the used
             furniture industry spans over 20 years. This rich heritage has given
@@ -212,7 +212,7 @@ export default function AboutUs() {
             What We Do
           </h3>
         </div>
-        <div className="col-span-2 py-10 md:text-lg md:border-l-2 border-t-2 border-[#c07d53] md:pl-10 text">
+        <div className="col-span-2 py-10 md:text-lg md:border-t-0 md:border-l-2 border-t-2 border-[#c07d53] md:pl-10 text">
           <p>
             At Rukun Al Arooba, we specialize in buying and selling high-quality
             used furniture and home appliances throughout the UAE. Our mission
