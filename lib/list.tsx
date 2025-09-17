@@ -7,7 +7,7 @@ export const servicesList = [
   {
     title: "Used Electronics",
     desc: "Buy reliable second-hand electronics including TVs, laptops, and more.",
-    link: "#",
+    link: "/used-electronics-buyers-in-dubai",
   },
   {
     title: "Used Office Furniture",
@@ -577,9 +577,6 @@ export const hwwFaqs = [
   },
 ];
 
-import React from "react";
-
-// The array of FAQs. You can import this directly into your component.
 export const SharjahBuyersFaqs = [
   {
     question: "How quickly can you pick up my furniture?",
@@ -1241,6 +1238,220 @@ export const BedsBuyersFaqs = [
           also operate across Sharjah, Abu Dhabi, Ajman, Ras Al Khaimah, and Al
           Ain. Our pickup service ensures sellers across the UAE can benefit
           from our fast response and fair offers.
+        </p>
+      </>
+    ),
+  },
+];
+export const electronicsFaqs = [
+  {
+    question: "Who are reliable used electronics buyers in Dubai?",
+    answer: (
+      <>
+        <p>
+          Rukun Al Arooba is a trusted option among{" "}
+          <strong>used electronics buyers in Dubai</strong>. We buy phones,
+          laptops, TVs, refrigerators, washing machines and other home
+          appliances with a fast, transparent process. With 20+ years of trading
+          experience and a physical store in Sharjah, sellers get a professional
+          alternative to classifieds and random buyers.
+        </p>
+        <p>
+          For a quick response, message photos and model details on WhatsApp
+          using the phrase <em>“sell used electronics Dubai”</em> and we’ll
+          reply with an offer and pickup options.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Where can I sell used electronics in Dubai for cash?",
+    answer: (
+      <>
+        <p>
+          You can sell used electronics for cash directly to Rukun Al Arooba —
+          we offer on-the-spot payments, bank transfers or cheques depending on
+          your preference. Popular items we buy for cash include mobile phones,
+          laptops, TVs and kitchen appliances.
+        </p>
+        <p>
+          To speed up your sale, include clear photos, the model number and your
+          location (for example
+          <em>“sell old mobile phone Dubai — Jumeirah”</em>) when you message
+          us.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What types of used electronics do you buy in Dubai?",
+    answer: (
+      <>
+        <p>
+          We buy a wide range of <strong>used electronics</strong>: smartphones
+          & tablets, laptops & desktops, LED/LCD/Smart TVs, sound systems,
+          refrigerators, washing machines, air conditioners and small kitchen
+          appliances.
+        </p>
+        <p>
+          We also accept broken or non-working items for parts or recycling —
+          send photos and a short description like{" "}
+          <em>“broken phone for parts Dubai”</em> to get an instant valuation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you value used electronics (how much will I get)?",
+    answer: (
+      <>
+        <p>
+          Valuation depends on brand, model, age, working condition and market
+          demand. Popular models and well-kept devices command higher prices. We
+          provide fair, transparent offers after inspecting photos or visiting
+          your location for a free inspection.
+        </p>
+        <p>
+          Use long-tail queries such as <em>“sell laptop for cash Dubai”</em> or{" "}
+          <em>“used TV valuation Dubai”</em> when you message to help us speed
+          up the appraisal.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you wipe data from phones and laptops before resale?",
+    answer: (
+      <>
+        <p>
+          Yes — data security is a priority. All mobile phones and computers are
+          securely wiped or factory-reset before resale. If you’re selling a
+          device, we’ll either guide you to factory-reset it or perform a secure
+          wipe on pickup.
+        </p>
+        <p>
+          Mention <em>“data wipe”</em> or <em>“secure wipe”</em> when you
+          contact us to confirm the process and reassure buyers.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I sell broken or damaged electronics in Dubai?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We buy broken smartphones, cracked TVs, non-working
+          fridges and other damaged electronics. Items that are repairable may
+          receive a higher offer; irreparable devices are valued for parts or
+          recycling.
+        </p>
+        <p>
+          Send clear pictures of the damage with a description like{" "}
+          <em>“broken fridge pickup Dubai”</em> and we’ll respond with an offer
+          and pickup options.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you provide pickup service when buying used electronics?",
+    answer: (
+      <>
+        <p>
+          Yes — we offer free or low-cost pickup across Dubai and the UAE. After
+          you accept our offer, we schedule a convenient pickup time. For bulky
+          items (washing machines, fridges, AC units) we arrange skilled
+          handlers to ensure safe collection.
+        </p>
+        <p>
+          Use phrases such as <em>“pickup used TV Dubai”</em> when you message
+          to get an accurate pickup quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does the sale process take to complete?",
+    answer: (
+      <>
+        <p>
+          The process is fast: message photos and details, get an instant or
+          same-day offer, schedule pickup and receive payment on collection.
+          Many local sales close within 24–72 hours depending on location and
+          item availability.
+        </p>
+        <p>
+          If you need same-day cash, include <em>“same-day pickup Dubai”</em> in
+          your message and we’ll check availability.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you offer when buying used electronics?",
+    answer: (
+      <>
+        <p>
+          We offer flexible payment methods: cash on pickup, bank transfer and
+          cheque. For business or bulk sellers we can arrange direct bank
+          settlements and invoices. Let us know your preferred method when
+          accepting the offer.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you buy electronics from businesses and offices (bulk / corporate sales)?",
+    answer: (
+      <>
+        <p>
+          Yes — we purchase corporate IT equipment, bulk phones, office
+          printers, servers and other electronics. We handle on-site
+          inspections, logistics and documentation, making us a preferred buyer
+          for businesses looking to liquidate assets.
+        </p>
+        <p>
+          Use terms like <em>“bulk electronics buyers Dubai”</em> or{" "}
+          <em>“sell office computers Dubai”</em> to start the conversation.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you environmentally responsible with e-waste and recycling?",
+    answer: (
+      <>
+        <p>
+          Absolutely — items that can’t be refurbished are sent to certified
+          recyclers. We refurbish usable electronics and responsibly recycle
+          hazardous components to reduce e-waste. Choosing a reputable buyer
+          supports sustainable disposal.
+        </p>
+        <p>
+          Ask about our <em>e-waste recycling</em> policy when you contact us
+          and we’ll explain how we process non-repairable items.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "How should I prepare my electronics for sale to get the best price?",
+    answer: (
+      <>
+        <p>
+          Provide clear photos (front, back, serial/model labels), include
+          accessories and original boxes if available, and note any faults.
+          Power the device on if possible so we can see functionality. These
+          small steps help secure the best valuation for items like{" "}
+          <em>phones, laptops</em> or <em>smart TVs</em>.
+        </p>
+        <p>
+          When messaging, use specific long-tail phrases such as{" "}
+          <em>“sell old phone Dubai with box”</em> to highlight included
+          accessories and speed up the offer process.
         </p>
       </>
     ),
