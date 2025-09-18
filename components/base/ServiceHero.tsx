@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ServiceHero = ({
   title,
@@ -46,7 +47,7 @@ const ServiceHero = ({
           </h1>
           <p className="pr-5 mb-5 text">{desc}</p>
           <div className="flex items-center gap-x-3">
-            <Button size={"sm"}>
+            <Button wtsBtn size={"sm"}>
               {" "}
               <svg
                 fill="#ffffff"
@@ -71,9 +72,11 @@ const ServiceHero = ({
               </svg>{" "}
               WhatsApp Us{" "}
             </Button>
-            <Button variant={"secondary"} size={"sm"}>
-              Visit Shop <ArrowUpRight />
-            </Button>
+            <Link href={"https://share.google/iLEgJq3Qt9DduRnRi"}>
+              <Button variant={"secondary"} size={"sm"}>
+                Visit Shop <ArrowUpRight />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

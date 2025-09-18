@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import Form from "@/components/FORM";
+import { APP } from "@/lib/App";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
 import React from "react";
@@ -33,7 +34,7 @@ export default function ContactForm() {
           </>
         }
       />
-      <div className="md:w-11/12 mx-auto  grid grid-cols-1 lg:grid-cols-12 items-start gap-6 mt-16 ">
+      <div className="md:w-11/12 mx-auto  grid grid-cols-1 lg:grid-cols-12 items-start gap-6 my-16 ">
         {/* Left contact card */}
         <aside className="lg:col-span-4 bg-secondary p-4 rounded-2xl shadow-sm border">
           <h2 className="font-medium text-lg">Our Info</h2>
@@ -43,13 +44,16 @@ export default function ContactForm() {
           <ul className="mt-4 space-y-2 text-sm">
             <li>
               <strong>Phone:</strong>{" "}
-              <a href="tel:+971500000000" className="text-primary underline">
-                +971 50 000 0000
+              <a href={`tel:${APP.phone}`} className="text-primary underline">
+                (055) 6461731
               </a>
             </li>
             <li>
               <strong>WhatsApp:</strong>{" "}
-              <a href="#" className="text-primary underline">
+              <a
+                href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
+                className="text-primary underline"
+              >
                 Message us on WhatsApp
               </a>
             </li>

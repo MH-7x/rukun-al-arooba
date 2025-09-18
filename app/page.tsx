@@ -8,20 +8,25 @@ import { HomeFaqs } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroSection from "@/components/base/HeroSection";
 import BuySellSection from "@/components/base/BuySellSection";
+import CTA from "@/components/base/CTA";
 
 const servicesList: {
   title: string;
   desc: React.ReactNode;
   list: string[];
   src: string;
+  link: string;
 }[] = [
   {
     title: "Home Appliance & Electronics",
     desc: (
       <>
         <p>
-          Beyond furniture, we&lsquo;re trusted used appliance buyers and
-          sellers in Sharjah.
+          Beyond furniture, we&lsquo;re trusted{" "}
+          <Link href={"/used-home-appliances-dubai"}>
+            used appliance buyers and sellers in Sharjah & Dubai
+          </Link>
+          .
         </p>
         <p>
           Every electronic item is thoroughly tested, certified for safety, and
@@ -37,6 +42,7 @@ const servicesList: {
       "Home electronics",
     ],
     src: "/appliances.svg",
+    link: "/used-home-appliances-dubai",
   },
   {
     title: "Living Room Furniture",
@@ -64,6 +70,7 @@ const servicesList: {
       "Recliners and accent chairs",
     ],
     src: "/living-room-furniture.svg",
+    link: "#",
   },
   {
     title: "Bedroom Furniture",
@@ -76,6 +83,12 @@ const servicesList: {
           furniture. Every bedroom piece is sanitized and restored to ensure
           peaceful, comfortable sleep.
         </p>
+        <p>
+          we are also{" "}
+          <Link href={"/used-beds-buyers-in-dubai"}>
+            buyers of used beds in sharjah, dubai & UAE.
+          </Link>
+        </p>
       </>
     ),
     list: [
@@ -86,6 +99,7 @@ const servicesList: {
       "Bedside tables and chest of drawers",
     ],
     src: "/bedroom-furniture.svg",
+    link: "/used-beds-for-sale",
   },
   {
     title: "Kitchen & Dinning",
@@ -109,6 +123,7 @@ const servicesList: {
       "Kitchen islands and bar stools",
     ],
     src: "/kitchen-furniture.svg",
+    link: "/used-beds-for-sale",
   },
   {
     title: "Office Furniture",
@@ -133,6 +148,7 @@ const servicesList: {
       "Reception furniture",
     ],
     src: "/office-furniture.svg",
+    link: "/used-beds-for-sale",
   },
   {
     title: "Outdoor & Garden Furniture",
@@ -156,6 +172,7 @@ const servicesList: {
       "BBQ tables and accessories",
     ],
     src: "/outdoor-furniture.svg",
+    link: "/used-beds-for-sale",
   },
 ];
 
@@ -359,13 +376,19 @@ export default function Home() {
               to help you save money without compromising on quality or style.
             </p>
             <div className="mt-5 flex gap-x-3">
-              <Button>
+              <Link href={"/used-furniture-buyers-in-dubai"}>
                 {" "}
-                Sell To Us <ArrowUpRight />
-              </Button>
-              <Button variant={"outline"}>
-                Buy From Us <ArrowUpRight />
-              </Button>
+                <Button>
+                  {" "}
+                  Sell To Us <ArrowUpRight />
+                </Button>
+              </Link>
+              <Link href={"/used-furniture-buyers-in-dubai"}>
+                {" "}
+                <Button variant={"outline"}>
+                  Buy From Us <ArrowUpRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -583,8 +606,10 @@ export default function Home() {
               home or office.
             </p>
             <div className="mt-5 flex gap-x-3">
-              <Button size={"lg"}>WhatsApp Us</Button>
-              <Button variant={"secondary"} size={"lg"}>
+              <Button wtsBtn size={"lg"}>
+                WhatsApp Us
+              </Button>
+              <Button storeBtn variant={"secondary"} size={"lg"}>
                 Visit To Store
               </Button>
             </div>
@@ -600,7 +625,9 @@ export default function Home() {
               key={service.title}
               className=" shadow-2xl rounded-2xl shadow-[#144e5a]/5 md:p-10 py-10 px-3 relative overflow-hidden"
             >
-              <h3 className="blue text-3xl font-bold">{service.title}</h3>
+              <h3 className="blue text-3xl font-bold">
+                <Link href={service.link}>{service.title} </Link>
+              </h3>
               <div className="mt-5 text text-base/tight flex flex-col gap-y-1">
                 {service.desc}
               </div>
@@ -612,9 +639,11 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Button variant={"secondary"} className="mt-5">
-                Contact For {service.title}
-              </Button>
+              <Link href={service.link}>
+                <Button variant={"secondary"} className="mt-5">
+                  Contact For {service.title}
+                </Button>
+              </Link>
 
               <Image
                 src={service.src}
@@ -757,10 +786,13 @@ export default function Home() {
               </h3>
             </Link>
             <p className="mt-5 text">
-              As comprehensive furniture buyers in Sharjah, we purchase almost
-              everything for your home. Don&lsquo;t worry about condition – we
-              have in-house restoration capabilities that allow us to buy
-              furniture others might reject:
+              As comprehensive{" "}
+              <Link href={"/used-furniture-buyers-in-sharjah"}>
+                furniture buyers in Sharjah
+              </Link>
+              , we purchase almost everything for your home. Don&lsquo;t worry
+              about condition – we have in-house restoration capabilities that
+              allow us to buy furniture others might reject:
             </p>
             <ul className="mt-5 ml-5 list-disc">
               <li className="text">
@@ -807,10 +839,15 @@ export default function Home() {
                 </div>
                 <span className="w-0.5 h-10 bg-gray-300 md:block hidden"></span>
                 <div className="flex gap-x-2">
-                  <Button size={"sm"} className="">
+                  <Button wtsBtn size={"sm"} className="">
                     WhatsApp Us
                   </Button>
-                  <Button variant={"secondary"} className="" size={"sm"}>
+                  <Button
+                    callBtn
+                    variant={"secondary"}
+                    className=""
+                    size={"sm"}
+                  >
                     Call Now
                   </Button>
                 </div>
@@ -837,7 +874,10 @@ export default function Home() {
                 thousands of Sharjah residents trust us when they need to sell
                 furniture for cash:
               </p>
-              <Button className="mt-3">About Us</Button>
+              <Link href={"/about-us"}>
+                {" "}
+                <Button className="mt-3">About Us</Button>
+              </Link>
             </div>
           </div>
           <div className="w-full py-16 md:px-12 bg-white mt-10">
@@ -867,7 +907,8 @@ export default function Home() {
           </h2>
           <p className="max-w-4xl text mt-5">
             While our showroom is in Sharjah, our services extend across the
-            entire UAE. We&lsquo;re your trusted furniture buyers and sellers
+            entire UAE. We&lsquo;re your trusted{" "}
+            <Link href={"/"}>furniture buyers and sellers</Link>
             wherever you&lsquo;re located:
           </p>
           <div className="mt-20">
@@ -989,16 +1030,22 @@ export default function Home() {
               for the UAE.
             </p>
             <p className="mt-2 text-white text-shadow-2xs max-w-3xl md:text-lg">
-              At Rukun Al Arooba, we&lsquo;re more than just used furniture
-              dealers– we&lsquo;re environmental champions. Every piece of
-              furniture we restore and resell represents a victory against waste
-              and unnecessary consumption.
+              At Rukun Al Arooba, we&lsquo;re more than just{" "}
+              <Link href={"/"}>used furniture dealers</Link>– we&lsquo;re
+              environmental champions. Every piece of furniture we restore and
+              resell represents a victory against waste and unnecessary
+              consumption.
             </p>
             <div className="mt-7  flex gap-x-3">
-              <Button size={"lg"}>WhatsApp Us</Button>
-              <Button variant={"secondary"} size={"lg"}>
-                Contact Us
+              <Button wtsBtn size={"lg"}>
+                WhatsApp Us
               </Button>
+              <Link href={"/contact-us"}>
+                {" "}
+                <Button variant={"secondary"} size={"lg"}>
+                  Contact Us
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -1141,6 +1188,19 @@ export default function Home() {
           </ul>
         </section>
         <FAQs Faqs={HomeFaqs} />
+        <CTA
+          title="Contact Us For Used Furniture in Sharjah"
+          desc={
+            <>
+              <p>
+                If you&apos;re ready to find the perfect pre-owned item or want
+                to sell your furniture quickly and easily, Rukun Al Arooba Used
+                Furniture is here to help. Our service speed is fast, with a
+                response to your inquiry within 5–10 minutes.
+              </p>
+            </>
+          }
+        />
       </main>
     </>
   );

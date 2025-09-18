@@ -116,6 +116,12 @@ const ServiceAside = () => {
             <Link href={service.link}>{service.title}</Link>{" "}
           </li>
         ))}
+        <li className="flex items-center text-sm gap-x-2 text mb-2 hover:underline underline-offset-2 transform duration-300">
+          <ArrowUpRight size={16} />
+          <Link href={"/used-beds-buyers-in-dubai"}>
+            Used Beds Buyers in Dubai
+          </Link>{" "}
+        </li>
       </ul>
     </aside>
   );

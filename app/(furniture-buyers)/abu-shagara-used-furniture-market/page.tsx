@@ -44,7 +44,7 @@ const AbuShagaraPage = () => {
           </p>
         </div>
         <div className="flex gap-x-4 mt-5">
-          <Button size={"lg"}>
+          <Button wtsBtn size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"
@@ -95,7 +95,7 @@ const AbuShagaraPage = () => {
             are 50-70% lower than retail stores, but the quality remains high.
           </p>
 
-          <Button size={"lg"} className="mt-5">
+          <Button wtsBtn size={"lg"} className="mt-5">
             Contact Us Now
           </Button>
         </div>
@@ -204,14 +204,14 @@ const AbuShagaraPage = () => {
                   <Phone className="md:size-[18px] size-[15px]" />{" "}
                   <span>Phone No.</span>
                 </p>
-                <p className=" mt-0.5">(052) 9999999</p>
+                <p className=" mt-0.5">(055) 6461731</p>
               </div>
               <span className="w-0.5 h-10 bg-gray-300 md:block hidden"></span>
               <div className="flex gap-x-2">
-                <Button size={"sm"} className="">
+                <Button wtsBtn size={"sm"} className="">
                   WhatsApp Us
                 </Button>
-                <Button variant={"secondary"} className="" size={"sm"}>
+                <Button callBtn variant={"secondary"} className="" size={"sm"}>
                   Call Now
                 </Button>
               </div>
@@ -239,10 +239,16 @@ const AbuShagaraPage = () => {
             <p className="text">
               In a market where many buyers try to undervalue your furniture, we
               stand out through transparency and fairness. Here&lsquo;s why
-              thousands of Sharjah residents trust us when they need to sell
-              furniture for cash:
+              thousands of Sharjah residents trust us when they need to{" "}
+              <Link href={"/used-furniture-buyers-in-sharjah"}>
+                sell furniture for cash
+              </Link>
+              :
             </p>
-            <Button className="mt-3">About Us</Button>
+            <Link href={"/about-us"}>
+              {" "}
+              <Button className="mt-3">About Us</Button>
+            </Link>
           </div>
         </div>
         <div className="w-full py-16 md:px-12 bg-white mt-10">

@@ -4,6 +4,7 @@ import React from "react";
 import "../styling.css";
 import Image from "next/image";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { Button } from "@/components/ui/button";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -88,8 +89,7 @@ const page = () => {
               <strong>used home appliances Dubai</strong> residents trust — from
               large white goods to small kitchen gadgets. Below is a detailed
               breakdown of each appliance category, the checks we perform when
-              buying, what we offer when selling, suggested SEO phrases and
-              image alt text recommendations.
+              buying, what we offer when selling.
             </p>
 
             {/* Refrigerator */}
@@ -434,7 +434,9 @@ const page = () => {
               <li>Schedule pickup or bring the item to our Sharjah store.</li>
               <li>Get paid on the spot via cash or bank transfer.</li>
             </ol>
-
+            <Button wtsBtn className="my-5">
+              Sell To Us Now
+            </Button>
             <div className="whatsapp-template">
               <h4 className="small-title">WhatsApp template (copy/paste)</h4>
               <code>

@@ -1,6 +1,7 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
 import { Button } from "@/components/ui/button";
+import { APP } from "@/lib/App";
 import { SharjahBuyersFaqs } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import {
@@ -100,6 +101,7 @@ const categories = [
       "**Dining & Storage:** dining sets, chairs, buffets, china cabinets.",
       "**Living Room:** entertainment centres, coffee tables, side tables & decorative pieces.",
     ],
+    link: "/",
   },
   {
     title: "Office Furniture Buyers",
@@ -112,6 +114,7 @@ const categories = [
       "**Meeting:** conference tables & reception furniture.",
       "**Workstations:** cubicle systems & full office clearouts.",
     ],
+    link: "/",
   },
   {
     title: "Home Appliances & Electronics Buyers",
@@ -124,6 +127,7 @@ const categories = [
       "**Electronics:** TVs, sound systems, gaming consoles, home theatre equipment.",
       "**Comfort Systems:** air conditioning units, water heaters and more.",
     ],
+    link: "/used-home-appliances-dubai",
   },
   {
     title: "Specialty Items Buyers",
@@ -136,6 +140,7 @@ const categories = [
       "**Outdoor & Kitchen:** garden sets, patio furniture, kitchen cabinets & built-ins.",
       "**Scale:** No lot is too large or too small for us to consider.",
     ],
+    link: "/",
   },
 ];
 
@@ -145,17 +150,21 @@ const CategoryCard = ({
   icon,
   description,
   items,
+  link,
 }: {
   title: string;
   icon: JSX.Element;
   description: string;
   items: string[];
+  link: string;
 }) => (
   <div className="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
     <div className="p-6">
       <div className="flex items-center space-x-4 mb-4">
         <div className="flex-shrink-0 pri-bg rounded-full p-3">{icon}</div>
-        <h3 className="text-2xl font-bold blue">{title}</h3>
+        <Link href={link}>
+          <h3 className="text-2xl font-bold blue">{title}</h3>
+        </Link>
       </div>
       <p className="text mb-5">{description}</p>
       <ul className="space-y-3 text-gray-700">
@@ -226,7 +235,7 @@ const page = () => {
           </p>
         </div>
         <div className="flex gap-x-4 mt-5">
-          <Button size={"lg"}>
+          <Button wtsBtn size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"
@@ -274,9 +283,12 @@ const page = () => {
             We accept multiple payment methods (cash, bank transfer, or check)
             and guarantee the quality of every item we purchase.
           </p>
-          <Button variant={"outline"} size={"lg"} className="w-max mt-3">
-            Get Instant Valuation Now <ArrowUpRight />
-          </Button>
+          <Link href={"/contact-us"}>
+            {" "}
+            <Button variant={"outline"} size={"lg"} className="w-max mt-3">
+              Get Instant Valuation Now <ArrowUpRight />
+            </Button>
+          </Link>
         </div>
         <div className="md:h-[450px] h-[400px] bg-gray-300 relative md:ml-16">
           <Image
@@ -425,9 +437,15 @@ const page = () => {
           <p className="text">
             We buy single pieces to full-house contents — fair offers, quick
             pickup and instant payment across Sharjah. We have a wide range of
-            used furniture and home appliances available for sale.
+            <Link href={"/used-home-appliances-dubai"}>
+              used furniture and home appliances
+            </Link>{" "}
+            available for sale.
           </p>
-          <Button className="mt-3">About Us</Button>
+          <Link href={"/about-us"}>
+            {" "}
+            <Button className="mt-3">About Us</Button>
+          </Link>
         </div>
       </section>
 
@@ -462,21 +480,19 @@ const page = () => {
             For the most accurate offer, please include dimensions and a brief
             note on any damage.
           </p>
-          <a
-            href="https://wa.me/YOUR_WHATSAPP_NUMBER" // <-- IMPORTANT: Add your WhatsApp number here
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
             className="inline-block pri-bg text-white font-medium text-lg py-4 px-8 rounded-lg shadow-md hover:bg-teal-600 transition-colors duration-300"
           >
             Send Photos on WhatsApp
-          </a>
+          </Link>
         </div>
       </section>
 
       <div className="pri-bg text-gray-100 text-center py-6 px-6">
         <p>
-          We buy used furniture in Sharjah — bedroom sets, sofas, office
-          furniture, appliances, villa contents and more.
+          We <Link href={"/"}>buy used furniture in Sharjah</Link> — bedroom
+          sets, sofas, office furniture, appliances, villa contents and more.
         </p>
         <p className="mt-1">
           Fast pickup, fair prices, and instant payment across the city.
@@ -581,7 +597,11 @@ const page = () => {
         </div>
         <div className="mt-16 flex flex-col gap-y-2 text max-w-4xl mx-auto text-center">
           <p>
-            We pride ourselves as trusted used furniture buyers in Sharjah.{" "}
+            We pride ourselves as{" "}
+            <Link href={"/used-furniture-buyers-in-sharjah"}>
+              trusted used furniture buyers in Sharjah
+            </Link>
+            .{" "}
           </p>
           <p>
             From transparent pricing to prompt communication, everything we do
@@ -628,6 +648,13 @@ const page = () => {
           </p>
           <ul className="mt-5 list-disc list-inside text">
             <li>
+              We are best{" "}
+              <Link href={"/abu-shagara-used-furniture-market"}>
+                used furniture buyers in abu shagara used furniture market
+              </Link>
+              .
+            </li>
+            <li>
               Industrial areas like Sharjah Industrial Areas 1-18 are covered
               with specialized commercial pickup services.
             </li>
@@ -637,7 +664,7 @@ const page = () => {
               guidelines.
             </li>
           </ul>
-          <Button size={"lg"} className="mt-5">
+          <Button wtsBtn size={"lg"} className="mt-5">
             Sell To Best Buyers in Sharjah
           </Button>
         </div>
@@ -680,10 +707,15 @@ const page = () => {
             budget-conscious buyers.
           </p>
           <div className="mt-7  flex gap-x-3">
-            <Button size={"lg"}>WhatsApp Us</Button>
-            <Button variant={"secondary"} size={"lg"}>
-              Contact Us
+            <Button wtsBtn size={"lg"}>
+              WhatsApp Us
             </Button>
+            <Link href={"/contact-us"}>
+              {" "}
+              <Button variant={"secondary"} size={"lg"}>
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -819,7 +851,7 @@ const page = () => {
                 <h3 className="text-xl font-semibold text-gray-900">
                   WhatsApp
                 </h3>
-                <p className="mt-2 text-base text-gray-600">[Your Number]</p>
+                <p className="mt-2 text-base text-gray-600">(055) 6461731</p>
                 <p className="mt-1 text-sm text-gray-500">
                   Get a quote in 5-10 minutes
                 </p>
@@ -833,7 +865,7 @@ const page = () => {
               </div>
               <div className="mt-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900">Call</h3>
-                <p className="mt-2 text-base text-gray-600">[Your Number]</p>
+                <p className="mt-2 text-base text-gray-600">(055) 6461731</p>
                 <p className="mt-1 text-sm text-gray-500">
                   Speak directly with our valuation team
                 </p>

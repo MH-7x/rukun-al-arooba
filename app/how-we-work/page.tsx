@@ -14,6 +14,7 @@ import {
   Wrench,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = MetadataTemplate({
@@ -55,12 +56,16 @@ const BuyingSellingProcess = () => {
             furniture trading.{" "}
           </p>
           <div className="flex mt-5 gap-x-3">
-            <Button size={"lg"} className="">
-              <ListChecks /> Get a Free Quote
-            </Button>
-            <Button size={"lg"} variant={"link"}>
-              <Navigation /> Visit Our Store
-            </Button>
+            <Link href={"/contact-us"}>
+              <Button size={"lg"} className="">
+                <ListChecks /> Get a Free Quote
+              </Button>
+            </Link>
+            <Link href={"https://share.google/OJgtbXz8Zc8dmUqJk"}>
+              <Button size={"lg"} variant={"link"}>
+                <Navigation /> Visit Our Store
+              </Button>
+            </Link>
           </div>
         </div>
         <div className=" h-96 md:w-96 w-full relative md:mx-auto">
@@ -282,7 +287,7 @@ const BuyingSellingProcess = () => {
               (subject to schedule) — confirm on quote.
             </li>
           </ul>
-          <Button size={"lg"} className="mt-5">
+          <Button wtsBtn size={"lg"} className="mt-5">
             Sell To Best Buyers in Dubai
           </Button>
         </div>

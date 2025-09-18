@@ -13,12 +13,16 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-const FeatureItem: React.FC<{ title: string; items: string[] }> = ({
-  title,
-  items,
-}) => (
-  <article className="bg-white/60 dark:bg-gray-800/60 rounded-2xl p-5  border border-gray-100 dark:border-gray-700">
-    <h3 className="text-lg font-semibold mb-3 blue">{title}</h3>
+const FeatureItem: React.FC<{
+  title: string;
+  items: string[];
+  link?: string;
+}> = ({ title, items, link = "#" }) => (
+  <div className="bg-white/60 dark:bg-gray-800/60 rounded-2xl p-5  border border-gray-100 dark:border-gray-700">
+    <Link href={link}>
+      {" "}
+      <h3 className="text-lg font-semibold mb-3 blue">{title}</h3>{" "}
+    </Link>
     <ul className="space-y-2 text-sm leading-snug">
       {items.map((it, i) => (
         <li key={i} className="flex items-start gap-3 text">
@@ -41,7 +45,7 @@ const FeatureItem: React.FC<{ title: string; items: string[] }> = ({
         </li>
       ))}
     </ul>
-  </article>
+  </div>
 );
 
 export const metadata = MetadataTemplate({
@@ -75,12 +79,14 @@ const UsedFurnitureBuyersDubai = () => {
           <p>
             Looking for reliable used furniture buyers in Dubai to sell your
             valuable furniture? Rukun Al Arooba Used Furniture is the
-            UAE&lsquo;s leading furniture buying service since 2018. We bring
-            over 20 years of industry experience.
+            <Link href={"/"}>
+              UAE&lsquo;s leading furniture buying service
+            </Link>{" "}
+            since 2018. We bring over 20 years of industry experience.
           </p>
         </div>
         <div className="flex gap-x-4 mt-5">
-          <Button size={"lg"}>
+          <Button wtsBtn size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"
@@ -127,14 +133,14 @@ const UsedFurnitureBuyersDubai = () => {
                   <Phone className="md:size-[18px] size-[15px]" />{" "}
                   <span>Phone No.</span>
                 </p>
-                <p className=" mt-0.5">(052) 9999999</p>
+                <p className=" mt-0.5">(055) 6461731</p>
               </div>
               <span className="w-0.5 h-10 bg-gray-400 md:block hidden"></span>
               <div className="flex gap-x-2">
-                <Button size={"sm"} className="">
+                <Button wtsBtn size={"sm"} className="">
                   WhatsApp Us
                 </Button>
-                <Button variant={"secondary"} className="" size={"sm"}>
+                <Button callBtn variant={"secondary"} className="" size={"sm"}>
                   Call Now
                 </Button>
               </div>
@@ -156,7 +162,9 @@ const UsedFurnitureBuyersDubai = () => {
             </li>
           </ul>
           <p className="mb-5">
-            We cover Dubai, Sharjah, Abu Dhabi, and all UAE emirates.
+            We cover Dubai,{" "}
+            <Link href={"/used-furniture-buyers-in-sharjah"}>Sharjah</Link>, Abu
+            Dhabi, and all UAE emirates.
           </p>
           <p>
             Whether you are selling a single item or furnishing an entire home,
@@ -183,8 +191,11 @@ const UsedFurnitureBuyersDubai = () => {
         </p>
         <p className="mt-1 text max-w-3xl mx-auto text-center">
           Rukun Al Arooba is an established leader known for transparency and
-          professionalism. Here is why we are the preferred choice for selling
-          second-hand furniture in Dubai:
+          professionalism. Here is why we are the preferred choice for{" "}
+          <Link href={"/used-furniture-buyers-in-dubai"}>
+            selling second-hand furniture in Dubai
+          </Link>
+          :
         </p>
         <div className="grid md:grid-cols-2 grid-cols-1 items-center gap-16 mt-20 md:ml-20">
           <div id="register-company">
@@ -197,9 +208,12 @@ const UsedFurnitureBuyersDubai = () => {
               government since 2018.
             </p>
             <p className="text">
-              Our physical store on Al Estiqlal Street in Sharjah serves as
-              proof of our legitimate business operations and commitment to the
-              community.
+              <Link href={"https://share.google/iLEgJq3Qt9DduRnRi"}>
+                {" "}
+                Our physical store on Al Estiqlal Street in Sharjah
+              </Link>{" "}
+              serves as proof of our legitimate business operations and
+              commitment to the community.
             </p>
             <details className="group  rounded-lg mt-5 bg-white ">
               <summary className="pri underline flex justify-start items-center cursor-pointer  font-medium ">
@@ -241,7 +255,8 @@ const UsedFurnitureBuyersDubai = () => {
             </h3>
             <p className="text-sm text mt-2 pb-3 border-b-2 border-[#c07d53a5]">
               Get a response within 5–10 minutes when you contact us via
-              WhatsApp or our website. Selling your old furniture in Dubai has
+              WhatsApp or our website.{" "}
+              <Link href={"/"}>Selling your old furniture in Dubai</Link> has
               never been easier.
             </p>
           </div>
@@ -462,7 +477,7 @@ const UsedFurnitureBuyersDubai = () => {
                 full house & office clearances.
               </p>
               <a
-                href="#contact"
+                href="/contact-us"
                 className="inline-block mt-4 px-4 py-2 rounded-xl pri-bg text-white text-sm font-medium shadow"
               >
                 Get valuation
@@ -474,6 +489,7 @@ const UsedFurnitureBuyersDubai = () => {
           <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             <FeatureItem
               title="We Buy Used Home Furniture"
+              link="/used-home-appliances-dubai"
               items={[
                 "Bedroom: beds, mattresses, wardrobes, dressers, nightstands",
                 "Living room: sofas, sectionals, coffee tables, entertainment centers, accent chairs",
@@ -504,6 +520,7 @@ const UsedFurnitureBuyersDubai = () => {
 
             <FeatureItem
               title="Used Electronics & Appliances"
+              link="/used-electronics-buyers-in-dubai"
               items={[
                 "Large appliances: refrigerators, washing machines, dryers, dishwashers",
                 "Kitchen appliances and small electrics",
@@ -521,11 +538,6 @@ const UsedFurnitureBuyersDubai = () => {
             corporate sellers, we offer tailored liquidation services and bulk
             pricing.
           </p>
-          <p>
-            If you&lsquo;d like this content presented as an FAQ, table, or a
-            dedicated landing page layout, tell me how you&lsquo;d like it
-            arranged and I’ll adapt the component.
-          </p>
         </div>
       </section>
 
@@ -541,9 +553,12 @@ const UsedFurnitureBuyersDubai = () => {
             <span className="md:block blue">Used Furniture Buyers In UAE</span>
           </h2>
           <p className="mt-3 text">
-            While our main showroom is in Sharjah, our services extend across
-            the entire UAE. We are proud to be the trusted used furniture buyer
-            in the UAE for customers in:
+            While{" "}
+            <Link href={"/https://share.google/iLEgJq3Qt9DduRnRi"}>
+              our main showroom is in Sharjah
+            </Link>
+            , our services extend across the entire UAE. We are proud to be the
+            trusted used furniture buyer in the UAE for customers in:
           </p>
           <ul className="mt-5 list-disc list-inside text">
             <li>
@@ -556,7 +571,7 @@ const UsedFurnitureBuyersDubai = () => {
               and Al Ain
             </li>
           </ul>
-          <Button size={"lg"} className="mt-5">
+          <Button wtsBtn size={"lg"} className="mt-5">
             Sell To Best Buyers in Dubai
           </Button>
         </div>

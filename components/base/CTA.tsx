@@ -14,7 +14,7 @@ const CTA = ({
 }) => {
   return (
     <section
-      className={`${headerUse ? "" : "my-36"}  py-20 relative  overflow-hidden`}
+      className={`${headerUse ? "" : "my-32"}  py-20 relative  overflow-hidden`}
     >
       {/* SVG background */}
       <svg
@@ -72,7 +72,7 @@ const CTA = ({
 
         {!headerUse && (
           <div className="flex gap-x-4 mt-5">
-            <Button size={"lg"}>
+            <Button wtsBtn size={"lg"}>
               {" "}
               <svg
                 fill="#ffffff"

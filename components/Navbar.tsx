@@ -91,14 +91,15 @@ export default function Navbar() {
                 <Phone className="md:size-[18px] size-[15px]" />{" "}
                 <span>Phone No.</span>
               </p>
-              <p className="md:text-sm text-xs mt-0.5">(052) 9999999</p>
+              <p className="md:text-sm text-xs mt-0.5">(055) 6461731</p>
             </div>
             <span className="w-0.5 h-10 bg-gray-300 md:block hidden"></span>
             <div className="flex gap-x-2">
-              <Button size={"sm"} className="md:text-sm text-xs">
+              <Button wtsBtn size={"sm"} className="md:text-sm text-xs">
                 WhatsApp Us
               </Button>
               <Button
+                callBtn
                 variant={"secondary"}
                 className="md:text-sm text-xs"
                 size={"sm"}

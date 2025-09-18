@@ -250,7 +250,7 @@ const UsedBeds = () => {
             </p>
 
             <div className="my-5 flex gap-x-3">
-              <Button>WhatsApp Us </Button>
+              <Button wtsBtn>WhatsApp Us </Button>
               <Link href={"/used-beds-buyers-in-dubai"}>
                 {" "}
                 <Button variant={"outline"}>Sell Your Bed Now</Button>

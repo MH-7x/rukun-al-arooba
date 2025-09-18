@@ -1,6 +1,7 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
 import { Button } from "@/components/ui/button";
+import { APP } from "@/lib/App";
 import { ajmanFaqs } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { ArrowDown, ArrowUpRight, ListChecks, Navigation } from "lucide-react";
@@ -69,7 +70,7 @@ const page = () => {
           </p>
         </div>
         <div className="flex gap-x-4 mt-5">
-          <Button size={"lg"}>
+          <Button wtsBtn size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"
@@ -220,12 +221,18 @@ const page = () => {
             buyers to appear.
           </p>
           <div className="flex mt-5 gap-x-3">
-            <Button size={"lg"} className="">
-              <ListChecks /> Get a Free Quote
-            </Button>
-            <Button size={"lg"} variant={"link"}>
-              <Navigation /> Visit Our Store
-            </Button>
+            <Link href={"/contact-us"}>
+              {" "}
+              <Button size={"lg"} className="">
+                <ListChecks /> Get a Free Quote
+              </Button>
+            </Link>
+            <Link href={"https://share.google/0vX3fDlwXKNcIwIG3"}>
+              {" "}
+              <Button size={"lg"} variant={"link"}>
+                <Navigation /> Visit Our Store
+              </Button>
+            </Link>
           </div>
         </div>
         <div className=" h-96 md:w-96 w-full relative md:mx-auto">
@@ -516,13 +523,13 @@ const page = () => {
                 </div>
                 <div className="flex gap-3">
                   <a
-                    href="tel:+971000000000"
+                    href={`tel:${APP.phone}`}
                     className="inline-flex items-center justify-center px-5 py-2 rounded-lg blue-bg text-white font-medium shadow"
                   >
                     Call Now
                   </a>
                   <a
-                    href="#"
+                    href="/contact-us"
                     className="inline-flex items-center justify-center px-5 py-2 rounded-lg border border-gray-200 bg-white text-gray-800 font-medium"
                   >
                     Request Quote

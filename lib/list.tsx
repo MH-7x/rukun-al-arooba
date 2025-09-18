@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const servicesList = [
   {
     title: "Used Home Appliances",
@@ -128,8 +130,14 @@ export const HomeFaqs = [
     answer: (
       <>
         <p>
-          Absolutely! Unlike other furniture buyers in Sharjah who only want
-          perfect pieces, we buy furniture in any condition.
+          Absolutely! Unlike other{" "}
+          <Link
+            className="underline"
+            href={"/used-furniture-buyers-in-sharjah"}
+          >
+            furniture buyers in Sharjah
+          </Link>{" "}
+          who only want perfect pieces, we buy furniture in any condition.
         </p>
         <p>
           Scratched, faded, wobbly, or outdated – we see potential where others
@@ -333,7 +341,11 @@ export const ufdFaqs = [
           buying categories include:
         </p>
         <ul>
-          <li>Bedroom sets (beds, wardrobes, dressers, nightstands)</li>
+          <li>
+            <Link href={"/used-beds-buyers-in-dubai"}>
+              Bedroom sets (beds, wardrobes, dressers, nightstands)
+            </Link>
+          </li>
           <li>
             Living room furniture (sofas, sectionals, coffee tables, accent
             chairs, entertainment centers)
@@ -349,8 +361,11 @@ export const ufdFaqs = [
             seating)
           </li>
           <li>
-            Home electronics & appliances (refrigerators, washing machines, TVs,
-            sound systems, small kitchen appliances)
+            <Link href={"/used-electronics-buyers-in-dubai"}>
+              Home electronics & appliances
+            </Link>{" "}
+            (refrigerators, washing machines, TVs, sound systems, small kitchen
+            appliances)
           </li>
         </ul>
         <p>

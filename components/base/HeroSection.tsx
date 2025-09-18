@@ -33,7 +33,7 @@ const HeroSection = () => {
             Arooba Used Furniture, where over 20 years of experience meets
             modern convenience.
           </p>
-          <Button className="mt-5" size={"lg"}>
+          <Button wtsBtn className="mt-5" size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"

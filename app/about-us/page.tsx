@@ -13,12 +13,14 @@ import src from "../../public/Rukun-Al-Arooba-Used-Furniture.jpg";
 import Image from "next/image";
 import CTA from "@/components/base/CTA";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import Link from "next/link";
 
 type ProductItem = {
   id: number;
   title: string;
   subtitle?: string;
   icon: React.ReactNode;
+  link: string;
 };
 
 const items: ProductItem[] = [
@@ -27,36 +29,42 @@ const items: ProductItem[] = [
     title: "Premium Used Home Appliances",
     subtitle: "Carefully inspected, ready-to-use appliances.",
     icon: <WashingMachine className="w-6 h-6" />,
+    link: "/used-home-appliances-dubai",
   },
   {
     id: 2,
     title: "Quality Electronics",
     subtitle: "Smartphones, audio and more from trusted brands.",
     icon: <LampDesk className="w-6 h-6" />,
+    link: "/used-electronics-buyers-in-dubai",
   },
   {
     id: 3,
     title: " Office Furniture Solutions",
     subtitle: "Ergonomic desks, chairs & storage for modern workspaces.",
     icon: <Armchair className="w-6 h-6" />,
+    link: "/",
   },
   {
     id: 4,
     title: " Beds and Bedroom Sets",
     subtitle: "Everything for a restful night — frames, mattresses, sets.",
     icon: <BedDouble className="w-6 h-6" />,
+    link: "/used-beds-for-sale",
   },
   {
     id: 5,
     title: "Energy-Efficient Refrigerators",
     subtitle: "Low-consumption fridges that keep food fresher longer.",
     icon: <Refrigerator className="w-6 h-6" />,
+    link: "/",
   },
   {
     id: 6,
     title: "Stylish Sofa Sets",
     subtitle: "From compact loveseats to spacious modular lounges.",
     icon: <Sofa className="w-6 h-6" />,
+    link: "/",
   },
   {
     id: 7,
@@ -70,13 +78,13 @@ const items: ProductItem[] = [
         id="Layer_1"
         width={28}
         height={28}
-        stroke-width="4.7203200000000003"
+        strokeWidth="4.7203200000000003"
       >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
@@ -87,12 +95,14 @@ const items: ProductItem[] = [
         </g>
       </svg>
     ),
+    link: "/",
   },
   {
     id: 8,
     title: "Durable Outdoor Furniture",
     subtitle: "Weather-resistant pieces built to last and impress.",
     icon: <Armchair className="w-6 h-6" />,
+    link: "/",
   },
 ];
 
@@ -148,7 +158,7 @@ export default function AboutUs() {
               Emirates.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button>
+              <Button wtsBtn>
                 Lets Talks <ArrowRight />
               </Button>
               <Button variant={"linkBlue"}>
@@ -297,20 +307,20 @@ export default function AboutUs() {
                   <span className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
                     Explore
                   </span>
-                  <a
-                    href="#"
+                  <Link
+                    href={it.link}
                     className="text-sm font-medium pri"
                     aria-label={`view more about ${it.title}`}
                   >
                     view more →
-                  </a>
+                  </Link>
                 </div>
               </li>
             ))}
           </ul>
 
           <div className="mt-12 text-center">
-            <Button size={"lg"}>
+            <Button wtsBtn size={"lg"}>
               {" "}
               <svg
                 fill="#ffffff"
@@ -449,9 +459,11 @@ export default function AboutUs() {
             <li className="mt-2">Al Ain - Garden city furniture solutions</li>
             <li className="mt-2">And all surrounding areas</li>
           </ul>
-          <Button size={"lg"} className="mt-5">
-            Contact From Anywhere in UAE
-          </Button>
+          <Link href={"/contact-us"}>
+            <Button size={"lg"} className="mt-5">
+              Contact From Anywhere in UAE
+            </Button>
+          </Link>
         </div>
         <div className="mx-auto md:mt-16 w-full ">
           <div className="md:h-[430px] h-96 md:w-96 w-full relative">

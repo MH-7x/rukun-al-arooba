@@ -190,7 +190,7 @@ function UsedElectronicsBuyers() {
               </li>
             </ol>
             <div className="my-5 flex gap-x-3">
-              <Button>WhatsApp Us </Button>
+              <Button wtsBtn>WhatsApp Us </Button>
               <Link href={"/contact-us"}>
                 {" "}
                 <Button variant={"outline"}>Contact Us</Button>

@@ -1,6 +1,8 @@
 "use client";
 
+import { APP } from "@/lib/App";
 import React, { useState, useRef } from "react";
+import { Button } from "./ui/button";
 type Reason = "sell" | "buy" | "general";
 
 const Form = () => {
@@ -411,7 +413,7 @@ const Form = () => {
         {/* Submit area */}
         <div className="flex items-center justify-between gap-4">
           <div>
-            <button
+            <Button
               type="submit"
               disabled={loading}
               className="px-4 py-2 rounded-lg pri-bg text-white font-medium disabled:opacity-60"
@@ -423,7 +425,7 @@ const Form = () => {
                 : reason === "buy"
                 ? "Request Item"
                 : "Send Message"}
-            </button>
+            </Button>
             {errors.submit && (
               <p className="text-red-600 text-sm mt-2">{errors.submit}</p>
             )}
@@ -431,7 +433,10 @@ const Form = () => {
 
           <div className="text-sm text-gray-500">
             Prefer WhatsApp?{" "}
-            <a href="#" className="underline">
+            <a
+              href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
+              className="underline"
+            >
               Message us directly
             </a>
           </div>

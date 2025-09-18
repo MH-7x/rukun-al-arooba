@@ -46,7 +46,7 @@ const UsedBedsBuyers = () => {
           </p>
         </div>
         <div className="flex gap-x-4 mt-5">
-          <Button size={"lg"}>
+          <Button wtsBtn size={"lg"}>
             {" "}
             <svg
               fill="#ffffff"
