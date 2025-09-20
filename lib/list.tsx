@@ -14,12 +14,12 @@ export const servicesList = [
   {
     title: "Used Office Furniture",
     desc: "Upgrade your workspace with durable and stylish used office furniture.",
-    link: "#",
+    link: "/used-office-furniture-buyers-dubai",
   },
   {
     title: "Used Office Furniture Dealer",
     desc: "Trusted dealer offering affordable and high-quality second-hand office furniture.",
-    link: "#",
+    link: "/used-office-furniture-buyers-dubai",
   },
   {
     title: "Used Beds for Sale",
@@ -1467,6 +1467,153 @@ export const electronicsFaqs = [
           When messaging, use specific long-tail phrases such as{" "}
           <em>“sell old phone Dubai with box”</em> to highlight included
           accessories and speed up the offer process.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const OfficeFurnitureBuyersFaqs = [
+  {
+    question:
+      "What's the best way to sell used office furniture in Dubai for a good price?",
+    answer: (
+      <>
+        <p>
+          The best way to sell used office furniture quickly and for a great
+          price is to work with a professional buyer like Rukun Al Arooba. While
+          classified sites can seem tempting, they often lead to wasted time,
+          lowball offers, and logistical headaches.
+        </p>
+        <p>
+          We eliminate the hassle. Our experts provide a fast, fair valuation
+          based on current market trends, ensuring you get the best possible
+          return. We handle everything from the quote to professional pickup,
+          making it the most efficient and profitable method for your{" "}
+          <strong>office furniture liquidation in Dubai</strong>.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "How much is my used office furniture worth, and how do you calculate its value?",
+    answer: (
+      <>
+        <p>
+          The value of your used office furniture depends on several key
+          factors. Our appraisal team considers:
+        </p>
+        <ul>
+          <li>
+            <strong>Condition:</strong> The overall state of the items (e.g.,
+            minimal wear and tear).
+          </li>
+          <li>
+            <strong>Brand & Quality:</strong> Reputable brands and high-quality
+            materials retain more value.
+          </li>
+          <li>
+            <strong>Age:</strong> Newer, more modern pieces generally command
+            higher prices.
+          </li>
+          <li>
+            <strong>Quantity:</strong> We assess both individual items and bulk
+            lots for a complete valuation.
+          </li>
+          <li>
+            <strong>Demand:</strong> Current market demand for specific items
+            like ergonomic chairs or standing desks.
+          </li>
+        </ul>
+        <p>
+          To find out exactly{" "}
+          <strong>how much your used office furniture is worth</strong>, send us
+          some pictures on WhatsApp. We’ll provide a free, no-obligation quote
+          in 5-10 minutes, giving you a clear and competitive cash offer.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you only handle large office clearances, or can I sell just a few items?",
+    answer: (
+      <>
+        <p>
+          We cater to every need, big or small! Whether you are a startup
+          upgrading a single desk or a large corporation looking for a complete{" "}
+          <strong>office furniture liquidation service</strong>, we are here to
+          help.
+        </p>
+        <p>
+          There is no minimum quantity required to sell to us. We are happy to
+          buy a single executive chair, a set of workstations, or the entire
+          contents of your office floor. Our professional service and commitment
+          to fair pricing apply to every transaction, regardless of size.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What is the process for office furniture pickup and removal in Dubai?",
+    answer: (
+      <>
+        <p>
+          Our process is designed to be completely hands-off and stress-free for
+          you. Once you accept our offer, we handle all the logistics for the{" "}
+          <strong>furniture pickup and removal</strong>.
+        </p>
+        <p>
+          Our professional moving partners at Abu Muhammad Movers will arrive at
+          the scheduled time, carefully disassemble items if necessary, and
+          transport them from your premises without causing any disruption to
+          your business. You simply show us the furniture, and we take care of
+          the rest while you receive your payment.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Is selling our old office furniture a sustainable and eco-friendly option?",
+    answer: (
+      <>
+        <p>
+          Absolutely! Selling your used office furniture is one of the most
+          responsible decisions you can make. It&lsquo;s a key part of the
+          circular economy and a fantastic method for{" "}
+          <strong>sustainable office furniture disposal</strong>.
+        </p>
+        <p>
+          Instead of sending items to a landfill, you give them a second life.
+          We check and repair furniture before reselling it, ensuring quality
+          pieces continue to be used. This not only benefits the environment but
+          also provides you with a financial return for making an eco-friendly
+          choice.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Why should I sell to your company instead of using a classifieds website?",
+    answer: (
+      <>
+        <p>
+          Choosing us over classifieds means prioritizing speed, security, and
+          convenience. Selling through classifieds involves creating listings,
+          responding to endless inquiries, dealing with no-shows, and haggling
+          with buyers who may not be serious.
+        </p>
+        <p>
+          With Rukun Al Arooba, you get one serious, professional offer—fast. We
+          are an officially registered business, so you deal with a trusted
+          entity. You get <strong>quick cash for your old office desks</strong>{" "}
+          and chairs without any risk, and you never have to worry about the
+          logistics of delivery. We offer a guaranteed sale and a professional
+          service from start to finish.
         </p>
       </>
     ),

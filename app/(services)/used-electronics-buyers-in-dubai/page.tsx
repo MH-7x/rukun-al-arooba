@@ -287,7 +287,7 @@ function UsedElectronicsBuyers() {
           </section>
           <div className="my-10 grid w-full relative md:h-96 h-80 bg-gray-200 rounded-2xl overflow-hidden">
             <Image
-              src="/service/Sell-Used-Electronics-in-UAE.webp"
+              src="/service/Sell-Used-Electronics-in-UAE.jpg"
               alt="sell used electronics in uae"
               fill
               className="object-cover"

@@ -63,13 +63,19 @@ const Footer = () => {
               ))}
             </LinkGroup>
             <LinkGroup header="Quick Links">
-              <NavLink link="/#" label="About Us" />
-              <NavLink link="/#" label="Contact Us" />
-              <NavLink link="/#" label="Our Showroom" />
-              <NavLink link="/#" label="How We Work" />
+              <NavLink link="/about-us" label="About Us" />
+              <NavLink link="/contact-us" label="Contact Us" />
+              <NavLink
+                link="https://share.google/uLNlamfwJl2DVzPi6"
+                label="Our Showroom"
+              />
+              <NavLink link="/how-we-work" label="How We Work" />
               <NavLink link="/#" label="Our Blogs" />
               <NavLink link="/#" label="Gallery" />
-              <NavLink link="/#" label="Our Moving Partner" />
+              <NavLink
+                link="https://abumuhammadmovers.com/"
+                label="Our Moving Partner"
+              />
             </LinkGroup>
 
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">

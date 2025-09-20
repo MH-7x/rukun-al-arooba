@@ -123,7 +123,7 @@ const servicesList: {
       "Kitchen islands and bar stools",
     ],
     src: "/kitchen-furniture.svg",
-    link: "/used-beds-for-sale",
+    link: "#",
   },
   {
     title: "Office Furniture",
@@ -148,7 +148,7 @@ const servicesList: {
       "Reception furniture",
     ],
     src: "/office-furniture.svg",
-    link: "/used-beds-for-sale",
+    link: "#",
   },
   {
     title: "Outdoor & Garden Furniture",
@@ -172,7 +172,7 @@ const servicesList: {
       "BBQ tables and accessories",
     ],
     src: "/outdoor-furniture.svg",
-    link: "/used-beds-for-sale",
+    link: "/used-office-furniture-buyers-dubai",
   },
 ];
 

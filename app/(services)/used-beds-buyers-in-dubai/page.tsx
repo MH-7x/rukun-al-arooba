@@ -3,7 +3,7 @@ import FAQs from "@/components/base/FAQs";
 import { Button } from "@/components/ui/button";
 import { BedsBuyersFaqs } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
-import { CheckCircle, CircleDollarSign, Store } from "lucide-react";
+import { CheckCircle, CircleDollarSign } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
