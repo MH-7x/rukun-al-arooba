@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { servicesList } from "@/lib/list";
 import Link from "next/link";
+import { APP } from "@/lib/App";
 
 const ServiceAside = () => {
   return (
@@ -56,13 +57,16 @@ const ServiceAside = () => {
         <ul className="mt-4 space-y-2 text-sm">
           <li>
             <strong>Phone:</strong>{" "}
-            <a href="tel:+971500000000" className="text-primary underline">
-              +971 50 000 0000
+            <a href={`tel:${APP.phone}`} className="text-primary underline">
+              (055) 6461731
             </a>
           </li>
           <li>
             <strong>WhatsApp:</strong>{" "}
-            <a href="#" className="text-primary underline">
+            <a
+              href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
+              className="text-primary underline"
+            >
               Message us on WhatsApp
             </a>
           </li>

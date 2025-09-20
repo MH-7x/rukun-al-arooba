@@ -1,10 +1,33 @@
 "use client";
 
 import { APP } from "@/lib/App";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Button } from "./ui/button";
+import { submitDetails } from "@/actions/Submit";
 type Reason = "sell" | "buy" | "general";
-
+export type PayLoad = {
+  reason: Reason;
+  name: string;
+  phone: string;
+  email: string;
+  city: string;
+  area: string;
+  category: string;
+  condition: string;
+  preferredService: {
+    pickup: boolean;
+    delivery: boolean;
+  };
+  message: string;
+  images: string[] | [];
+};
+import {
+  CldUploadWidget,
+  CloudinaryUploadWidgetResults,
+  CloudinaryUploadWidgetInfo,
+} from "next-cloudinary";
+import Image from "next/image";
+import { UploadCloud } from "lucide-react";
 const Form = () => {
   const [reason, setReason] = useState<Reason>("general");
   const [name, setName] = useState("");
@@ -19,15 +42,22 @@ const Form = () => {
     delivery: boolean;
   }>({ pickup: true, delivery: false });
   const [message, setMessage] = useState("");
-  const [files, setFiles] = useState<File[]>([]);
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<null | { id: string; name: string }>(
     null
   );
+  const [image, setImage] = useState<string[] | []>([]);
+  const [Resource, setResource] = useState<
+    CloudinaryUploadWidgetInfo | undefined
+  >(undefined);
   const liveRegionRef = useRef<HTMLDivElement | null>(null);
 
-  // simple validators
+  useEffect(() => {
+    if (Resource) {
+      setImage([...(image || []), Resource.secure_url]);
+    }
+  }, [Resource]);
   function validate() {
     const e: Record<string, string> = {};
     if (!name || name.trim().length < 2)
@@ -39,22 +69,9 @@ const Form = () => {
     if (!city) e.city = "Please select a city.";
     if ((reason === "sell" || reason === "buy") && !category)
       e.category = "Select a furniture category.";
-    if (files.length > 3) e.files = "You can upload up to 3 images.";
+    if (image && image.length > 3) e.files = "You can upload up to 3 images.";
     setErrors(e);
     return Object.keys(e).length === 0;
-  }
-
-  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const selected = e.target.files;
-    if (!selected) return;
-    const list = Array.from(selected).slice(0, 3);
-    setFiles(list);
-    // clear file input value so same file can be re-picked if removed
-    e.currentTarget.value = "";
-  }
-
-  function removeFile(index: number) {
-    setFiles((s) => s.filter((_, i) => i !== index));
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -69,40 +86,40 @@ const Form = () => {
     setLoading(true);
     setErrors({});
 
-    // Build form data
-    const payload = new FormData();
-    payload.append("reason", reason);
-    payload.append("name", name);
-    payload.append("phone", phone);
-    payload.append("email", email);
-    payload.append("city", city);
-    payload.append("area", area);
-    payload.append("category", category);
-    payload.append("condition", condition);
-    payload.append("preferredService", JSON.stringify(preferredService));
-    payload.append("message", message);
-    files.forEach((f) => payload.append(`files`, f, f.name));
+    const payload: PayLoad = {
+      reason: reason || "",
+      name: name || "",
+      phone: phone || "",
+      email: email || "",
+      city: city || "",
+      area: area || "",
+      category: category || "",
+      condition: condition || "",
+      preferredService: preferredService || { pickup: false, delivery: false },
+      message: message || "",
+      images: image || [],
+    };
 
     try {
-      // Replace this fetch with your actual API endpoint
-      // For demo, we simulate a small delay and success response
-      const data = payload.forEach((value, key) => console.log(key, value));
-      console.log(data);
-
       await new Promise((r) => setTimeout(r, 800));
-      const id = `RF-${Date.now().toString().slice(-6)}`;
-      setSuccess({ id, name });
-      if (liveRegionRef.current)
-        liveRegionRef.current.textContent = `Thanks ${name}. We received your request (ref ${id}). We'll contact you on WhatsApp or phone.`;
-
-      // Reset form lightly (keep city to help repeated submissions)
-      setName("");
-      setPhone("");
-      setEmail("");
-      setMessage("");
-      setFiles([]);
-      setCategory("");
-      setCondition("");
+      const results = await submitDetails(payload);
+      if (results.error) {
+        setErrors({
+          submit: "Failed to send. Please try again or contact via WhatsApp.",
+        });
+      } else {
+        const id = `RF-${Date.now().toString().slice(-6)}`;
+        setSuccess({ id, name });
+        if (liveRegionRef.current)
+          liveRegionRef.current.textContent = `Thanks ${name}. We received your request (ref ${id}). We'll contact you on WhatsApp or phone.`;
+        setName("");
+        setPhone("");
+        setEmail("");
+        setMessage("");
+        setImage([]);
+        setCategory("");
+        setCondition("");
+      }
     } catch (error) {
       setErrors({
         submit: "Failed to send. Please try again or contact via WhatsApp.",
@@ -117,6 +134,16 @@ const Form = () => {
     }
   }
 
+  async function deleteImage(publicId: string) {
+    console.log("public id : ", publicId);
+    const req = await fetch("/api/upload", {
+      method: "DELETE",
+      body: JSON.stringify({ publicId }),
+    });
+    if (!req.ok) console.log("something wrong");
+    const res = await req.json();
+    console.log("results ", res);
+  }
   return (
     <>
       <form onSubmit={handleSubmit} noValidate>
@@ -257,50 +284,80 @@ const Form = () => {
               </div>
             </div>
 
-            <div className="md:col-span-1 bg-secondary p-4 rounded-2xl">
-              <label className="block text-sm font-medium">
-                Upload photos (optional)
-              </label>
-              <div className="mt-2">
-                <input
-                  aria-describedby="upload-help"
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  onChange={handleFileChange}
-                />
-                <p id="upload-help" className="text-xs text-gray-500">
-                  Recommended: up to 3 images. Max 5MB each.
-                </p>
-                {errors.files && (
-                  <p className="text-red-600 text-sm">{errors.files}</p>
+            {reason === "sell" && (
+              <div className="md:col-span-1 bg-secondary p-4 rounded-2xl">
+                <label className="block text-sm font-medium">
+                  Upload photos (optional)
+                </label>
+                <div className="mt-2">
+                  <p id="upload-help" className="text-xs text-gray-500">
+                    Recommended: up to 3 images. Max 5MB each.
+                  </p>
+                  {errors.files && (
+                    <p className="text-red-600 text-sm">{errors.files}</p>
+                  )}
+                </div>
+                {image && image.length < 3 && (
+                  <CldUploadWidget
+                    signatureEndpoint="/api/upload"
+                    onSuccess={(results: CloudinaryUploadWidgetResults) => {
+                      setResource(
+                        results?.info as CloudinaryUploadWidgetInfo | undefined
+                      );
+                    }}
+                    onQueuesEnd={(result, { widget }) => {
+                      widget.close();
+                    }}
+                  >
+                    {({ open }) => {
+                      return (
+                        <label
+                          onClick={() => {
+                            setResource(undefined);
+                            open();
+                          }}
+                          className="bg-white text-gray-500 font-semibold text-base rounded max-w-md h-32 mt-5 flex flex-col items-center justify-center cursor-pointer border-2 border-gray-300 border-dashed mx-auto font-[sans-serif]"
+                        >
+                          <UploadCloud className="w-12 h-12" />
+                          Upload file
+                          <p className="text-xs font-medium text-gray-400 mt-2">
+                            PNG, JPG SVG, WEBP, and GIF are Allowed.
+                          </p>
+                        </label>
+                      );
+                    }}
+                  </CldUploadWidget>
+                )}
+                {image && image.length > 0 && (
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {image.map((imgUrl, index) => (
+                      <div key={index} className="relative w-24 h-24">
+                        <Image
+                          src={imgUrl}
+                          alt={`Uploaded ${index + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                        <button
+                          onClick={() => {
+                            // setImage((imgs) =>
+                            //   imgs ? imgs.filter((_, i) => i !== index) : null
+                            // );
+                            deleteImage(
+                              imgUrl.split("/").pop()?.split(".")[0] as string
+                            );
+                          }}
+                          type="button"
+                          className="absolute top-1 right-1 bg-red-600 text-white rounded-full px-2 py-1 text-xs"
+                        >
+                          X
+                        </button>
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
-
-              {files.length > 0 && (
-                <div className="mt-3 grid grid-cols-3 gap-2">
-                  {files.map((f, i) => (
-                    <div
-                      key={i}
-                      className="relative border rounded overflow-hidden"
-                    >
-                      <img
-                        src={URL.createObjectURL(f)}
-                        className="w-full h-20 object-cover"
-                        alt={`preview-${i}`}
-                      />
-                      <button
-                        type="button"
-                        onClick={() => removeFile(i)}
-                        className="absolute top-1 right-1 bg-white/80 rounded px-1 text-xs"
-                      >
-                        Remove
-                      </button>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
+            )}
           </div>
         )}
 
@@ -411,7 +468,7 @@ const Form = () => {
         </div>
 
         {/* Submit area */}
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-4 flex-wrap">
           <div>
             <Button
               type="submit"

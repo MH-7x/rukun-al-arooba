@@ -41,20 +41,16 @@ export const servicesList = [
     desc: "Affordable used kitchen cabinets to upgrade your cooking space.",
     link: "#",
   },
-  {
-    title: "Outdoor Furniture",
-    desc: "Durable and stylish used outdoor furniture for your garden or patio.",
-    link: "#",
-  },
+
   {
     title: "Selling Used Furniture",
     desc: "Easily sell your used furniture and get the best market value.",
-    link: "#",
+    link: "/used-furniture-buyers-in-dubai",
   },
   {
     title: "Buying Used Furniture",
     desc: "Purchase quality used furniture at unbeatable prices.",
-    link: "#",
+    link: "/",
   },
 ];
 export const locationList = [

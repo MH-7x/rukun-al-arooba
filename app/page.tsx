@@ -835,7 +835,7 @@ export default function Home() {
                     <Phone className="md:size-[18px] size-[15px]" />{" "}
                     <span>Phone No.</span>
                   </p>
-                  <p className=" mt-0.5">(052) 9999999</p>
+                  <p className=" mt-0.5">(055) 6461731</p>
                 </div>
                 <span className="w-0.5 h-10 bg-gray-300 md:block hidden"></span>
                 <div className="flex gap-x-2">
