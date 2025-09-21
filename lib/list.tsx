@@ -34,7 +34,7 @@ export const servicesList = [
   {
     title: "Used Sofa Set",
     desc: "Choose from a variety of stylish and comfortable used sofa sets.",
-    link: "#",
+    link: "/used-sofa-for-sale-uae",
   },
   {
     title: "Kitchen Cabinets",
@@ -1755,6 +1755,117 @@ export const RefrigeratorFaqs = [
           reliable and <strong>discounted delivery service</strong> across the
           entire UAE, including Dubai, Abu Dhabi, Ajman, and of course, our home
           city of Sharjah.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const SofaFaqs = [
+  {
+    question: "What should I look for when buying a used sofa?",
+    answer: (
+      <>
+        <p>
+          Buying a pre-owned sofa is a fantastic way to get a high-quality piece
+          affordably, but knowing what to look for is key. While you would
+          typically need to check for a sturdy frame, firm cushions, and inspect
+          the fabric for wear and tear, we take the guesswork out of the
+          equation for you.
+        </p>
+        <p>
+          At Rukun Al Arooba, every <strong>quality second-hand couch</strong>{" "}
+          undergoes a rigorous inspection process by our experienced team before
+          it even enters our showroom. We ensure the structural integrity is
+          sound, the upholstery is clean and in great condition, and that it
+          meets our high standards. This means you can shop with confidence,
+          knowing every option is pre-vetted for quality.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How do you guarantee the cleanliness and quality of your sofas?",
+    answer: (
+      <>
+        <p>
+          This is our specialty and what truly sets us apart. Our commitment to
+          quality is more than just a claim; it&apos;s a meticulous process.
+          When we acquire a used sofa, it goes through several stages:
+        </p>
+        <p>
+          First, a deep inspection of the frame, springs, and fabric. Second, a
+          professional cleaning and sanitization process. Third, any necessary
+          repairs—from minor stitching to reinforcing the frame—are expertly
+          handled. Finally, it&apos;s polished and prepared for display. You
+          aren’t just buying a <strong>used sofa for sale</strong>; you&apos;re
+          investing in a piece of furniture that has been professionally
+          restored for its next home.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you offer delivery for a used sofa purchased in Sharjah to other Emirates like Dubai or Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Absolutely! While our main showroom is in Sharjah, we are proud to
+          offer a reliable <strong>used sofa with delivery</strong> service
+          across all of the UAE. We understand that logistics can be a
+          challenge, so we&apos;ve made it simple.
+        </p>
+        <p>
+          Through our official partnership with Abu Muhammad Movers, we provide
+          a seamless, professional, and discounted delivery service whether
+          you&apos;re in Dubai, Abu Dhabi, Ajman, or Al Ain. We handle the
+          coordination so you can enjoy your new sofa without the hassle.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What makes you different from sellers on Dubizzle or Facebook Marketplace?",
+    answer: (
+      <>
+        <p>
+          The difference is peace of mind and guaranteed quality. When you buy
+          from a private seller online, you often face risks: no warranty, no
+          return policy, and no guarantee of the item&apos;s true condition.
+        </p>
+        <p>
+          Rukun Al Arooba is an <strong>officially registered company</strong>{" "}
+          with a physical showroom you can visit. We provide an official{" "}
+          <strong>warranty on second-hand furniture</strong>, offer multiple
+          secure payment options, and every item is professionally inspected and
+          restored. You&apos;re not just buying a sofa; you&apos;re getting a
+          promise of quality and customer service from a trusted UAE business.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "I want to sell my used sofa. How does your buying process work?",
+    answer: (
+      <>
+        <p>
+          We make selling your used sofa simple, fast, and fair. As leading{" "}
+          <strong>used sofa buyers in Sharjah and Dubai</strong>, we&apos;ve
+          streamlined the process to be completely hassle-free for you:
+        </p>
+        <p>
+          <strong>1. Contact Us:</strong> Simply send us a few clear photos of
+          your sofa via WhatsApp.
+          <br />
+          <strong>2. Get a Fast Quote:</strong> Our experts will assess its
+          condition and give you a competitive, no-obligation price quote within
+          minutes.
+          <br />
+          <strong>3. Easy Pickup:</strong> If you accept the offer, we will
+          coordinate a convenient time for our team to pick up the item. It’s
+          that easy to <strong>sell your used sofa for cash</strong> with us.
         </p>
       </>
     ),
