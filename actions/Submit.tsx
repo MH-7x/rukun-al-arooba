@@ -12,7 +12,7 @@ export const submitDetails = async (data: PayLoad) => {
 
     const response = await resend.emails.send({
       from: "New Contact From Web <onboarding@resend.dev>",
-      to: "abumuhammad.movers@gmail.com",
+      to: "shoaibkh7709@gmail.com",
       subject: "New Customer Inquiry",
       react: (
         <ContactFormEmail

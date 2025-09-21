@@ -29,7 +29,7 @@ export const servicesList = [
   {
     title: "Used Refrigerators",
     desc: "Shop for tested and reliable used refrigerators at the best prices.",
-    link: "#",
+    link: "/buy-or-sell-used-refrigerators",
   },
   {
     title: "Used Sofa Set",
@@ -1610,6 +1610,151 @@ export const OfficeFurnitureBuyersFaqs = [
           and chairs without any risk, and you never have to worry about the
           logistics of delivery. We offer a guaranteed sale and a professional
           service from start to finish.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const RefrigeratorFaqs = [
+  {
+    question: "Is it a good idea to buy a second-hand refrigerator in the UAE?",
+    answer: (
+      <>
+        <p>
+          Absolutely! Buying a <strong>second-hand refrigerator</strong> is a
+          fantastic way to get a high-quality appliance from a top brand without
+          the hefty price tag. The key is to buy from a trusted dealer like
+          Rukun Al Arooba.
+        </p>
+        <p>
+          Unlike risky private sales on classified sites, every fridge we sell
+          has been thoroughly inspected, serviced, and cleaned. You get a
+          reliable, like-new appliance and save money, making it a smart and
+          sustainable choice for your home in the UAE.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What should I check before buying a used fridge?",
+    answer: (
+      <>
+        <p>
+          While that&apos;s a great question, we&apos;ve already done all the
+          hard work for you! Our expert technicians perform a rigorous
+          multi-point inspection on every unit. Here’s what we guarantee is
+          checked before any <strong>used fridge for sale</strong> reaches our
+          floor:
+        </p>
+        <ul>
+          <li>
+            <strong>Cooling Performance:</strong> We test the compressor and
+            thermostat to ensure it cools efficiently.
+          </li>
+          <li>
+            <strong>Door Seals:</strong> We check for any gaps or cracks to
+            prevent cold air from escaping.
+          </li>
+          <li>
+            <strong>Physical Condition:</strong> We look for any significant
+            damage and ensure all shelves and drawers are intact.
+          </li>
+          <li>
+            <strong>Cleanliness:</strong> Every appliance is professionally
+            cleaned and sanitized.
+          </li>
+        </ul>
+        <p>
+          When you buy from us, you&apos;re not just buying a fridge;
+          you&apos;re buying peace of mind.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "How much can I expect to pay for a used refrigerator in Dubai or Sharjah?",
+    answer: (
+      <>
+        <p>
+          The <strong>price of a used refrigerator</strong> can vary based on
+          its brand, size, age, and features. However, you can expect to save
+          significantly—often 50-70% off the original retail price.
+        </p>
+        <p>
+          At Rukun Al Arooba, we pride ourselves on transparent and fair
+          pricing. We offer everything from compact models perfect for a studio
+          to large family-sized units, ensuring you get the best possible value
+          for your budget. Contact us on WhatsApp for a quick look at our
+          current inventory and prices!
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How can I sell my old fridge for cash quickly in the UAE?",
+    answer: (
+      <>
+        <p>
+          We make it incredibly fast and easy to{" "}
+          <strong>sell your old fridge for cash</strong>. As leading{" "}
+          <strong>used refrigerator buyers</strong>, our process is designed for
+          your convenience:
+        </p>
+        <ol>
+          <li>
+            <strong>Send Photos:</strong> Just WhatsApp us a few pictures of
+            your fridge.
+          </li>
+          <li>
+            <strong>Get a Fast Quote:</strong> We’ll give you a fair,
+            competitive offer within 5-10 minutes.
+          </li>
+          <li>
+            <strong>Get Paid & Schedule Pickup:</strong> Once you accept, we
+            arrange immediate payment and a hassle-free pickup from your
+            location anywhere in the UAE.
+          </li>
+        </ol>
+        <p>
+          It&apos;s the simplest way to turn your unwanted appliance into cash
+          without any stress.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do your used appliances come with a warranty?",
+    answer: (
+      <>
+        <p>
+          Yes, they do! This is one of the biggest reasons customers choose us.
+          Every <strong>used appliance</strong> we sell, including our
+          refrigerators, comes with a warranty.
+        </p>
+        <p>
+          This guarantee protects your purchase and gives you the confidence
+          that you are investing in a quality product that we stand behind. It’s
+          a level of security you simply won’t find with private sellers.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer delivery for the used refrigerators you sell?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We offer a complete, hassle-free shopping experience. Once
+          you’ve chosen your perfect refrigerator, we can arrange for
+          professional delivery right to your doorstep.
+        </p>
+        <p>
+          Thanks to our partnership with Abu Muhammad Movers, we provide a
+          reliable and <strong>discounted delivery service</strong> across the
+          entire UAE, including Dubai, Abu Dhabi, Ajman, and of course, our home
+          city of Sharjah.
         </p>
       </>
     ),
