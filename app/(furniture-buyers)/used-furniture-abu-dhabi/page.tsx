@@ -2,11 +2,14 @@ import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
 import { Button } from "@/components/ui/button";
 import { APP } from "@/lib/App";
+import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import { UsedFurnitureFaqsAbuDhabi } from "@/lib/list";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { ArrowRight, CheckCircle, Store } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -289,9 +292,19 @@ const values = [
     ),
   },
 ];
+
+const FaqsSchema = generateFAQSchema(
+  convertFaqsForSchema(UsedFurnitureFaqsAbuDhabi)
+);
 const AbuDhabiPage = () => {
   return (
     <>
+      <Script
+        strategy="beforeInteractive"
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqsSchema }}
+      />
       <main className="overflow-hidden ">
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <div className="grid-background" />

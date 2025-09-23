@@ -9,6 +9,9 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import HeroSection from "@/components/base/HeroSection";
 import BuySellSection from "@/components/base/BuySellSection";
 import CTA from "@/components/base/CTA";
+import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
 
 const servicesList: {
   title: string;
@@ -253,9 +256,18 @@ export const metadata = MetadataTemplate({
   },
 });
 
+const FaqsSchema = generateFAQSchema(convertFaqsForSchema(HomeFaqs));
+
 export default function Home() {
   return (
     <>
+      <Script
+        strategy="beforeInteractive"
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqsSchema }}
+      />
+
       <main>
         <HeroSection />
 

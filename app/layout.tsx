@@ -6,6 +6,8 @@ import "animate.css";
 import localFont from "next/font/local";
 import Footer from "@/components/base/footer";
 import { APP } from "@/lib/App";
+import Script from "next/script";
+import { RukunAlAroobaSchema } from "@/lib/list";
 
 const GraphikFont = localFont({
   src: [
@@ -63,6 +65,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="Business-Schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(RukunAlAroobaSchema),
+          }}
+          strategy="beforeInteractive"
+          key="Business-Schema"
+        />
+      </head>
       <body className={`${GraphikFont.className} antialiased`}>
         <Navbar />
         {children}

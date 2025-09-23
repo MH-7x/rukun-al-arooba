@@ -1,5 +1,97 @@
 import Link from "next/link";
 
+export const RukunAlAroobaSchema = {
+  "@context": "https://schema.org",
+  "@type": "FurnitureStore",
+  name: "Rukun Al Arooba Used Furniture",
+  description:
+    "Rukun Al Arooba is Sharjah's and UAE's leading supplier of used home furniture and appliances. We have a vast selection of used items ranging from sofas, beds, refrigerators, to office furniture, all with a warranty. We buy and sell used furniture at affordable prices without cutting back on quality and style.",
+  url: "https://rukunalaroobausedfurniture.ae/",
+  telephone: "+971556461731",
+  priceRange: "$$",
+
+  image: "https://rukunalaroobausedfurniture.ae/path/storefront-image.jpg",
+  logo: "https://rukunalaroobausedfurniture.ae/square-logo.png",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Al Estiqlal Street, Bu Shaghara",
+    addressLocality: "Sharjah",
+    addressRegion: "Sharjah",
+    postalCode: "00000",
+    addressCountry: "AE",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 25.3377,
+    longitude: 55.4124,
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.8",
+    reviewCount: "9",
+  },
+  amenityFeature: [
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Delivery Service Available",
+      value: "true",
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "In-Store Pickup",
+      value: "true",
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Accepts Cash",
+      value: "true",
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Accepts Bank Checks",
+      value: "true",
+    },
+    {
+      "@type": "LocationFeatureSpecification",
+      name: "Warranty on Purchases",
+      value: "true",
+    },
+  ],
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "09:00",
+      closes: "23:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Tuesday",
+      opens: "09:00",
+      closes: "23:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Wednesday",
+      opens: "09:00",
+      closes: "22:30",
+    },
+  ],
+  sameAs: [
+    "https://www.google.com/maps/place/Rukun+AL+arooba+used+furniture+and+electronics+trading/@25.3377035,55.4123512,15z/data=!4m6!3m5!1s0x3e5f590ac9a2245b:0xb6338b255c468962!8m2!3d25.3377035!4d55.4123512!16s%2Fg%2F11bbr23m8s?entry=ttu",
+    // Add links to your social media profiles here if you have them
+  ],
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate:
+        "https://rukunalaroobausedfurniture.ae/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export const servicesList = [
   {
     title: "Used Home Appliances",
@@ -2023,6 +2115,229 @@ export const UsedFurnitureFaqsAbuDhabi = [
           cost of hiring a separate moving company.
         </p>
       </>
+    ),
+  },
+];
+export const applianceFaqs = [
+  {
+    question: "What types of used home appliances do you offer?",
+    answer: (
+      <div>
+        <p>We offer a wide range of used home appliances, including:</p>
+        <ul>
+          <li>
+            Used Refrigerators (single-door, double-door, top freezer, bottom
+            freezer, side-by-side, and French-door models)
+          </li>
+          <li>Used Washing Machines (top-load and front-load)</li>
+          <li>Used Dryers (tumble and condenser)</li>
+          <li>Used Air Conditioners (split, window, and portable)</li>
+          <li>Used Ovens, Stoves & Cooktops (gas and electric)</li>
+          <li>
+            Small Kitchen Appliances & Electronics (microwaves, blenders,
+            kettles, toasters, etc.)
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Do you provide a warranty for your used appliances?",
+    answer: (
+      <p>
+        Yes, we offer a short warranty on our refurbished used home appliances.
+        We also have a returns policy for your peace of mind.
+      </p>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <p>
+        We accept various payment methods for your convenience, including cash,
+        bank transfer, online deposit, or cheque.
+      </p>
+    ),
+  },
+  {
+    question: "Do you offer delivery services for purchased appliances?",
+    answer: (
+      <p>
+        Yes, we offer delivery and pickup services through our partner, Abu
+        Muhammad Movers, at competitive rates.
+      </p>
+    ),
+  },
+  {
+    question: "Are the appliances checked and repaired before being sold?",
+    answer: (
+      <p>
+        Absolutely. We check and repair all furniture and appliances before
+        displaying them in our store to ensure they are in good working
+        condition.
+      </p>
+    ),
+  },
+  {
+    question:
+      "How can I be sure of the quality of your second-hand appliances in the UAE?",
+    answer: (
+      <div>
+        <p>
+          At Rukun Al Arooba, we are committed to quality. Here&apos;s how we
+          ensure it:
+        </p>
+        <ul>
+          <li>
+            <strong>Thorough Inspection:</strong> Every appliance undergoes a
+            multi-point inspection by our experienced technicians.
+          </li>
+          <li>
+            <strong>Expert Refurbishment:</strong> We repair and refurbish
+            appliances to a high standard, ensuring full functionality.
+          </li>
+          <li>
+            <strong>Warranty and Trust:</strong> We back our appliances with a
+            warranty and a clear returns policy. As a leading provider of
+            pre-owned furniture in the UAE, our reputation is built on trust and
+            customer satisfaction.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question:
+      "What is the process for purchasing used home appliances from you?",
+    answer: (
+      <p>
+        You can visit our store on Al Estiqlal Street, Bu Shaghara, Hay Al
+        Qasimiah, Sharjah, to see our wide selection of used appliances. Our
+        team will assist you in finding the right appliance for your needs and
+        budget. Once you&apos;ve made your choice, we offer various payment
+        options and can arrange for quick delivery through our partners.
+      </p>
+    ),
+  },
+  {
+    question:
+      "Why should I buy used home appliances in Dubai instead of new ones?",
+    answer: (
+      <div>
+        <p>
+          Choosing used home appliances from Rukun Al Arooba offers several
+          benefits:
+        </p>
+        <ul>
+          <li>
+            <strong>Cost Savings:</strong> Get high-quality appliances from top
+            brands at a fraction of the cost of new ones.
+          </li>
+          <li>
+            <strong>Eco-Friendly:</strong> Buying used helps reduce waste and is
+            a more sustainable choice for the environment.
+          </li>
+          <li>
+            <strong>Quality Assurance:</strong> All our appliances are
+            thoroughly checked, repaired, and come with a warranty.
+          </li>
+          <li>
+            <strong>Wide Selection:</strong> We offer a diverse range of models
+            and brands to suit every need and budget.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question: "Do you buy used home appliances? If so, what is the process?",
+    answer: (
+      <p>
+        Yes, we buy used furniture and home appliances. If you&apos;re looking
+        to sell, you can contact us with the details of your items. We&apos;ll
+        assess them and offer you a fair price. We also partner with Abu
+        Muhammad Movers for convenient pickup services.
+      </p>
+    ),
+  },
+  {
+    question:
+      "How fast is your response and delivery service in Sharjah and the UAE?",
+    answer: (
+      <p>
+        We pride ourselves on our fast service. We typically respond to
+        inquiries within 5-10 minutes. For delivery, we partner with a moving
+        company to provide discounted and efficient delivery services throughout
+        the UAE, ensuring you get your purchased items as quickly as possible.
+      </p>
+    ),
+  },
+  {
+    question:
+      "Are there any hidden costs when buying used appliances from you?",
+    answer: (
+      <p>
+        No, we believe in transparent pricing. The price you see is the price
+        you pay. Any delivery charges will be clearly communicated to you
+        upfront. We aim to help our customers save money without any surprises.
+      </p>
+    ),
+  },
+  {
+    question: "Do you have a physical showroom for used appliances in Sharjah?",
+    answer: (
+      <p>
+        Yes, we do. Our showroom is located on Al Estiqlal Street, Bu Shaghara,
+        Hay Al Qasimiah, Sharjah. We invite you to visit us to see our extensive
+        collection of high-quality used home appliances and furniture.
+      </p>
+    ),
+  },
+  {
+    question:
+      "What makes Rukun Al Arooba a trusted used furniture trader in the UAE?",
+    answer: (
+      <p>
+        With over 20 years of experience in used furniture trading in Sharjah,
+        Rukun Al Arooba is an officially registered company with a physical
+        store. Our commitment to quality, customer satisfaction, transparent
+        pricing, and our warranty and returns policy make us a leading and
+        trusted provider of pre-owned furniture and appliances in the UAE.
+      </p>
+    ),
+  },
+  {
+    question:
+      "How do I care for my purchased used home appliance to ensure its longevity?",
+    answer: (
+      <div>
+        <p>
+          To ensure the longevity of your used appliance, we recommend the
+          following:
+        </p>
+        <ul>
+          <li>
+            Regular cleaning and maintenance as per the manufacturer&apos;s
+            guidelines.
+          </li>
+          <li>Ensuring proper installation and ventilation.</li>
+          <li>Avoiding overloading machines like washers and dryers.</li>
+          <li>Contacting a professional for any repairs or servicing needs.</li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    question:
+      "By purchasing second-hand appliances, am I contributing to a greener UAE?",
+    answer: (
+      <p>
+        Absolutely. By choosing to buy used appliances, you are actively
+        participating in the circular economy. This reduces landfill waste,
+        conserves the resources and energy required to manufacture new products,
+        and lowers your carbon footprint, contributing to a more sustainable and
+        greener UAE.
+      </p>
     ),
   },
 ];
