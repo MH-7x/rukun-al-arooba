@@ -67,7 +67,7 @@ export const locationList = [
   {
     title: "Used Furniture in Abu Dhabi",
     desc: "Discover a wide range of used furniture and home essentials in Abu Dhabi.",
-    link: "#",
+    link: "/used-furniture-abu-dhabi",
   },
   {
     title: "Used Furniture in Ajman",
@@ -1866,6 +1866,161 @@ export const SofaFaqs = [
           <strong>3. Easy Pickup:</strong> If you accept the offer, we will
           coordinate a convenient time for our team to pick up the item. It’s
           that easy to <strong>sell your used sofa for cash</strong> with us.
+        </p>
+      </>
+    ),
+  },
+];
+
+export const UsedFurnitureFaqsAbuDhabi = [
+  {
+    question:
+      "How does the process of selling used furniture in Abu Dhabi actually work?",
+    answer: (
+      <>
+        <p>
+          Selling your used furniture with us is designed to be completely
+          hassle-free. Forget the stress of creating online listings, dealing
+          with endless messages, and meeting strangers. Our process is simple
+          and professional:
+        </p>
+        <p>
+          <strong>1. Instant Online Valuation:</strong> Just send us a few clear
+          photos of your items via WhatsApp. Our experts will quickly assess
+          them and provide you with a fair, no-obligation quote.
+        </p>
+        <p>
+          <strong>2. Free & Fast Pickup:</strong> Once you accept our offer, we
+          schedule a{" "}
+          <strong>free furniture pickup from anywhere in Abu Dhabi</strong> at a
+          time that works for you. Our professional team handles all the heavy
+          lifting, so you don&lsquo;t have to lift a finger.
+        </p>
+        <p>
+          <strong>3. Instant Payment:</strong> We pay you on the spot in cash or
+          via instant bank transfer the moment we pick up your furniture. It’s
+          the fastest and safest way to{" "}
+          <strong>get instant cash for your used furniture</strong>.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "What's the best way to get a fair price for my second-hand furniture?",
+    answer: (
+      <>
+        <p>
+          Getting a fair price means working with honest experts who understand
+          the market. As one of the leading{" "}
+          <strong>used furniture buyers in Abu Dhabi</strong>, we determine our
+          offers based on several key factors to ensure you get the best
+          possible value:
+        </p>
+        <ul>
+          <li>
+            <strong>Brand & Quality:</strong> Furniture from popular brands like
+            IKEA, Home Centre, or Pottery Barn often retains higher value.
+          </li>
+          <li>
+            <strong>Condition:</strong> We look at the overall state of the
+            item, including any wear and tear. Well-maintained items always
+            fetch a better price.
+          </li>
+          <li>
+            <strong>Current Demand:</strong> Our deep market knowledge helps us
+            know what today&lsquo;s buyers are looking for, allowing us to offer
+            you a competitive price.
+          </li>
+        </ul>
+        <p>
+          Our transparent valuation process ensures you receive a fair and
+          competitive offer every time.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Do you buy specific brands like used IKEA or Home Centre furniture?",
+    answer: (
+      <>
+        <p>
+          Absolutely! We are always interested in buying{" "}
+          <strong>used IKEA furniture in Abu Dhabi</strong>, as well as items
+          from other popular brands like Home Centre, Pan Emirates, and West
+          Elm.
+        </p>
+        <p>
+          These brands are in high demand in the second-hand market because of
+          their modern design and reliability. If you&lsquo;re selling furniture
+          from these or other well-known brands, you can expect a quick and
+          competitive offer from our team.
+        </p>
+      </>
+    ),
+  },
+  {
+    question:
+      "Are you just furniture buyers, or can I find cheap used furniture for sale?",
+    answer: (
+      <>
+        <p>
+          We are your one-stop shop for everything related to second-hand
+          furniture! While we are expert <strong>used furniture buyers</strong>,
+          we also have a fantastic, curated selection of{" "}
+          <strong>quality used furniture for sale in Abu Dhabi</strong>.
+        </p>
+        <p>
+          Every item we sell has been carefully inspected, cleaned, and restored
+          to ensure it meets our high standards. This means you can furnish your
+          home with stylish, high-quality pieces for a fraction of the original
+          price. Contact us or visit our showroom to see what&lsquo;s currently
+          in stock!
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What types of used home appliances do you typically buy?",
+    answer: (
+      <>
+        <p>
+          We don&lsquo;t just specialize in furniture; we are also one of the
+          top buyers of <strong>used home appliances in Abu Dhabi</strong>. We
+          are actively looking to buy a wide range of appliances in good working
+          condition, including:
+        </p>
+        <ul>
+          <li>Refrigerators and Freezers</li>
+          <li>Washing Machines and Dryers</li>
+          <li>Air Conditioners (AC units)</li>
+          <li>Cooking Ranges and Ovens</li>
+          <li>Microwaves and Dishwashers</li>
+          <li>LED/LCD Televisions (TVs)</li>
+        </ul>
+        <p>
+          If you have a used appliance to sell, send us the details and
+          we&lsquo;ll give you a quick quote.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How does your free furniture removal service in Abu Dhabi work?",
+    answer: (
+      <>
+        <p>
+          Our <strong>free furniture removal service</strong> is a key part of
+          our commitment to a hassle-free experience. Once we agree on a price
+          for your items, the service is automatically included.
+        </p>
+        <p>
+          There are no hidden charges for transportation or labor. Our
+          professional moving team arrives at the scheduled time, carefully
+          removes the furniture from your home without causing any damage, and
+          loads it onto our truck. This service saves you the time, effort, and
+          cost of hiring a separate moving company.
         </p>
       </>
     ),
