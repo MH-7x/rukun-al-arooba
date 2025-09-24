@@ -9,6 +9,7 @@ import { APP } from "@/lib/App";
 import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import GTM from "@/components/GTM";
 
 const GraphikFont = localFont({
   src: [
@@ -82,6 +83,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <GoogleAnalytics />
+        <GTM />
       </body>
     </html>
   );
