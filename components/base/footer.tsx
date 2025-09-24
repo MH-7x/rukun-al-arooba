@@ -122,7 +122,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center md:mt-0 mt-3 space-x-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://web.facebook.com/profile.php?id=61581140562247"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"
@@ -142,7 +142,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="https://www.pinterest.com"
+              href="https://www.pinterest.com/rukun_al_arooba_used_furniture/"
               target="_blank"
               rel="noreferrer"
               aria-label="Pinterest"
