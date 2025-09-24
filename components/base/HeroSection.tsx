@@ -6,12 +6,13 @@ const HeroSection = () => {
   return (
     <section
       id="used-furniture-in-sharjah"
-      className="w-full h-[500px] bg-red-300 relative "
+      className="w-full h-[500px] relative "
     >
       <Image
         src={heroImage}
         placeholder="blur"
         loading="eager"
+        fetchPriority="high"
         alt="rukun al arooba used furniture in sharjah"
         fill
         className="absolute object-cover object-center"

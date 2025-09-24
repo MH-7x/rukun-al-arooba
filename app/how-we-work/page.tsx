@@ -85,6 +85,7 @@ const BuyingSellingProcess = () => {
               src={"/used-furniture-buying-process.png"}
               alt="used-furniture-buying-process"
               fill
+              fetchPriority="high"
               loading="eager"
               className="object-contain md:ml-10"
             />
