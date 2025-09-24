@@ -21,7 +21,7 @@ export const metadata = MetadataTemplate({
       path: "/service/used-bed-buyers-in-dubai.jpg",
       alt: "rukun al arooba used bed buyers in dubai",
     },
-    path: "/used-beds-buyers-in-dubai",
+    path: "/buy-or-sell-used-refrigerators",
   },
 });
 const FaqsSchema = generateFAQSchema(convertFaqsForSchema(RefrigeratorFaqs));

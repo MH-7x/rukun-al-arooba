@@ -73,7 +73,7 @@ const DesktopNav = () => {
                 >
                   Furniture & Home Appliance Buyers in Sharjah and UAE.
                 </ListItem>
-                <ListItem href="/docs" title="Used Furniture Sellers">
+                <ListItem href="/" title="Used Furniture Sellers">
                   Like New Furniture For Sale in Sharjah and UAE.
                 </ListItem>
               </ul>
@@ -143,7 +143,7 @@ const DesktopNav = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link href="/docs">Blogs</Link>
+              <Link href="/">Blogs</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
         </NavigationMenuList>

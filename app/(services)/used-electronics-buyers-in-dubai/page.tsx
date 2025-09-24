@@ -107,19 +107,13 @@ function UsedElectronicsBuyers() {
               <div className="hero-cta" style={{ marginTop: "0.8rem" }}>
                 <a
                   className="cta-button"
-                  href="https://wa.me/971XXXXXXXXX?text=I%20want%20to%20sell%20my%20electronics"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="https://wa.me/+971556461731?text=I%20Contact%20You%20For%20Used%20Furniture"
                 >
                   Get Instant Quote on WhatsApp
                 </a>
-                <a
-                  className="cta-phone"
-                  href="/sell-electronics"
-                  rel="noopener"
-                >
+                <Link className="cta-phone" href="/contact-us">
                   Sell My Electronics — Get Offer
-                </a>
+                </Link>
               </div>
             </section>
             <div className="my-10 grid md:grid-cols-2 w-full grid-cols-1 gap-5">

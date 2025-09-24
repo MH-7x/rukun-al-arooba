@@ -22,7 +22,7 @@ export const metadata = MetadataTemplate({
       path: "/service/used-sofa-for-sale-sharjah-dubai.jpg",
       alt: "Stylish affordable used sofa for sale in Sharjah and Dubai — Rukun Al Arooba certified pre-owned furniture UAE",
     },
-    path: "/used-home-appliances-dubai",
+    path: "/used-sofa-for-sale-uae",
   },
 });
 

@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
       path: "/service/used-home-appliances-dubai.jpg",
       alt: "rukun al arooba used home appliances dubai",
     },
-    path: "/used-home-appliances-dubai",
+    path: "/used-office-furniture-buyers-dubai",
   },
 });
 const FaqsSchema = generateFAQSchema(

@@ -581,7 +581,7 @@ const UsedFurnitureBuyersDubai = () => {
             </h2>
             <p className="mt-3 text">
               While{" "}
-              <Link href={"/https://share.google/iLEgJq3Qt9DduRnRi"}>
+              <Link href={"https://share.google/iLEgJq3Qt9DduRnRi"}>
                 our main showroom is in Sharjah
               </Link>
               , our services extend across the entire UAE. We are proud to be
