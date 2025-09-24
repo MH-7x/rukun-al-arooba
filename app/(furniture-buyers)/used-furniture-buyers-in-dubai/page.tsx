@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
@@ -707,6 +708,7 @@ const UsedFurnitureBuyersDubai = () => {
             value.
           </p>
         </section>
+        <Reviews />
         <FAQs
           title="Frequently Asked Questions About Selling Used Furniture in Dubai"
           Faqs={ufdFaqs}

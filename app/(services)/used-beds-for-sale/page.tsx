@@ -11,6 +11,7 @@ import Link from "next/link";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
+import Reviews from "@/components/Reviews";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -315,6 +316,7 @@ const UsedBeds = () => {
           </article>
           <ServiceAside />
         </div>
+        <Reviews />
         <FAQs Faqs={BedsFaqs} />
         <CTA
           title="Ready to buy a quality used bed?"

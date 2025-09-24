@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
@@ -306,6 +307,7 @@ const UsedBedsBuyers = () => {
             <li>And all surrounding areas</li>
           </ul>
         </section>
+        <Reviews />
         <FAQs Faqs={BedsBuyersFaqs} />
         <CTA
           title="Sell Your Bed Today with Rukun Al Arooba"

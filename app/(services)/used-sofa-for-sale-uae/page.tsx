@@ -11,6 +11,7 @@ import CTA from "@/components/base/CTA";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
+import Reviews from "@/components/Reviews";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -275,6 +276,7 @@ const UsedSofaPage = () => {
           <ServiceAside />
         </div>
         <FAQs Faqs={SofaFaqs} />
+        <Reviews />
         <CTA
           title="Get Your Affordable, High-Quality Used Sofa Today!"
           desc={

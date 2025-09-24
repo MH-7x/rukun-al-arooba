@@ -14,6 +14,7 @@ import Image from "next/image";
 import CTA from "@/components/base/CTA";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Link from "next/link";
+import Reviews from "@/components/Reviews";
 
 type ProductItem = {
   id: number;
@@ -502,6 +503,7 @@ export default function AboutUs() {
           Fast pickup, fair prices, and instant payment across the city.
         </p>
       </div>
+      <Reviews />
       <CTA
         title="Contact Us Or Visit Us Today"
         desc={

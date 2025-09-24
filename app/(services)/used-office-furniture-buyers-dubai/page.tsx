@@ -9,6 +9,7 @@ import Image from "next/image";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
+import Reviews from "@/components/Reviews";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -250,6 +251,7 @@ const page = () => {
           </article>
           <ServiceAside />
         </div>
+        <Reviews />
         <FAQs Faqs={OfficeFurnitureBuyersFaqs} />
         <CTA
           title="Ready to Sell Your Used Office Furniture in Dubai?"

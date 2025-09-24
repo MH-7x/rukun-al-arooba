@@ -12,6 +12,7 @@ import CTA from "@/components/base/CTA";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
+import Reviews from "@/components/Reviews";
 
 const servicesList: {
   title: string;
@@ -1199,6 +1200,7 @@ export default function Home() {
             </li>
           </ul>
         </section>
+        <Reviews />
         <FAQs Faqs={HomeFaqs} />
         <CTA
           title="Contact Us For Used Furniture in Sharjah"

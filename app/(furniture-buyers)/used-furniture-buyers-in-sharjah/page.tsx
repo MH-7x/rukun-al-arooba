@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { APP } from "@/lib/App";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
@@ -735,6 +736,7 @@ const page = () => {
             </div>
           </div>
         </section>
+        <Reviews />
         <FAQs
           title="Frequently Asked Questions About Selling Used Furniture in Sharjah"
           Faqs={SharjahBuyersFaqs}

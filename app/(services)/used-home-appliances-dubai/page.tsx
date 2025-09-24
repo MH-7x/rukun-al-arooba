@@ -11,6 +11,7 @@ import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
 import FAQs from "@/components/base/FAQs";
 import CTA from "@/components/base/CTA";
+import Reviews from "@/components/Reviews";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -512,7 +513,9 @@ const page = () => {
 
           <ServiceAside />
         </div>
+        <Reviews />
         <FAQs Faqs={applianceFaqs} />
+
         <CTA
           title="Contact Us For Used Home Appliance in UAE"
           desc={

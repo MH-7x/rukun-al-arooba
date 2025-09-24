@@ -1,4 +1,5 @@
 import CTA from "@/components/base/CTA";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { Phone, Store } from "lucide-react";
@@ -319,6 +320,7 @@ const AbuShagaraPage = () => {
           </div>
         </div>
       </section>
+      <Reviews />
       <CTA
         title="Visit Rukun Al Arooba at Abu Shagara Used Furniture Market Today"
         desc={

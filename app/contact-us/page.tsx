@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { FileText, CheckCircle2, MessageSquare, Truck } from "lucide-react";
 import React from "react";
+import Reviews from "@/components/Reviews";
 
 // Data for each step for cleaner mapping
 const steps = [
@@ -160,6 +161,7 @@ export default function ContactForm() {
           ))}
         </div>
       </section>
+      <Reviews />
     </main>
   );
 }

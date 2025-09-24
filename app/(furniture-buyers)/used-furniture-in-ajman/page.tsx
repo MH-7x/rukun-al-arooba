@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { APP } from "@/lib/App";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
@@ -706,6 +707,7 @@ const page = () => {
             of new prices.
           </p>
         </section>
+        <Reviews />
         <FAQs Faqs={ajmanFaqs} />
         <CTA
           title="Ready to Transform Your Home? Contact Us Today!"

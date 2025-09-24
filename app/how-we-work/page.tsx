@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
@@ -347,6 +348,7 @@ const BuyingSellingProcess = () => {
             the showroom or a customer’s home — a safe and eco-friendly choice.
           </p>
         </section>
+        <Reviews />
         <FAQs Faqs={hwwFaqs} />
         <CTA
           title="Get A Free Quote From Trusted Used Furniture Dealer"

@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { APP } from "@/lib/App";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
@@ -18,7 +19,7 @@ export const metadata = MetadataTemplate({
       desc: "Rukun Al Arooba Used Furniture Abu Dhabi – 20+ years experience buying & selling quality pre-owned furniture. buy & sell second-hand sofas, beds, dining sets, and more at our Sharjah showroom.",
     },
     image: {
-      path: "/abu-shagara-used-furniture-market.jpg",
+      path: "/furniture/used-furniture-abu-dhabi.jpg",
       alt: "Used Furniture Abu Dhabi",
     },
     path: "/used-furniture-abu-dhabi",
@@ -801,6 +802,7 @@ const AbuDhabiPage = () => {
             </div>
           </div>
         </section>
+        <Reviews />
         <FAQs Faqs={UsedFurnitureFaqsAbuDhabi} />
         <CTA
           title="Ready to Buy or Sell? Get Your Free Quote Today!"

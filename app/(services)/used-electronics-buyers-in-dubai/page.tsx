@@ -12,6 +12,7 @@ import { electronicsFaqs } from "@/lib/list";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
+import Reviews from "@/components/Reviews";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -315,6 +316,7 @@ function UsedElectronicsBuyers() {
           </article>
           <ServiceAside />
         </div>
+        <Reviews />
         <FAQs Faqs={electronicsFaqs} />
         <CTA
           title="Ready to sell your Electronics"
