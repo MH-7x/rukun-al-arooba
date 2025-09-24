@@ -8,6 +8,7 @@ import Footer from "@/components/base/footer";
 import { APP } from "@/lib/App";
 import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const GraphikFont = localFont({
   src: [
@@ -80,6 +81,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );
