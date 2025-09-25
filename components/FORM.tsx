@@ -25,6 +25,7 @@ import {
   CldUploadWidget,
   CloudinaryUploadWidgetResults,
   CloudinaryUploadWidgetInfo,
+  CloudinaryUploadWidgetError,
 } from "next-cloudinary";
 import Image from "next/image";
 import { UploadCloud } from "lucide-react";
@@ -142,6 +143,9 @@ const Form = () => {
     });
     if (!req.ok) console.log("something wrong");
     const res = await req.json();
+    setImage((imgs) =>
+      imgs ? imgs.filter((img) => !img.includes(publicId)) : []
+    );
     console.log("results ", res);
   }
   return (
@@ -304,6 +308,18 @@ const Form = () => {
                       setResource(
                         results?.info as CloudinaryUploadWidgetInfo | undefined
                       );
+                    }}
+                    onError={(err: CloudinaryUploadWidgetError) => {
+                      console.log("error", err);
+                      setErrors((e) => ({
+                        ...e,
+                        files:
+                          typeof err === "object" && err && "message" in err
+                            ? (err as { message: string }).message
+                            : typeof err === "string"
+                            ? err
+                            : "Upload failed.",
+                      }));
                     }}
                     onQueuesEnd={(result, { widget }) => {
                       widget.close();
