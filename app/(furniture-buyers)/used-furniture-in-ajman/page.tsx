@@ -72,7 +72,6 @@ const page = () => {
           </h1>
           <div className="max-w-3xl mx-auto text-center text mt-5">
             <p>
-              Looking for reliable used furniture buyers in Dubai to sell your
               Seeking high-quality used furniture in Ajman? Whether you&apos;re
               furnishing a new home, upgrading your office, or selling furniture
               you no longer need, Rukun Al Arooba Used Furniture has been the
