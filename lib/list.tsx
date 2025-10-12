@@ -28,7 +28,7 @@ export const RukunAlAroobaSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
-    reviewCount: "9",
+    reviewCount: "11",
   },
   amenityFeature: [
     {
@@ -79,7 +79,8 @@ export const RukunAlAroobaSchema = {
   ],
   sameAs: [
     "https://www.google.com/maps/place/Rukun+AL+arooba+used+furniture+and+electronics+trading/@25.3377035,55.4123512,15z/data=!4m6!3m5!1s0x3e5f590ac9a2245b:0xb6338b255c468962!8m2!3d25.3377035!4d55.4123512!16s%2Fg%2F11bbr23m8s?entry=ttu",
-    // Add links to your social media profiles here if you have them
+    "https://web.facebook.com/profile.php?id=61581140562247",
+    "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
   ],
   potentialAction: {
     "@type": "SearchAction",

@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section
       id="used-furniture-in-sharjah"
-      className="w-full h-[500px] relative "
+      className="w-full h-[550px] relative "
     >
       <Image
         src={heroImage}
@@ -19,29 +19,26 @@ const HeroSection = () => {
       />
       <div
         id="content"
-        className="md:px-16 absolute top-0 left-0 w-full h-full flex items-center justify-between flex-wrap"
+        className="md:px-16 absolute bg-[#144e5a]/75 top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center"
       >
-        <div className="bg-white/80  md:p-10 py-10 px-3 md:-mt-20 mt-14 md:w-[560px] rounded-2xl">
-          <h1 className="headline text-4xl/tight font-bold">
-            <span className="border-b-4 border-[#ffdb5e]">
-              {" "}
-              Rukun Al Arooba
-            </span>{" "}
-            <span className="block blue"> Used Furniture in Sharjah</span>
-          </h1>
-          <p className="headline mt-5 ">
-            Looking for quality used furniture in Sharjah? Welcome to Rukun Al
-            Arooba Used Furniture, where over 20 years of experience meets
-            modern convenience.
-          </p>
-          <Button wtsBtn className="mt-5" size={"lg"}>
+        <h1 className="headline text-6xl/tight h-grd font-bold">
+          <span className=""> Rukun Al Arooba</span>{" "}
+          <span className="block "> Used Furniture in Sharjah</span>
+        </h1>
+        <p className="mt-7 max-w-4xl text-lg text-white">
+          Looking for quality used furniture in Sharjah? Welcome to Rukun Al
+          Arooba Used Furniture, where over 20 years of experience meets modern
+          convenience.
+        </p>
+        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+          <Button wtsBtn variant={"secondary"} className="blue" size={"lg"}>
             {" "}
             <svg
-              fill="#ffffff"
+              fill="#144e5a"
               version="1.1"
               viewBox="0 0 30.667 30.667"
               xmlSpace="preserve"
-              stroke="#ffffff"
+              stroke="#144e5a"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
@@ -59,15 +56,10 @@ const HeroSection = () => {
             </svg>{" "}
             WhatsApp Us{" "}
           </Button>
-        </div>
-        <div className="bg-white/90  drop-shadow-2xl md:mx-0 mx-auto md:h-96 h-80 rounded-full md:w-96 w-80 md:mt-64 mt-16 p-5 ">
-          <Image
-            src={"/Picture1.png"}
-            alt="Rukun Al Arooba Business Profile Screenshort"
-            width={260}
-            className="mx-auto "
-            height={260}
-          />
+          <Button variant={"link"} className="text-white" size={"lg"}>
+            {" "}
+            Contact Us{" "}
+          </Button>
         </div>
       </div>
     </section>

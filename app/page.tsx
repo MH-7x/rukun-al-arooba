@@ -396,7 +396,7 @@ export default function Home() {
                   Sell To Us <ArrowUpRight />
                 </Button>
               </Link>
-              <Link href={"/used-furniture-buyers-in-dubai"}>
+              <Link href={"/contact-us"}>
                 {" "}
                 <Button variant={"outline"}>
                   Buy From Us <ArrowUpRight />

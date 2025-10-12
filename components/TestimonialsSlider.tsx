@@ -224,10 +224,12 @@ export default function TestimonialSlider({
                   {/* User Info */}
                   <div className="flex items-center justify-between gap-4 mb-4">
                     <div className="flex items-center gap-x-3">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.name}
                         loading="lazy"
+                        width={48}
+                        height={48}
                         className="w-12 h-12 rounded-full border"
                       />
                       <div className="text-left">

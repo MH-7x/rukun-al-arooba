@@ -8,8 +8,9 @@ import Footer from "@/components/base/footer";
 import { APP } from "@/lib/App";
 import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+
 import GTM from "@/components/GTM";
+import LatestsNews from "@/components/LatestsNews";
 
 const GraphikFont = localFont({
   src: [
@@ -81,8 +82,9 @@ export default function RootLayout({
       <body className={`${GraphikFont.className} antialiased`}>
         <Navbar />
         {children}
+        <LatestsNews />
         <Footer />
-        <GoogleAnalytics />
+
         <GTM />
       </body>
     </html>

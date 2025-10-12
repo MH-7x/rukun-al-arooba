@@ -159,6 +159,12 @@ main {
 .text {
   color: #414141;
 }
+.h-grd {
+  background: linear-gradient(90deg, #fff, #ffdb5e, #ffdb5e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 /* From Uiverse.io by qhns3 */
 .bg-pattern {
