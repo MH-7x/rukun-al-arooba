@@ -6,5 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-
-
+export const createEncodedUrl = (arabicSlug: string): string => {
+  const encodedSlug = encodeURIComponent(arabicSlug);
+  return `/${encodedSlug}`;
+};

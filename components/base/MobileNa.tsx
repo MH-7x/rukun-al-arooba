@@ -3,9 +3,12 @@ import { Sidebar } from "./sidebar";
 import Image from "next/image";
 import Link from "next/link";
 import logoYel from "../../public/rukun-al-arooba-used-furniture-yellow.svg";
-const MobileNa = () => {
+const MobileNa = ({ ar }: { ar?: boolean }) => {
   return (
-    <nav className="bg-[#144E5A] relative  md:hidden md:px-0 px-3 w-full min-h-12 mt-1 flex justify-between items-center py-2">
+    <nav
+      dir="ltr"
+      className="bg-[#144E5A] relative  md:hidden md:px-0 px-3 w-full min-h-12 mt-1 flex justify-between items-center py-2"
+    >
       <Link href={"/"} id="Logo" className="h-12 w-[113px]  relative">
         <Image
           src={logoYel}
@@ -39,7 +42,7 @@ const MobileNa = () => {
           </g>
         </svg>
       </label>
-      <Sidebar />{" "}
+      <Sidebar ar={ar} />{" "}
     </nav>
   );
 };

@@ -3,14 +3,18 @@
 import { locationList, servicesList } from "@/lib/list";
 import { Plus, X } from "lucide-react";
 import Link from "next/link";
+import { navItems } from "../arabic/ArNavbar";
 
-export const Sidebar = () => {
+export const Sidebar = ({ ar }: { ar?: boolean }) => {
   const closeSidebar = () => {
     const checkbox = document.getElementById("menu-toggle") as HTMLInputElement;
     if (checkbox) checkbox.checked = false;
   };
   return (
-    <div className="sidebar scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary">
+    <div
+      dir="rtl"
+      className="sidebar scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
+    >
       {/* Close Button */}
       <label
         htmlFor="menu-toggle"
@@ -19,93 +23,113 @@ export const Sidebar = () => {
         <X size={30} />
       </label>
 
-      <ul className="w-full px-5 mt-[70px] text-lg">
-        <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
-          <Link onClick={closeSidebar} href={"/about-us"}>
-            About Us
-          </Link>
-        </li>
-        <li className="border-b border-[#144E5A]/50">
-          <input type="checkbox" id="buy-sell" className="peer hidden" />
-          <label
-            htmlFor="buy-sell"
-            className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
-          >
-            <span className="font-medium">Buy & Sell</span>
-            <Plus className="transition-transform peer-checked:rotate-45" />
-          </label>
-          <DropDown
-            list={[
-              {
-                title: "Used Furniture Buyers",
-                link: "/used-furniture-buyers-in-dubai",
-              },
-              { title: "Used Furniture Sellers", link: "#" },
-            ]}
-          />
-        </li>
-        {/* SERVICES DROPDOWN */}
-        <li className="border-b border-[#144E5A]/50">
-          <input type="checkbox" id="services-toggle" className="peer hidden" />
-          <label
-            htmlFor="services-toggle"
-            className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
-          >
-            <span className="font-medium">Services</span>
-            <Plus className="transition-transform peer-checked:rotate-45" />
-          </label>
-          <DropDown
-            list={servicesList.map((ser) => {
-              return {
-                link: ser.link,
-                title: ser.title,
-              };
-            })}
-          />
-        </li>
+      {ar ? (
+        <ul className="w-full px-5 mt-[70px] text-lg">
+          {/* OTHER LINKS */}
+          {navItems.map((item, i) => (
+            <li
+              key={i}
+              className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium"
+            >
+              <Link onClick={closeSidebar} href={item.link}>
+                {item.title}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <ul className="w-full px-5 mt-[70px] text-lg">
+          <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
+            <Link onClick={closeSidebar} href={"/about-us"}>
+              About Us
+            </Link>
+          </li>
+          <li className="border-b border-[#144E5A]/50">
+            <input type="checkbox" id="buy-sell" className="peer hidden" />
+            <label
+              htmlFor="buy-sell"
+              className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
+            >
+              <span className="font-medium">Buy & Sell</span>
+              <Plus className="transition-transform peer-checked:rotate-45" />
+            </label>
+            <DropDown
+              list={[
+                {
+                  title: "Used Furniture Buyers",
+                  link: "/used-furniture-buyers-in-dubai",
+                },
+                { title: "Used Furniture Sellers", link: "#" },
+              ]}
+            />
+          </li>
+          {/* SERVICES DROPDOWN */}
+          <li className="border-b border-[#144E5A]/50">
+            <input
+              type="checkbox"
+              id="services-toggle"
+              className="peer hidden"
+            />
+            <label
+              htmlFor="services-toggle"
+              className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
+            >
+              <span className="font-medium">Services</span>
+              <Plus className="transition-transform peer-checked:rotate-45" />
+            </label>
+            <DropDown
+              list={servicesList.map((ser) => {
+                return {
+                  link: ser.link,
+                  title: ser.title,
+                };
+              })}
+            />
+          </li>
 
-        {/* LOCATIONS DROPDOWN */}
-        <li className="border-b border-[#144E5A]/50">
-          <input
-            type="checkbox"
-            id="locations-toggle"
-            className="peer hidden"
-          />
-          <label
-            htmlFor="locations-toggle"
-            className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
-          >
-            <span className="font-medium">Locations</span>
-            <Plus className="transition-transform peer-checked:rotate-45" />
-          </label>
-          <DropDown
-            list={locationList.map((loc) => {
-              return {
-                link: loc.link,
-                title: loc.title,
-              };
-            })}
-          />
-        </li>
+          {/* LOCATIONS DROPDOWN */}
+          <li className="border-b border-[#144E5A]/50">
+            <input
+              type="checkbox"
+              id="locations-toggle"
+              className="peer hidden"
+            />
+            <label
+              htmlFor="locations-toggle"
+              className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
+            >
+              <span className="font-medium">Locations</span>
+              <Plus className="transition-transform peer-checked:rotate-45" />
+            </label>
+            <DropDown
+              list={locationList.map((loc) => {
+                return {
+                  link: loc.link,
+                  title: loc.title,
+                };
+              })}
+            />
+          </li>
 
-        {/* OTHER LINKS */}
-        <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
-          <Link onClick={closeSidebar} href={"/how-we-work"}>
-            How We Work
-          </Link>
-        </li>
-        <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
-          <Link onClick={closeSidebar} href={"/contact-us"}>
-            Contact Us
-          </Link>
-        </li>
-        <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
-          <a onClick={closeSidebar} href={"/blogs"}>
-            {" "}
-            Blogs
-          </a>
-        </li>
-      </ul>
+          {/* OTHER LINKS */}
+          <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
+            <Link onClick={closeSidebar} href={"/how-we-work"}>
+              How We Work
+            </Link>
+          </li>
+          <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
+            <Link onClick={closeSidebar} href={"/contact-us"}>
+              Contact Us
+            </Link>
+          </li>
+          <li className="border-b border-[#144E5A]/50 pl-4 py-3 font-medium">
+            <a onClick={closeSidebar} href={"/blogs"}>
+              {" "}
+              Blogs
+            </a>
+          </li>
+        </ul>
+      )}
     </div>
   );
 };

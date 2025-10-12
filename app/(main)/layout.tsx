@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/Navbar";
 import "animate.css";
 
@@ -15,17 +15,17 @@ import LatestsNews from "@/components/LatestsNews";
 const GraphikFont = localFont({
   src: [
     {
-      path: "./Graphik-Regular-Trial.woff2",
+      path: "../Graphik-Regular-Trial.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./Graphik-Medium-Trial.woff2",
+      path: "../Graphik-Medium-Trial.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./Graphik-Bold-Trial.woff2",
+      path: "../Graphik-Bold-Trial.woff2",
       weight: "700",
       style: "normal",
     },

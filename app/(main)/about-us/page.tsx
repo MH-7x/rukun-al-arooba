@@ -9,7 +9,7 @@ import {
   Sofa,
   WashingMachine,
 } from "lucide-react";
-import src from "../../public/Rukun-Al-Arooba-Used-Furniture.jpg";
+import src from "../../../public/Rukun-Al-Arooba-Used-Furniture.jpg";
 import Image from "next/image";
 import CTA from "@/components/base/CTA";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
