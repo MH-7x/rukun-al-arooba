@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type BlogCardProps = {
   image: string;
   category: string;
@@ -19,9 +21,11 @@ export default function BlogCard({
     <article className="">
       {/* Image + category tag */}
       <div className="relative">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={400}
+          height={240}
           className="h-60 w-full object-cover rounded-2xl"
           loading="lazy"
         />

@@ -21,11 +21,11 @@ const HeroSection = () => {
         id="content"
         className="md:px-16 absolute bg-[#144e5a]/75 top-0 left-0 w-full h-full flex items-center justify-center flex-col text-center"
       >
-        <h1 className="headline text-6xl/tight h-grd font-bold">
+        <h1 className="headline md:text-6xl/tight text-4xl/tight h-grd font-bold">
           <span className=""> Rukun Al Arooba</span>{" "}
           <span className="block "> Used Furniture in Sharjah</span>
         </h1>
-        <p className="mt-7 max-w-4xl text-lg text-white">
+        <p className="mt-7 max-w-4xl md:text-lg text-white">
           Looking for quality used furniture in Sharjah? Welcome to Rukun Al
           Arooba Used Furniture, where over 20 years of experience meets modern
           convenience.

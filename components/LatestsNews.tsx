@@ -1,4 +1,3 @@
-import { CalendarCheck2 } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
@@ -24,7 +23,7 @@ const LatestsNews = () => {
       <div className="mt-16 ">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
           <BlogCard
-            image="Background-with-text.jpg"
+            image="/Background-with-text.jpg"
             category="Commercial Moving"
             title="Load Boards Show Flat Demand & Higher Rates in Dubai Market"
             date="April 6, 2021"
@@ -32,7 +31,7 @@ const LatestsNews = () => {
             href="#"
           />
           <BlogCard
-            image="Background-with-text.jpg"
+            image="/Background-with-text.jpg"
             category="Commercial Moving"
             title="Load Boards Show Flat Demand & Higher Rates in Dubai Market"
             date="April 6, 2021"
@@ -40,7 +39,7 @@ const LatestsNews = () => {
             href="#"
           />
           <BlogCard
-            image="Background-with-text.jpg"
+            image="/Background-with-text.jpg"
             category="Commercial Moving"
             title="Load Boards Show Flat Demand & Higher Rates in Dubai Market"
             date="April 6, 2021"
