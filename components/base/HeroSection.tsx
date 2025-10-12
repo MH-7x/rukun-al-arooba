@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import heroImage from "../../public/used-furniture-in-sharjah-b.jpg";
+
 const HeroSection = () => {
   return (
     <section
@@ -28,7 +29,7 @@ const HeroSection = () => {
         <p className="mt-7 max-w-4xl md:text-lg text-white">
           Looking for quality used furniture in Sharjah? Welcome to Rukun Al
           Arooba Used Furniture, where over 20 years of experience meets modern
-          convenience.
+          convenience.{" "}
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-4">
           <Button wtsBtn variant={"secondary"} className="blue" size={"lg"}>
