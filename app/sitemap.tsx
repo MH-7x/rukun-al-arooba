@@ -101,6 +101,12 @@ const pages: MetadataRoute.Sitemap = [
     priority: 0.9,
     images: ["/images/used-sofa-for-sale.jpg"],
   },
+  {
+    url: `/${decodeURIComponent("أثاث-مستعمل")}`,
+    changeFrequency: "monthly",
+    priority: 0.9,
+    images: ["/ar/used-furniture-ar.jpg"],
+  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
