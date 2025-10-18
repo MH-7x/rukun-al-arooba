@@ -39,6 +39,7 @@ import GTM from "@/components/GTM";
 import ArNavbar from "@/components/arabic/ArNavbar";
 import Image from "next/image";
 import { createEncodedUrl } from "@/lib/utils";
+import WtChatBox from "@/components/WtChatBox";
 
 const NotoSansArabic = localFont({
   src: [
@@ -110,6 +111,7 @@ export default function RootLayout({
       <body className={`${NotoSansArabic.className} antialiased`}>
         <ArNavbar />
         {children}
+        <WtChatBox />
         <footer className="bg-gray-100">
           <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="flex justify-center ">

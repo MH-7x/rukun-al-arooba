@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       id="used-furniture-in-sharjah"
-      className="w-full h-[550px] relative "
+      className="w-full md:h-[550px] h-[500px] relative "
     >
       <Image
         src={heroImage}
@@ -26,12 +26,12 @@ const HeroSection = () => {
           <span className=""> Rukun Al Arooba</span>{" "}
           <span className="block "> Used Furniture in Sharjah</span>
         </h1>
-        <p className="mt-7 max-w-4xl md:text-lg text-white">
+        <p className="mt-7 max-w-4xl md:text-lg text-white px-3">
           Looking for quality used furniture in Sharjah? Welcome to Rukun Al
           Arooba Used Furniture, where over 20 years of experience meets modern
           convenience.{" "}
         </p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+        <div className="mt-6 flex  gap-4">
           <Button wtsBtn variant={"secondary"} className="blue" size={"lg"}>
             {" "}
             <svg
@@ -57,7 +57,7 @@ const HeroSection = () => {
             </svg>{" "}
             WhatsApp Us{" "}
           </Button>
-          <Button variant={"link"} className="text-white" size={"lg"}>
+          <Button variant={"link"} className="text-white border " size={"lg"}>
             {" "}
             Contact Us{" "}
           </Button>

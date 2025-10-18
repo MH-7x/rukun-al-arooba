@@ -11,6 +11,7 @@ import { RukunAlAroobaSchema } from "@/lib/list";
 
 import GTM from "@/components/GTM";
 import LatestsNews from "@/components/LatestsNews";
+import WtChatBox from "@/components/WtChatBox";
 
 const GraphikFont = localFont({
   src: [
@@ -82,6 +83,7 @@ export default function RootLayout({
       <body className={`${GraphikFont.className} antialiased`}>
         <Navbar />
         {children}
+        <WtChatBox />
         <LatestsNews />
         <Footer />
 

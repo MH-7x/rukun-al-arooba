@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
 export default function RuknAlorobaPage() {
   return (
     <main dir="rtl" lang="ar" className="min-h-screen bg-gray-50 py-10">
-      <div className="max-w-6xl mx-auto bg-white py-8 px-4 md:p-12 rounded-2xl shadow-lg">
+      <div className="max-w-6xl mx-auto bg-white py-8 px-3 md:p-12 rounded-2xl shadow-lg">
         {/* Hero */}
         <header className="mb-8">
           <h1 className="headline text-2xl md:text-4xl font-extrabold border-b-4 pb-4 border-[#144e5a]">
