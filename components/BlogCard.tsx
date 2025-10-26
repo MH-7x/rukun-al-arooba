@@ -1,3 +1,4 @@
+import { User2 } from "lucide-react";
 import Image from "next/image";
 
 type BlogCardProps = {
@@ -36,30 +37,36 @@ export default function BlogCard({
 
       {/* Body */}
       <div className="px-3 pt-6 pb-4 ">
-        <h3 className="md:text-xl text-lg font-medium line-clamp-2 leading-6 blue">
+        <h3 className=" text-[20px] font-medium line-clamp-2 leading-6 blue">
           <a href={href} className="hover:underline">
             {title}
           </a>
         </h3>
 
         {/* Date */}
-        <div className="mt-3 flex items-center gap-2 text-sm text-slate-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-[18px] w-[18px] shrink-0"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.6"
-          >
-            <rect x="3" y="4" width="18" height="18" rx="2" />
-            <path d="M16 2v4M8 2v4M3 10h18" />
-          </svg>
-          <span>{date}</span>
+        <div className="flex items-center justify-between mt-5">
+          <div className=" flex items-center gap-2 text-xs text-slate-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-[18px] w-[18px] shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.6"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <path d="M16 2v4M8 2v4M3 10h18" />
+            </svg>
+            <span>{date}</span>
+          </div>
+          <div className=" flex items-center gap-2 text-xs text-slate-500">
+            <User2 className="h-[18px] w-[18px] shrink-0" />
+            <span>Mashal Huraira</span>
+          </div>
         </div>
 
         {/* Excerpt */}
-        <p className="mt-3 text md:text-base text-sm line-clamp-2">{excerpt}</p>
+        <p className="mt-3 text text-sm line-clamp-2">{excerpt}</p>
 
         {/* Read more */}
         <a

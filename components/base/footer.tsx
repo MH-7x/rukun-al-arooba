@@ -10,6 +10,37 @@ import {
   WhatsAppIcon,
   GoogleBusinessIcon,
 } from "../Icons";
+import { createEncodedUrl } from "@/lib/utils";
+const navItems = [
+  {
+    title: "اثاث مستعمل",
+    link: createEncodedUrl("أثاث-مستعمل"),
+  },
+  {
+    title: "اثاث مستعمل الشارقة",
+    link: createEncodedUrl("أثاث-مستعمل-الشارقة"),
+  },
+  {
+    title: "اثاث مستعمل دبي",
+    link: createEncodedUrl("اثاث-مستعمل-دبي"),
+  },
+  {
+    title: "اثاث مستعمل ابوظبي",
+    link: createEncodedUrl("اثاث-مستعمل-ابوظبي"),
+  },
+  {
+    title: "اثاث مستعمل عجمان",
+    link: createEncodedUrl("اثاث-مستعمل-عجمان"),
+  },
+  {
+    title: "اثاث مستعمل العين",
+    link: createEncodedUrl("اثاث-مستعمل-العين"),
+  },
+  {
+    title: "اثاث مستعمل راس الخيمة",
+    link: createEncodedUrl("اثاث-مستعمل-راس-الخيمة"),
+  },
+];
 const Footer = () => {
   return (
     <>
@@ -92,10 +123,17 @@ const Footer = () => {
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.8696529263066!2d55.39297417447848!3d25.3421546258158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b39dde3733b%3A0x70627f406a04df1e!2sRukun%20AL%20arooba%20used%20furniture%20and%20electronics%20trading!5e0!3m2!1sen!2s!4v1757767922306!5m2!1sen!2s"
                   width="280"
                   height="200"
-                  className="w-full "
+                  className="w-full bg-gray-300 mb-2"
                   allowFullScreen
                   loading="lazy"
                 ></iframe>
+                <ul className="flex flex-wrap gap-x-3 text-sm flex-row ">
+                  {navItems.map((item, i) => (
+                    <li key={i}>
+                      <Link href={item.link}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

@@ -128,6 +128,24 @@ export const Sidebar = ({ ar }: { ar?: boolean }) => {
               Blogs
             </a>
           </li>
+          <li className="border-b border-[#144E5A]/50">
+            <input type="checkbox" id="ar-toggle" className="peer hidden" />
+            <label
+              htmlFor="ar-toggle"
+              className="flex items-center justify-between w-full pl-4 py-3 cursor-pointer"
+            >
+              <span className="font-medium">اثاث مستعمل</span>
+              <Plus className="transition-transform peer-checked:rotate-45" />
+            </label>
+            <DropDown
+              list={navItems.map((loc) => {
+                return {
+                  link: loc.link,
+                  title: loc.title,
+                };
+              })}
+            />
+          </li>
         </ul>
       )}
     </div>

@@ -10,7 +10,7 @@ import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
 
 import GTM from "@/components/GTM";
-import LatestsNews from "@/components/LatestsNews";
+
 import WtChatBox from "@/components/WtChatBox";
 
 const GraphikFont = localFont({
@@ -84,7 +84,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <WtChatBox />
-        <LatestsNews />
+
         <Footer />
 
         <GTM />

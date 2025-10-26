@@ -10,6 +10,7 @@ import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
 import Reviews from "@/components/Reviews";
+import LatestsNews from "@/components/LatestsNews";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -275,6 +276,7 @@ const UsedRefrigeratorPage = () => {
           }
         />
       </main>
+      <LatestsNews />
     </>
   );
 };

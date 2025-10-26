@@ -12,6 +12,7 @@ import Script from "next/script";
 import FAQs from "@/components/base/FAQs";
 import CTA from "@/components/base/CTA";
 import Reviews from "@/components/Reviews";
+import LatestsNews from "@/components/LatestsNews";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -529,6 +530,7 @@ const page = () => {
           }
         />
       </main>
+      <LatestsNews />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import LatestsNews from "@/components/LatestsNews";
 import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
@@ -732,6 +733,7 @@ const UsedFurnitureBuyersDubai = () => {
           }
         />
       </main>
+      <LatestsNews />
     </>
   );
 };

@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { locationList, servicesList } from "@/lib/list";
 import Link from "next/link";
+import { navItems } from "../arabic/ArNavbar";
 
 function ListItem({
   title,
@@ -145,6 +146,24 @@ const DesktopNav = () => {
             >
               <Link href="/">Blogs</Link>
             </NavigationMenuLink>
+          </NavigationMenuItem>
+          <NavigationMenuItem className="text-[#353535]">
+            <NavigationMenuTrigger>اثاث مستعمل </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="grid w-[250px] grid-cols-2 gap-1">
+                {navItems.map((service) => (
+                  <li key={service.title}>
+                    <NavigationMenuLink asChild>
+                      <Link href={service.link}>
+                        <div className="text-sm leading-none font-medium">
+                          {service.title}
+                        </div>
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                ))}
+              </ul>
+            </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>

@@ -13,6 +13,7 @@ import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import Script from "next/script";
 import Reviews from "@/components/Reviews";
+import LatestsNews from "@/components/LatestsNews";
 
 const servicesList: {
   title: string;
@@ -638,7 +639,7 @@ export default function Home() {
               key={service.title}
               className=" shadow-2xl rounded-2xl shadow-[#144e5a]/5 md:p-10 py-10 px-3 relative overflow-hidden"
             >
-              <h3 className="blue text-3xl font-bold">
+              <h3 className="blue md:text-3xl text-[27px] font-bold">
                 <Link href={service.link}>{service.title} </Link>
               </h3>
               <div className="mt-5 text text-base/tight flex flex-col gap-y-1">
@@ -1216,6 +1217,7 @@ export default function Home() {
           }
         />
       </main>
+      <LatestsNews />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
+import LatestsNews from "@/components/LatestsNews";
 import Reviews from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { APP } from "@/lib/App";
@@ -722,6 +723,7 @@ const page = () => {
           }
         />
       </main>
+      <LatestsNews />
     </>
   );
 };
