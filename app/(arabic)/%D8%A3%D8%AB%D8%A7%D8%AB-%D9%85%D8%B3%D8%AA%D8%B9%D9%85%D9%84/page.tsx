@@ -1,4 +1,5 @@
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { createEncodedUrl } from "@/lib/utils";
 
 import Image from "next/image";
 import React from "react";
@@ -328,28 +329,52 @@ export default function RuknAlorobaPage() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-6">
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("أثاث-مستعمل-الشارقة")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في الشارقة - مقرنا الرئيسي
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("اثاث-مستعمل-دبي")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في دبي - توصيل سريع
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("اثاث-مستعمل-ابوظبي")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في أبوظبي ومصفح
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("اثاث-مستعمل-عجمان")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في عجمان
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("اثاث-مستعمل-العين")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في العين
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("اثاث-مستعمل-راس-الخيمة")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في رأس الخيمة
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("أثاث-مستعمل")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في الفجيرة
           </a>
-          <a className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md">
+          <a
+            href={createEncodedUrl("أثاث-مستعمل")}
+            className="city-link block text-center bg-[#144e5a] text-white py-3 rounded-md"
+          >
             اثاث مستعمل في أم القيوين
           </a>
         </div>

@@ -122,14 +122,21 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.9,
     images: ["/ar/used-furniture-ar.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-10-31",
   },
   {
     url: `/${decodeURIComponent("أثاث-مستعمل-الشارقة")}`,
     changeFrequency: "monthly",
     priority: 0.9,
     images: ["/ar/used-furniture-sharjah-ar.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-10-31",
+  },
+  {
+    url: `/${decodeURIComponent("اثاث-مستعمل-دبي")}`,
+    changeFrequency: "monthly",
+    priority: 0.9,
+    images: ["/ar/used-furniture-dubai-ar.jpg"],
+    lastModified: "2025-10-31",
   },
 ];
 
