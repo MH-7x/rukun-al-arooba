@@ -226,3 +226,31 @@ main {
     transparent 100%
   );
 }
+
+#content p {
+  @apply mb-2;
+}
+
+#content h2 {
+  @apply text-2xl my-5;
+}
+
+#content h3 {
+  @apply text-lg my-2;
+}
+
+#content ul {
+  @apply list-disc ml-5;
+}
+
+#content ol {
+  @apply list-decimal mr-3;
+}
+
+#content a {
+  @apply text-[#144e5a] underline underline;
+}
+
+#content img {
+  @apply my-6 rounded-lg;
+}

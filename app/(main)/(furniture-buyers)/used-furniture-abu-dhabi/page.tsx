@@ -368,8 +368,8 @@ const AbuDhabiPage = () => {
             fill
             loading="eager"
           />
-          <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-white/50 to-white flex items-end justify-center px-32 pb-5">
-            <h3 className="text-2xl font-medium text-shadow-2xs underline underline-offset-2 text-center blue">
+          <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent via-white/50 to-white flex items-end justify-center md:px-32 px-3 pb-5">
+            <h3 className="md:text-2xl text-base w-full font-medium text-shadow-2xs underline underline-offset-2 text-center blue">
               Rukun Al Arooba: Abu Dhabi&lsquo;s Trusted Partner for Buying and
               Selling Quality Used Furniture. Fair Prices, a Transparent
               Process, and Exceptional Service Since 2018.

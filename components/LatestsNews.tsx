@@ -2,27 +2,46 @@ import Link from "next/link";
 import React from "react";
 import { Button } from "./ui/button";
 import BlogCard from "./BlogCard";
-const blogsData = [
-  {
-    id: 1,
-    category: "Used Furniture",
-    title: "Why Buying Used Furniture in UAE Is a Smart Choice",
-    body: "Discover how purchasing second-hand furniture can save you money while helping the environment. Learn where to find quality used furniture across Dubai, Sharjah, and Ajman.",
-  },
-  {
-    id: 2,
-    category: "Sustainability",
-    title: "Eco-Friendly Living: The Rise of Pre-Owned Furniture in Dubai",
-    body: "With sustainability becoming a lifestyle, residents in the UAE are turning to used furniture stores to reduce waste and embrace eco-conscious home décor.",
-  },
-  {
-    id: 3,
-    category: "Home Décor",
-    title: "Top Tips for Styling Your Home with Used Furniture",
-    body: "Used furniture doesn’t mean outdated! Explore creative ways to mix and match pre-owned pieces to give your home a modern and luxurious look.",
-  },
-];
-const LatestsNews = () => {
+import { MainForCard } from "@/types/blog";
+
+let errorMessage: string;
+
+async function getBlogs() {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/blog?limit=3`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        cache: "no-store",
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch blogs");
+    }
+    const data: MainForCard = await res.json();
+    if (!data.success) {
+      errorMessage = data.message;
+    }
+
+    return data.data;
+  } catch (error) {
+    if (error instanceof Error) {
+      errorMessage = error.message;
+      console.log("Failed To Get Blogs: ", Error);
+    }
+
+    errorMessage = "An unknown error occurred.";
+    console.log("Server Error: ", Error);
+  }
+}
+
+const LatestsNews = async () => {
+  const blogsData = await getBlogs();
+
   return (
     <section className="md:w-11/12 mx-auto  md:px-0 px-3 mb-10">
       <div className="flex items-end justify-between">
@@ -41,17 +60,32 @@ const LatestsNews = () => {
       </div>
       <div className="mt-16 ">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-          {blogsData.map((blog) => (
-            <BlogCard
-              key={blog.id}
-              image="/Background-with-text.jpg"
-              category={blog.category}
-              title={blog.title}
-              date="April 6, 2021"
-              excerpt={blog.body}
-              href="#"
-            />
-          ))}
+          {blogsData ? (
+            blogsData.map((blog) => (
+              <BlogCard
+                key={blog._id}
+                image={blog.FeaturedImage || "/Background-with-text.jpg"}
+                category={blog.category.name}
+                title={blog.title}
+                date={new Date(blog.createdAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+                author={"Mashal Huraira"}
+                excerpt={blog.caption}
+                href={`/blogs${blog.slug}`}
+              />
+            ))
+          ) : (
+            <>
+              <div className="col-span-3">
+                <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
+                  Error: {errorMessage}
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>

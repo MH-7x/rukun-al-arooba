@@ -8,6 +8,8 @@ type BlogCardProps = {
   date: string; // e.g. "April 6, 2021"
   excerpt: string;
   href?: string;
+  imgSrc?: string;
+  author: string;
 };
 
 export default function BlogCard({
@@ -17,6 +19,8 @@ export default function BlogCard({
   date,
   excerpt,
   href = "#",
+  author,
+  imgSrc,
 }: BlogCardProps) {
   return (
     <article className="">
@@ -61,7 +65,7 @@ export default function BlogCard({
           </div>
           <div className=" flex items-center gap-2 text-xs text-slate-500">
             <User2 className="h-[18px] w-[18px] shrink-0" />
-            <span>Mashal Huraira</span>
+            <span>{author}</span>
           </div>
         </div>
 

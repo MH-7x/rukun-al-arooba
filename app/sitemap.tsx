@@ -6,7 +6,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/modern-furniture-showroom-sharjah.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-12-09",
   },
   {
     url: "/about-us",
@@ -43,7 +43,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.8,
     images: ["/furniture/used-furniture-abu-dhabi.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-12-09",
   },
   {
     url: "/used-furniture-buyers-in-dubai",
@@ -116,6 +116,13 @@ const pages: MetadataRoute.Sitemap = [
     priority: 0.9,
     images: ["/images/used-sofa-for-sale.jpg"],
     lastModified: "2025-10-26",
+  },
+  {
+    url: "/blogs",
+    changeFrequency: "weekly",
+    priority: 0.8,
+    images: ["/images/used-sofa-for-sale.jpg"],
+    lastModified: "2025-12-09",
   },
   {
     url: `/${decodeURIComponent("أثاث-مستعمل")}`,

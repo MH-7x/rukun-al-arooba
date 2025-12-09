@@ -12,7 +12,7 @@ export const Sidebar = ({ ar }: { ar?: boolean }) => {
   };
   return (
     <div
-      dir="rtl"
+      dir={`${ar ? "rtl" : "ltr"}`}
       className="sidebar scrollbar-thin scrollbar-thumb-accent scrollbar-track-primary"
     >
       {/* Close Button */}

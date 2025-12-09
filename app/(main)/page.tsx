@@ -1,7 +1,16 @@
 import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown, ArrowUpRight, CheckCircleIcon, Phone } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  CheckCircleIcon,
+  ClockFadingIcon,
+  Medal,
+  Phone,
+  ShieldCheck,
+  UserRoundCheck,
+} from "lucide-react";
 import Link from "next/link";
 import FAQs from "@/components/base/FAQs";
 import { HomeFaqs } from "@/lib/list";
@@ -275,25 +284,55 @@ export default function Home() {
 
         <BuySellSection />
 
+        {/* 
+              
+             
+              */}
+
         <section
-          className="max-w-6xl  shadow-2xl rounded-2xl shadow-[#144e5a]/5 mx-auto md:p-10 px-3 mt-36 text relative"
+          className="max-w-6xl grid md:grid-cols-2 grid-cols-1 gap-16  shadow-2xl rounded-2xl shadow-[#144e5a]/5 mx-auto md:p-10 px-3 mt-36 text relative"
           id="about-company"
         >
-          <div className="grid md:grid-cols-2 gap-5">
-            <p>
+          <div
+            id="states"
+            className="grid grid-cols-2 md:gap-x-5 gap-5 items-center justify-center md:px-12"
+          >
+            <div className="p-5 rounded-2xl bg-[#f7f7f7] items-center justify-center flex flex-col text-center">
+              <h4 className="blue flex gap-x-2 items-center">
+                <UserRoundCheck className="size-6" />{" "}
+                <span className="md:text-2xl text-xl font-bold">20+</span>
+              </h4>
+              <p className="mt-2 md:text-base text-sm">Years Experience</p>
+            </div>
+            <div className="p-5 rounded-2xl bg-[#f7f7f7] items-center justify-center flex flex-col text-center">
+              <h4 className="blue flex gap-x-2 items-center">
+                <ShieldCheck className="size-6" />{" "}
+                <span className="md:text-2xl text-xl font-bold">2018</span>
+              </h4>
+              <p className="mt-2 md:text-base text-sm">Gov. Register</p>
+            </div>
+            <div className="p-5 rounded-2xl bg-[#f7f7f7] items-center justify-center flex flex-col text-center">
+              <h4 className="blue flex gap-x-2 items-center">
+                <ClockFadingIcon className="size-6" />{" "}
+                <span className="md:text-2xl text-xl font-bold">5-10</span>
+              </h4>
+              <p className="mt-2 md:text-base text-sm">Mins Response</p>
+            </div>
+            <div className="p-5 rounded-2xl bg-[#f7f7f7] items-center justify-center flex flex-col text-center">
+              <h4 className="blue flex gap-x-2 items-center">
+                <Medal className="size-6" />{" "}
+                <span className="md:text-2xl text-xl font-bold">30</span>
+              </h4>
+              <p className="mt-2 md:text-base text-sm">Days Warranty</p>
+            </div>
+          </div>
+          <div id="content ">
+            <p className="text-[15px] mb-2">
               We&lsquo;re located on Al Estiqlal Street in central Sharjah.
               Unlike many online listings, we are a government-registered
-              business with a physical showroom{" "}
-              <Link
-                className="
-              border-b border-[#c07d53]"
-                href={"/"}
-              >
-                you can visit any day
-              </Link>
-              .
+              business with a physical showroom
             </p>
-            <p>
+            <p className="text-[15px] mb-2">
               Whether you want to buy used furniture in Sharjah at unbeatable
               prices or{" "}
               <Link
@@ -305,43 +344,21 @@ export default function Home() {
               , we guarantee a response within 5-10 minutes and same-day service
               for all Sharjah residents.
             </p>
+            <p className="text-[15px] mb-2">
+              Unlike freelance dealers and online-only platforms, we are
+              committed to quality and transparency as{" "}
+              <Link
+                className="underline underline-offset-2"
+                href={"/used-furniture-buyers-in-dubai"}
+              >
+                second-hand furniture buyers in Sharjah.
+              </Link>
+            </p>
+            <Button className="mt-3" wtsBtn>
+              {" "}
+              Sell Your Furniture Quickly
+            </Button>
           </div>
-          <p className="md:text-center md:px-48 mt-5">
-            Unlike freelance dealers and online-only platforms, we are committed
-            to quality and transparency as{" "}
-            <Link
-              className="underline underline-offset-2"
-              href={"/used-furniture-buyers-in-dubai"}
-            >
-              second-hand furniture buyers in Sharjah.
-            </Link>{" "}
-          </p>
-          <dl className="grid w-full gap-8 mx-auto blue sm:grid-cols-4 mt-10">
-            <div className="flex flex-col items-center justify-center pb-3 border-b-2 border-[#ffdb5e]">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">20+</dt>
-              <dd className="font-light text-gray-500 dark:text-gray-400">
-                Industry Experience
-              </dd>
-            </div>
-            <div className="flex flex-col items-center justify-center pb-3 border-b-2 border-[#ffdb5e]">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">2018</dt>
-              <dd className="font-light text-gray-500 dark:text-gray-400">
-                Gov. Registered
-              </dd>
-            </div>
-            <div className="flex flex-col items-center justify-center pb-3 border-b-2 border-[#ffdb5e]">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">5-10</dt>
-              <dd className="font-light text-gray-500 dark:text-gray-400">
-                Minutes Response
-              </dd>
-            </div>
-            <div className="flex flex-col items-center justify-center pb-3 border-b-2 border-[#ffdb5e]">
-              <dt className="mb-2 text-3xl md:text-4xl font-extrabold">30</dt>
-              <dd className="font-light text-gray-500 dark:text-gray-400">
-                Days Warranty
-              </dd>
-            </div>
-          </dl>
         </section>
 
         <section

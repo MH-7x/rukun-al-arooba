@@ -10,6 +10,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { MainForCard } from "@/types/blog";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -25,53 +26,55 @@ export const metadata = MetadataTemplate({
   },
 });
 
-const blogsData = [
-  {
-    id: 1,
-    category: "Used Furniture",
-    title: "Why Buying Used Furniture in UAE Is a Smart Choice",
-    body: "Discover how purchasing second-hand furniture can save you money while helping the environment. Learn where to find quality used furniture across Dubai, Sharjah, and Ajman.",
-  },
-  {
-    id: 2,
-    category: "Sustainability",
-    title: "Eco-Friendly Living: The Rise of Pre-Owned Furniture in Dubai",
-    body: "With sustainability becoming a lifestyle, residents in the UAE are turning to used furniture stores to reduce waste and embrace eco-conscious home décor.",
-  },
-  {
-    id: 3,
-    category: "Home Décor",
-    title: "Top Tips for Styling Your Home with Used Furniture",
-    body: "Used furniture doesn’t mean outdated! Explore creative ways to mix and match pre-owned pieces to give your home a modern and luxurious look.",
-  },
-  {
-    id: 4,
-    category: "Market Trends",
-    title: "The Growing Market for Used Furniture in Sharjah",
-    body: "The used furniture industry in Sharjah is booming, with local dealers offering affordable options for apartments, offices, and villas across the city.",
-  },
-  {
-    id: 5,
-    category: "Furniture Care",
-    title: "How to Inspect and Maintain Second-Hand Furniture",
-    body: "Before buying, always check for quality and durability. Here’s a quick guide to cleaning, polishing, and maintaining your pre-owned furniture to keep it looking new.",
-  },
-  {
-    id: 6,
-    category: "Buying Guide",
-    title: "Where to Buy the Best Used Furniture in the UAE",
-    body: "From Dubai’s Al Quoz to Sharjah’s Al Estiqlal Street, explore the top used furniture stores offering high-quality items at unbeatable prices.",
-  },
-];
+let errorMessage: string;
 
-const BlogsPage = async () => {
+async function getBlogs(page = 1) {
+  try {
+    const res = await fetch(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/blog?page=${page}&limit=6`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        cache: "no-store",
+      }
+    );
+
+    if (!res.ok) {
+      throw new Error("Failed to fetch blogs");
+    }
+
+    const data: MainForCard = await res.json();
+    if (!data.success) {
+      errorMessage = data.message;
+    }
+
+    return data;
+  } catch (error) {
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+    errorMessage = "An unknown error occurred.";
+  }
+}
+
+const BlogsPage = async ({
+  searchParams,
+}: {
+  searchParams: Promise<{ page: string }>;
+}) => {
+  const page = Number((await searchParams).page) || 1;
+
+  const blogsData = await getBlogs(page);
+  const pagination = blogsData?.pagination;
+
   return (
     <main>
       <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
         <div className="grid-background" />
         <h1 className="md:text-4xl/tight text-3xl blue font-bold text-center">
           <span className="headline border-b-4 border-[#ffdb5e]">
-            {" "}
             Our Blogs
           </span>
           <br className="md:block" /> Rukun Al Arooba Used Furniture
@@ -84,45 +87,78 @@ const BlogsPage = async () => {
           </p>
         </div>
       </section>
+
       <div className="mt-16 max-w-7xl mx-auto px-3 md:px-0 mb-10">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-          {blogsData.map((blog) => (
-            <BlogCard
-              key={blog.id}
-              image="/Background-with-text.jpg"
-              category={blog.category}
-              title={blog.title}
-              date="April 6, 2021"
-              excerpt={blog.body}
-              href="#"
-            />
-          ))}
+          {blogsData ? (
+            blogsData.data &&
+            blogsData.data.map((blog) => (
+              <BlogCard
+                key={blog._id}
+                image={blog.FeaturedImage || "/Background-with-text.jpg"}
+                category={blog.category.name}
+                title={blog.title}
+                date={new Date(blog.createdAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })}
+                author={"Mashal Huraira"}
+                excerpt={blog.caption}
+                href={`/blogs${blog.slug}`}
+              />
+            ))
+          ) : (
+            <div className="col-span-3">
+              <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
+                Error: {errorMessage}
+              </p>
+            </div>
+          )}
         </div>
       </div>
-      <Pagination className="mb-16">
-        <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious href="#" />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#" isActive>
-              2
-            </PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationLink href="#">3</PaginationLink>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationNext href="#" />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
+
+      {pagination && pagination.totalPages > 1 && (
+        <Pagination className="mb-16">
+          <PaginationContent>
+            {/* Previous Button */}
+            <PaginationItem>
+              <PaginationPrevious
+                href={`?page=${Math.max(1, pagination.page - 1)}`}
+                aria-disabled={pagination.page === 1}
+              />
+            </PaginationItem>
+
+            {/* Page Numbers */}
+            {Array.from({ length: pagination.totalPages }, (_, i) => i + 1).map(
+              (p) => (
+                <PaginationItem key={p}>
+                  <PaginationLink
+                    href={`?page=${p}`}
+                    isActive={p === pagination.page}
+                  >
+                    {p}
+                  </PaginationLink>
+                </PaginationItem>
+              )
+            )}
+
+            {/* Ellipsis (if needed) */}
+            {pagination.totalPages > 6 && <PaginationEllipsis />}
+
+            {/* Next Button */}
+            <PaginationItem>
+              <PaginationNext
+                href={`?page=${Math.min(
+                  pagination.totalPages,
+                  pagination.page + 1
+                )}`}
+                aria-disabled={pagination.page === pagination.totalPages}
+              />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
+      )}
     </main>
   );
 };
