@@ -206,7 +206,7 @@ const SingleBlogPage = async ({
           <>
             <div
               id="featured-image"
-              className="mb-16 bg-gray-100 rounded-2xl max-w-3xl mx-auto h-[420px] relative overflow-hidden"
+              className="mb-16 bg-gray-100 rounded-2xl max-w-3xl md:mx-auto mx-3 md:h-[420px] h-80 relative overflow-hidden"
             >
               <Image
                 alt={blog.title}
@@ -220,7 +220,7 @@ const SingleBlogPage = async ({
             <section
               id="content"
               dangerouslySetInnerHTML={{ __html: blog.content }}
-              className="max-w-3xl mx-auto text mb-16"
+              className="max-w-3xl md:mx-auto mx-3 text mb-16"
             ></section>
             <LatestsNews />
           </>
