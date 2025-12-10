@@ -145,6 +145,13 @@ const pages: MetadataRoute.Sitemap = [
     images: ["/ar/used-furniture-dubai-ar.jpg"],
     lastModified: "2025-10-31",
   },
+  {
+    url: `/${decodeURIComponent("اثاث-مستعمل-العين")}`,
+    changeFrequency: "monthly",
+    priority: 0.9,
+    images: ["/ar/used-furniture-al-ain-ar.jpg"],
+    lastModified: "2025-12-10",
+  },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

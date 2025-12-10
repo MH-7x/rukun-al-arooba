@@ -28,7 +28,7 @@ export const RukunAlAroobaSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.8",
-    reviewCount: "11",
+    reviewCount: "13",
   },
   amenityFeature: [
     {
