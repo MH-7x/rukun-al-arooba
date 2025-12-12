@@ -136,12 +136,18 @@ export default function UsedFurnitureAlAin() {
                 توصيل سريعة وفحص دقيق لكل قطعة.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="blue-bg text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition shadow-lg flex items-center justify-center gap-2">
-                  <Phone size={20} /> اتصل بنا الآن
-                </button>
-                <button className="pri-bg text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition shadow-lg">
-                  تواصل عبر واتساب
-                </button>
+                <Link href={`tel:+971556461731`}>
+                  <button className="blue-bg text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition shadow-lg flex items-center justify-center gap-2">
+                    <Phone size={20} /> اتصل بنا الآن
+                  </button>
+                </Link>
+                <Link
+                  href={`https://wa.me/+971556461731?text=I%20Contact%20You%20For%20Used%20Furniture`}
+                >
+                  <button className="pri-bg text-white px-8 py-4 rounded-lg font-bold text-lg hover:opacity-90 transition shadow-lg">
+                    تواصل عبر واتساب
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

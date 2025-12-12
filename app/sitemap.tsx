@@ -5,8 +5,8 @@ const pages: MetadataRoute.Sitemap = [
     url: "/",
     changeFrequency: "daily",
     priority: 1.0,
-    images: ["/modern-furniture-showroom-sharjah.jpg"],
-    lastModified: "2025-12-09",
+    images: ["/used-furniture-in-sharjah-b.jpg"],
+    lastModified: "2025-12-12",
   },
   {
     url: "/about-us",
@@ -150,7 +150,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.9,
     images: ["/ar/used-furniture-al-ain-ar.jpg"],
-    lastModified: "2025-12-10",
+    lastModified: "2025-12-12",
   },
 ];
 

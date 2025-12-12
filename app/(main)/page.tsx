@@ -260,7 +260,7 @@ export const metadata = MetadataTemplate({
       desc: "Buy or sell used furniture in Sharjah at Rukun Al Arooba. With 20+ years of trusted service, we offer quality pieces, easy returns, and fast support 5-10 min",
     },
     image: {
-      path: "/modern-furniture-showroom-sharjah.jpg",
+      path: "/used-furniture-in-sharjah-b.jpg",
       alt: "rukun al arooba used furniture in sharjah",
     },
     path: "",
