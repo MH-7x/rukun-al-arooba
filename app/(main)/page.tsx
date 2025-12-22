@@ -383,7 +383,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="" id="content">
+          <div className="" id="content-buy-sell">
             <h2 className="headline md:text-4xl/tight text-3xl/tight font-bold">
               <span className="border-b-4 border-[#ffdb5e]">
                 A Modern Way to

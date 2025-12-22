@@ -107,7 +107,7 @@ const Footer = () => {
                 label="Our Showroom"
               />
               <NavLink link="/how-we-work" label="How We Work" />
-              <NavLink link="/#" label="Our Blogs" />
+              <NavLink link="/blogs" label="Our Blogs" />
               <NavLink link="/#" label="Gallery" />
               <NavLink
                 link="https://abumuhammadmovers.com/"

@@ -1,12 +1,16 @@
 import Link from "next/link";
-import React from "react";
+
 import { Button } from "./ui/button";
 import BlogCard from "./BlogCard";
 import { MainForCard } from "@/types/blog";
 
-let errorMessage: string;
+// Define a return type for clarity
+type BlogResponse = {
+  data?: MainForCard["data"];
+  error?: string;
+};
 
-async function getBlogs() {
+async function getBlogs(): Promise<BlogResponse> {
   try {
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_API_URL}/api/blog?limit=3`,
@@ -15,35 +19,36 @@ async function getBlogs() {
         headers: {
           "Content-Type": "application/json",
         },
-        cache: "no-store",
+        // PERF FIX: Cache data for 1 hour (3600 seconds).
+        // Remove this line if you need real-time data on every refresh.
+        next: { revalidate: 3600 },
       }
     );
 
     if (!res.ok) {
-      throw new Error("Failed to fetch blogs");
-    }
-    const data: MainForCard = await res.json();
-    if (!data.success) {
-      errorMessage = data.message;
+      return { error: `Failed to fetch: ${res.statusText}` };
     }
 
-    return data.data;
+    const json: MainForCard = await res.json();
+
+    if (!json.success) {
+      return { error: json.message || "API returned failure" };
+    }
+
+    return { data: json.data };
   } catch (error) {
-    if (error instanceof Error) {
-      errorMessage = error.message;
-      console.log("Failed To Get Blogs: ", Error);
-    }
-
-    errorMessage = "An unknown error occurred.";
-    console.log("Server Error: ", Error);
+    // PERF FIX: Log the actual error object for debugging
+    console.error("Server Error fetching blogs:", error);
+    return { error: "An unknown error occurred while loading news." };
   }
 }
 
 const LatestsNews = async () => {
-  const blogsData = await getBlogs();
+  // Fetch data in parallel with other server components if possible
+  const { data: blogsData, error: errorMessage } = await getBlogs();
 
   return (
-    <section className="md:w-11/12 mx-auto  md:px-0 px-3 mb-10">
+    <section className="md:w-11/12 mx-auto md:px-0 px-3 mb-10">
       <div className="flex items-end justify-between">
         <div>
           <p className="blue font-medium md:text-lg">OUR BLOGS</p>
@@ -52,15 +57,16 @@ const LatestsNews = async () => {
           </h2>
         </div>
         <Link href={"/blogs"}>
-          {" "}
           <Button size={"lg"} className="md:px-12">
             ALL NEWS
           </Button>
         </Link>
       </div>
-      <div className="mt-16 ">
+
+      <div className="mt-16">
         <div className="grid md:grid-cols-3 grid-cols-1 gap-10">
-          {blogsData ? (
+          {/* Success State */}
+          {blogsData && blogsData.length > 0 ? (
             blogsData.map((blog) => (
               <BlogCard
                 key={blog._id}
@@ -74,17 +80,18 @@ const LatestsNews = async () => {
                 })}
                 author={"Mashal Huraira"}
                 excerpt={blog.caption}
-                href={`/blogs${blog.slug}`}
+                href={`/blogs/${blog.slug}`} // Fixed missing slash in href
               />
             ))
           ) : (
-            <>
-              <div className="col-span-3">
-                <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
-                  Error: {errorMessage}
-                </p>
-              </div>
-            </>
+            /* Error or Empty State */
+            <div className="col-span-3">
+              <p className="text-red-500 text-center max-w-md mx-auto p-5 rounded-2xl border border-red-500 bg-red-50">
+                {errorMessage
+                  ? `Error: ${errorMessage}`
+                  : "No news available at the moment."}
+              </p>
+            </div>
           )}
         </div>
       </div>
