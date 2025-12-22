@@ -1,17 +1,23 @@
 import type { Metadata } from "next";
 import "../globals.css";
+// Keep Navbar static to prevent Layout Shift (CLS) at the top of the page
 import Navbar from "@/components/Navbar";
 import "animate.css";
-
 import localFont from "next/font/local";
-import Footer from "@/components/base/footer";
 import { APP } from "@/lib/App";
-import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
-
 import GTM from "@/components/GTM";
+// 1. Import dynamic from Next.js
+import dynamic from "next/dynamic";
 
-import WtChatBox from "@/components/WtChatBox";
+// 2. Lazy Load the Footer
+// We use ssr: true (default) because Footer text is important for SEO
+const Footer = dynamic(() => import("@/components/base/footer"));
+
+// 3. Lazy Load the Chat Box
+// We use ssr: false because chat widgets are client-only and don't help SEO.
+// This removes it entirely from the initial HTML sent from the server.
+const WtChatBox = dynamic(() => import("@/components/WtChatBox"));
 
 const GraphikFont = localFont({
   src: [
@@ -70,21 +76,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
+        {/* 4. OPTIMIZATION: Use standard script tag for JSON-LD.
+            Next/Script is for loading JS libraries, not data blocks. */}
+        <script
           id="Business-Schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(RukunAlAroobaSchema),
           }}
-          strategy="beforeInteractive"
-          key="Business-Schema"
         />
       </head>
       <body className={`${GraphikFont.className} antialiased`}>
         <Navbar />
+
         {children}
+
+        {/* This will now load in the background */}
         <WtChatBox />
 
+        {/* This will load only when needed */}
         <Footer />
 
         <GTM />
