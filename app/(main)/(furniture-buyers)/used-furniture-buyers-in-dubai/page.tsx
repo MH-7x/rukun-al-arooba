@@ -316,8 +316,9 @@ const UsedFurnitureBuyersDubai = () => {
           <div className="max-w-3xl mt-5  text">
             <p>
               Selling your used furniture in Dubai with Rukun Al Arooba is
-              straightforward. Follow these steps to receive the best price for
-              your furniture or appliances:
+              straightforward and having reliable service from others. Follow
+              these steps to receive the best price for your furniture and home
+              appliances:
             </p>
           </div>
           <div className="md:w-11/12 w-full grid md:grid-cols-2 grid-cols-1 gap-10 mt-16 mx-auto">
@@ -404,15 +405,18 @@ const UsedFurnitureBuyersDubai = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2
               id="types-of-furniture"
-              className="text-3xl md:text-4xl font-extrabold leading-tight headline"
+              className="text-3xl md:text-4xl font-extrabold leading-tight headline mb-4"
             >
               Types Of Furniture & Electronics We Buy in Dubai
             </h2>
-            <p className="mt-4 text-gray-600 dark:text-gray-300">
+            <p className=" text-gray-600 dark:text-gray-300 inline">
               As comprehensive used furniture and electronics buyers in Dubai,
               we purchase a wide range of items to meet diverse customer needs.
+            </p>
+            <p className="text-gray-600 dark:text-gray-300 inline">
               Whether you&lsquo;re selling a single appliance or clearing out an
-              entire home or office, we are the buyers you can count on.
+              entire home or office, we are the buyers you can count on and
+              contact us today.
             </p>
           </div>
 
@@ -586,7 +590,8 @@ const UsedFurnitureBuyersDubai = () => {
                 our main showroom is in Sharjah
               </Link>
               , our services extend across the entire UAE. We are proud to be
-              the trusted used furniture buyer in the UAE for customers in:
+              the trusted second hand furniture buyers in dubai for customers
+              in:
             </p>
             <ul className="mt-5 list-disc list-inside text">
               <li>

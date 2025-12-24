@@ -50,7 +50,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.9,
     images: ["/furniture/used-furniture-buyers-in-dubai.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-12-24",
   },
   {
     url: "/used-furniture-buyers-in-sharjah",

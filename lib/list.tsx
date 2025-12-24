@@ -416,7 +416,7 @@ export const ufdFaqs = [
         </p>
         <p>
           If you accept the offer, we arrange immediate payment and pickup —
-          making the entire process fast and hassle-free.
+          making the entire process fast and stress free.
         </p>
       </>
     ),
@@ -1973,7 +1973,7 @@ export const UsedFurnitureFaqsAbuDhabi = [
       <>
         <p>
           Selling your used furniture with us is designed to be completely
-          hassle-free. Forget the stress of creating online listings, dealing
+          stress free. Forget the stress of creating online listings, dealing
           with endless messages, and meeting strangers. Our process is simple
           and professional:
         </p>
