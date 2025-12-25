@@ -493,7 +493,7 @@ export default function UsedFurnitureSharjahPage() {
               <div className="rounded-lg bg-white p-6 shadow-md">
                 <div className="w-full h-64 overflow-hidden bg-gray-200 mb-4 rounded-md relative object-cover">
                   <Image
-                    src={"/ar/Garden-furniture.jpg"}
+                    src={"/ar/garden-furniture"}
                     alt="أثاث خارجي وحدائق"
                     className="object-cover"
                     fill

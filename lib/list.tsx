@@ -185,12 +185,7 @@ export const locationList = [
   {
     title: "Used Furniture in mussafah",
     desc: "Quality used furniture and appliances available in mussafah.",
-    link: "#",
-  },
-  {
-    title: "Used Furniture in muweilah",
-    desc: "Buy and sell used furniture and appliances conveniently in muweilah.",
-    link: "#",
+    link: "/used-furniture-abu-dhabi",
   },
 ];
 export const HomeFaqs = [

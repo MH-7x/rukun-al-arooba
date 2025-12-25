@@ -87,7 +87,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.9,
     images: ["/service/used-beds-for-sale.jpg"],
-    lastModified: "2025-10-26",
+    lastModified: "2025-12-25",
   },
   {
     url: "/used-electronics-buyers-in-dubai",
@@ -136,7 +136,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.9,
     images: ["/ar/used-furniture-sharjah-ar.jpg"],
-    lastModified: "2025-10-31",
+    lastModified: "2025-12-25",
   },
   {
     url: `/${decodeURIComponent("اثاث-مستعمل-دبي")}`,

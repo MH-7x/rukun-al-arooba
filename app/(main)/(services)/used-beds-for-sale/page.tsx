@@ -232,7 +232,7 @@ const UsedBeds = () => {
               <p className="mt-3">
                 <a
                   className="cta-button"
-                  href="https://wa.me/971XXXXXXXXX?text=I%27m%20interested%20in%20a%20used%20bed"
+                  href="https://wa.me/+971556461731?text=I%20Contact%20You%20For%20Used%20Furniture"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -241,7 +241,7 @@ const UsedBeds = () => {
                 or{" "}
                 <a
                   className="cta-phone"
-                  href="https://maps.app.goo.gl/yourstorelink"
+                  href="https://share.google/uLNlamfwJl2DVzPi6"
                   target="_blank"
                   rel="noreferrer"
                 >
