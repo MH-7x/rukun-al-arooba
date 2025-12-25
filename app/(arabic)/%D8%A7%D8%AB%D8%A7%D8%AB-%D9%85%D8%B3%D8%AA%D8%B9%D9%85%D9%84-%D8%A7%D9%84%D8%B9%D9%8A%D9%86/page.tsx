@@ -126,7 +126,8 @@ export default function UsedFurnitureAlAin() {
                 ركن العروبة للأثاث المستعمل
               </span>
               <h1 className="text-4xl md:text-6xl font-extrabold headline mb-6 leading-tight">
-                اثاث مستعمل للبيع في العين <br />
+                اثاث مستعمل في العين
+                <br />
                 <span className="blue">جودة عالية وأسعار منافسة</span>
               </h1>
               <p className="text-lg md:text-xl text mb-10 max-w-2xl mx-auto leading-relaxed">
