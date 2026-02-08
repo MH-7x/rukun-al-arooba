@@ -28,7 +28,7 @@ export const RukunAlAroobaSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "14",
+    reviewCount: "16",
   },
   amenityFeature: [
     {
@@ -79,7 +79,7 @@ export const RukunAlAroobaSchema = {
   ],
   sameAs: [
     "https://www.google.com/maps/place/Rukun+AL+arooba+used+furniture+and+electronics+trading/@25.3377035,55.4123512,15z/data=!4m6!3m5!1s0x3e5f590ac9a2245b:0xb6338b255c468962!8m2!3d25.3377035!4d55.4123512!16s%2Fg%2F11bbr23m8s?entry=ttu",
-    "https://web.facebook.com/profile.php?id=61581140562247",
+    "https://www.facebook.com/rukun.al.arooba.used.furniture/",
     "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
   ],
   potentialAction: {
@@ -175,7 +175,7 @@ export const locationList = [
   {
     title: "Used Furniture in Al Ain",
     desc: "Find budget-friendly used furniture and appliances in Al Ain.",
-    link: "#",
+    link: "/used-furniture-al-ain",
   },
   {
     title: "Used Furniture Abu Shagara",
@@ -2334,6 +2334,229 @@ export const applianceFaqs = [
         and lowers your carbon footprint, contributing to a more sustainable and
         greener UAE.
       </p>
+    ),
+  },
+];
+
+export const AlAinFaqs = [
+  {
+    question: "Do you provide pickup service in Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes. We offer free furniture pickup throughout Al Ain and cover all
+          major and residential areas.
+        </p>
+        <ul>
+          <li>Al Jimi</li>
+          <li>Zakher</li>
+          <li>Tawam</li>
+          <li>Al Mutarad</li>
+          <li>Al Hili</li>
+          <li>Downtown Al Ain</li>
+          <li>Al Foah</li>
+          <li>Falaj Hazza</li>
+          <li>Al Niyadat</li>
+          <li>Al Qattara</li>
+          <li>All other areas</li>
+        </ul>
+        <p>Pickup is scheduled at your convenience.</p>
+      </>
+    ),
+  },
+  {
+    question: "How quickly can I get a quote for my furniture?",
+    answer: (
+      <>
+        <p>
+          Within <strong>5–10 minutes</strong>. Simply send photos via WhatsApp
+          or call us directly.
+        </p>
+        <p>
+          We provide instant estimates during the initial contact, with no long
+          waiting times.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you offer warranty on used furniture?",
+    answer: (
+      <>
+        <p>
+          Yes. All furniture purchases include warranty coverage for your peace
+          of mind.
+        </p>
+        <p>
+          Warranty terms vary depending on the item type, but we stand behind
+          everything we sell.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>We accept multiple secure and convenient payment options:</p>
+        <ul>
+          <li>Cash payments</li>
+          <li>Online bank transfers</li>
+          <li>Certified bank checks</li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    question: "Can I return furniture if I'm not satisfied?",
+    answer: (
+      <>
+        <p>Yes. We have a simple and customer-friendly return policy.</p>
+        <p>
+          If an item does not match the described condition or your
+          expectations, we’ll work with you to resolve it fairly.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you refurbish furniture before selling?",
+    answer: (
+      <>
+        <p>
+          Absolutely. Every piece goes through a complete restoration process
+          before being listed for sale.
+        </p>
+        <ul>
+          <li>Detailed inspection</li>
+          <li>Thorough cleaning</li>
+          <li>Repair of loose or damaged parts</li>
+          <li>Surface polishing</li>
+          <li>Reupholstery when required</li>
+        </ul>
+        <p>
+          Furniture is restored to the best possible condition before delivery.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Which areas of Al Ain do you serve?",
+    answer: (
+      <>
+        <p>
+          All of them. We cover every neighborhood, suburb, and district in Al
+          Ain and surrounding areas.
+        </p>
+        <p>If you’re in Al Ain, we reach you.</p>
+      </>
+    ),
+  },
+  {
+    question: "How do you determine furniture prices?",
+    answer: (
+      <>
+        <p>
+          Our pricing is based on a fair and transparent evaluation process.
+        </p>
+        <ul>
+          <li>Brand reputation</li>
+          <li>Current condition</li>
+          <li>Age and wear level</li>
+          <li>Original purchase price</li>
+          <li>Current market demand</li>
+          <li>Required repair or restoration costs</li>
+        </ul>
+        <p>The assessment is thorough but fast.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy broken or damaged furniture?",
+    answer: (
+      <>
+        <p>
+          Sometimes. If the item is repairable and structurally sound, we may
+          still be interested.
+        </p>
+        <p>
+          Furniture that is heavily damaged or beyond repair is usually
+          declined.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can I negotiate prices?",
+    answer: (
+      <>
+        <p>
+          Our prices are already set at fair market value, without artificial
+          inflation.
+        </p>
+        <p>That said, we’re reasonable people — feel free to talk to us.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you deliver furniture to Al Ain?",
+    answer: (
+      <>
+        <p>
+          Yes. Through our partnership with <strong>Abu Muhammad Movers</strong>
+          , we provide professional delivery services to Al Ain.
+        </p>
+        <p>We handle all logistics from pickup to final placement.</p>
+      </>
+    ),
+  },
+  {
+    question: "What's your showroom address?",
+    answer: (
+      <>
+        <p>
+          <strong>Al Estiqlal Street, Bu Shaghara, Sharjah</strong>
+        </p>
+        <p>
+          You’re welcome to visit our showroom to view inventory. Calling ahead
+          is recommended to confirm availability of specific items.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy furniture from homes or only from stores?",
+    answer: (
+      <>
+        <p>
+          We buy furniture from homeowners, businesses, and anyone selling
+          quality items.
+        </p>
+        <p>
+          Most of our purchases come directly from individuals and families.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How long does the pickup process take?",
+    answer: (
+      <>
+        <p>
+          Typically between <strong>30–60 minutes</strong>, depending on the
+          quantity of furniture.
+        </p>
+        <p>Our team works efficiently while respecting your space and time.</p>
+      </>
+    ),
+  },
+  {
+    question: "Do you require appointments?",
+    answer: (
+      <>
+        <p>Appointments help us serve you better, but we remain flexible.</p>
+        <p>Contact us and we’ll arrange a time that works best for you.</p>
+      </>
     ),
   },
 ];

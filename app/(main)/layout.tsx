@@ -11,6 +11,7 @@ import { RukunAlAroobaSchema } from "@/lib/list";
 import GTM from "@/components/GTM";
 
 import WtChatBox from "@/components/WtChatBox";
+import FooterNew from "@/components/FooterNew";
 
 const GraphikFont = localFont({
   src: [
@@ -79,12 +80,29 @@ export default function RootLayout({
           key="Business-Schema"
         />
       </head>
-      <body className={`${GraphikFont.className} antialiased`}>
+      <body
+        className={`${GraphikFont.className} antialiased min-h-screen w-full relative bg-white`}
+      >
+        <div
+          className="fixed inset-0 top-1/2 -z-10"
+          style={{
+            background: "#ffffff",
+            backgroundImage: `
+        radial-gradient(
+          circle at top center,
+          rgba(255, 140, 60, 0.3),
+          transparent 50%
+        )
+      `,
+            filter: "blur(80px)",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
         <Navbar />
         {children}
-        <WtChatBox />
+        {/* <WtChatBox /> */}
 
-        <Footer />
+        <FooterNew />
 
         <GTM />
       </body>

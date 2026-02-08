@@ -205,8 +205,8 @@ export default function TestimonialSlider({
       >
         {reviews
           ? reviews.map((item) => (
-              <SwiperSlide className="bg-red-400" key={item.id}>
-                <div className="shadow-lg p-10 relative text-start border ">
+              <SwiperSlide key={item.id}>
+                <div className="bg-[#FFF8DF] rounded-3xl  p-6 relative text-start">
                   {/* Stars */}
                   <div className="flex justify-start mb-4">
                     {[...Array(item.rating)].map((_, i) => (
@@ -233,9 +233,7 @@ export default function TestimonialSlider({
                         className="w-12 h-12 rounded-full border"
                       />
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-800">
-                          {item.name}
-                        </h3>
+                        <p className="font-medium text-gray-800">{item.name}</p>
                         <p className="text-sm text-gray-500">{item.ddate}</p>
                       </div>
                     </div>
@@ -259,7 +257,7 @@ export default function TestimonialSlider({
             ))
           : testimonials.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="bg-white/20 shadow-lg p-6 relative text-start">
+                <div className="bg-[#FFF8DF] rounded-3xl  p-6 relative text-start">
                   {/* Stars */}
                   <div className="flex justify-start mb-4">
                     {[...Array(item.rating)].map((_, i) => (
@@ -283,10 +281,12 @@ export default function TestimonialSlider({
                         className="w-12 h-12 rounded-full border"
                       />
                       <div className="text-left">
-                        <h3 className="font-semibold text-gray-800">
+                        <h3 className="font-medium text-gray-800">
                           {item.name}
                         </h3>
-                        <p className="text-sm text-gray-500">{item.ddate}</p>
+                        <p className="text-sm text-gray-500 mt-0.5">
+                          {item.ddate}
+                        </p>
                       </div>
                     </div>
                     <Image

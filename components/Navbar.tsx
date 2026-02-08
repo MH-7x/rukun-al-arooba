@@ -5,7 +5,7 @@ import logo from "../public/rukun-al-arooba-used-furniture.svg";
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import * as React from "react";
+
 import { useState, useEffect } from "react";
 import DesktopNav from "./base/DesktopNav";
 import MobileNa from "./base/MobileNa";

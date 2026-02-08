@@ -22,7 +22,7 @@ async function getBlogs(): Promise<BlogResponse> {
         // PERF FIX: Cache data for 1 hour (3600 seconds).
         // Remove this line if you need real-time data on every refresh.
         next: { revalidate: 3600 },
-      }
+      },
     );
 
     if (!res.ok) {
@@ -80,7 +80,7 @@ const LatestsNews = async () => {
                 })}
                 author={"Mashal Huraira"}
                 excerpt={blog.caption}
-                href={`/blogs/${blog.slug}`} // Fixed missing slash in href
+                href={`/blogs${blog.slug}`} // Fixed missing slash in href
               />
             ))
           ) : (

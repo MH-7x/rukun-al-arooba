@@ -16,28 +16,45 @@ const Reviews = () => {
           />
         </div>
         <div>
-          <p className="blue font-medium md:text-lg">Reviews</p>
-          <h2 className="md:text-5xl text-3xl font-black headline mt-3">
+          <h2 className="md:text-5xl text-3xl font-bold blue mt-3">
             What Our Client&apos;s Said
           </h2>
-          <ul className="grid md:grid-cols-2 grid-cols-1 gap-x-3 text mt-5">
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>Checked & Repaired</span>
+          <ul className="grid md:grid-cols-2 grid-cols-1 gap-y-2  mt-10 md:pr-10">
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>Checked & Repaired</span>
             </li>
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>Save Money, Keep Style</span>
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>Save Money, Keep Style</span>
             </li>
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>20+ Years Experience</span>
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>20+ Years Experience</span>
             </li>
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>Warranty & Easy Returns</span>
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>Warranty & Easy Returns</span>
             </li>
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>Quick Buy & Sell</span>
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>Quick Buy & Sell</span>
             </li>
-            <li className="flex items-center gap-x-2">
-              <Check size={20} /> <span>Discounted Delivery</span>
+            <li className="flex items-center gap-x-2 blue font-medium">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+                <Check size={15} />
+              </div>{" "}
+              <span>Discounted Delivery</span>
             </li>
           </ul>
 
