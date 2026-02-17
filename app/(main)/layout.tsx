@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
-
 import localFont from "next/font/local";
-import Footer from "@/components/base/footer";
 import { APP } from "@/lib/App";
 import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
-
 import GTM from "@/components/GTM";
-
-import WtChatBox from "@/components/WtChatBox";
 import FooterNew from "@/components/FooterNew";
 
 const GraphikFont = localFont({

@@ -872,12 +872,12 @@ const AlAinUsedFurniturePage = () => {
         <section className="py-10 mt-36 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           {/* Header Section */}
           <div className="text-center mb-16 space-y-4">
-            <h2 className="text-sm font-medium tracking-wide pri uppercase">
+            <p className="text-sm font-medium tracking-wide pri uppercase">
               Hassle-Free Selling
-            </h2>
-            <h1 className="text-3xl md:text-4xl font-bold blue">
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold blue">
               How to Sell Your Used Furniture in Al Ain
-            </h1>
+            </h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
               Selling is even easier. Turn your pre-owned items into cash in
               three simple steps.

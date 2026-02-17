@@ -14,6 +14,7 @@ function HeroSection() {
         fill
         loading="eager"
         placeholder="blur"
+        fetchPriority="high"
         className="object-cover"
       />
       <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b md:from-transparent from-[#144e5a]/25 via-[#144e5a]/50 to-[#144e5a] md:px-0 px-3">
