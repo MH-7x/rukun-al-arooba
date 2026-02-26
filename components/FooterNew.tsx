@@ -97,184 +97,247 @@ const socialLinks = [
 
 const FooterNew = () => {
   return (
-    <footer className="relative blue-bg text-gray-200 overflow-hidden mt-20">
-      {/* Decorative Background Elements (Blur/Gradient) */}
+    <>
+      <footer className="relative blue-bg text-gray-200 overflow-hidden mt-20">
+        {/* Decorative Background Elements (Blur/Gradient) */}
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
-        {/* --- Top Section: Logo & Description --- */}
-        <div className="flex flex-col items-center text-center mb-10">
-          {/* Logo Placeholder */}
-          <a className="mb-6 group cursor-pointer inline-block w-full relative h-[100px]">
-            <Image
-              src="/rukun-al-arooba-used-furniture-yellow.svg"
-              alt="Rukun Al Arooba Used Furniture Logo"
-              fill
-              className="object-contain"
-            />
-          </a>
-
-          <p className="max-w-2xl text-sm md:text-base text-gray-300 leading-relaxed font-light">
-            Rukun Al Arooba is Used Furniture Company in Sharjah, We Buy Sell
-            All Kind Of Used Furniture and Appliances All Over Emirates.
-          </p>
-        </div>
-
-        {/* --- Contact Info Bar --- */}
-        <div className=" mb-16">
-          <div className="flex flex-col md:flex-row justify-center md:items-center items-start gap-4 md:gap-12 text-sm font-medium">
-            <div className="flex items-center gap-3 cursor-pointer ">
-              <div className="p-2 bg-white/5 rounded-full ">
-                <Phone size={18} className="tert" />
-              </div>
-              <span>055 6461731</span>
-            </div>
-
-            <div className="hidden md:block w-px h-8 bg-white/10" />
-            <div className="flex items-center gap-3 cursor-pointer ">
-              <div className="p-2 bg-white/5 rounded-full ">
-                <MapPin size={18} className="tert" />
-              </div>
-              <span>Al Estiqlal Street, Bu Shaghara, Hay Al Qasimiah</span>
-            </div>
-
-            <div className="hidden md:block w-px h-8 bg-white/10" />
-
-            <div className="flex items-center gap-3 cursor-pointer ">
-              <div className="p-2 bg-white/5 rounded-full ">
-                <Clock size={18} className="tert" />
-              </div>
-              <span>Daily 9 AM–11 PM, Mon till 11:30, Wed till 10:30</span>
-            </div>
-          </div>
-        </div>
-
-        {/* --- Main Grid Section --- */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
-          {/* Column 1: Services */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
-              Services
-            </h3>
-            <ul className="space-y-2.5">
-              {servicesList.map((link, index) => (
-                <li key={index} className="w-max ">
-                  <a
-                    href={link.link}
-                    className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
-                  >
-                    <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-[#ffdb5e] transition-colors"></span>
-                    {link.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 2: Locations */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
-              Locations
-            </h3>
-            <ul className="space-y-2.5">
-              {locationList.map((loc, index) => (
-                <li key={index} className="w-max ">
-                  <a
-                    href={loc.link}
-                    className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
-                  >
-                    <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-yellow-500 transition-colors"></span>
-                    {loc.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Quick Links */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
-              Quick Links
-            </h3>
-            <ul className="space-y-2.5">
-              {quickLinks.map((link, index) => (
-                <li key={index} className="w-max ">
-                  <a
-                    href={link.link}
-                    className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
-                  >
-                    <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-yellow-500 transition-colors"></span>
-                    {link.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4: Visit Store (Map Placeholder) */}
-          <div className="space-y-6">
-            <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
-              Visit To Store
-            </h3>
-            <iframe
-              className="w-full h-48  bg-slate-800 rounded-lg overflow-hidden relative group border border-white/10 hover:border-yellow-500/50 transition-colors"
-              title="Our Store Location in Google Maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.8696529263066!2d55.39297417447848!3d25.3421546258158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b39dde3733b%3A0x70627f406a04df1e!2sRukun%20AL%20arooba%20used%20furniture%20and%20electronics%20trading!5e0!3m2!1sen!2s!4v1757767922306!5m2!1sen!2s"
-              allowFullScreen
-              loading="lazy"
-            />
-            <ul className="flex flex-wrap gap-x-3 text-sm flex-row ">
-              {navItems.map((item, i) => (
-                <li key={i}>
-                  <Link href={item.link}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* --- Bottom Section --- */}
-        <div className="pt-8 border-t border-white/10 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
-          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-xs text-gray-200">
-            <p className="text-center md:text-left">
-              Copyright © {new Date().getFullYear()}{" "}
-              <span className="text-gray-300 font-medium">Rukun Al Arooba</span>
-            </p>
-            <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-[#ffdb5e] transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-[#ffdb5e] transition-colors">
-                Terms & Conditions
-              </a>
-            </div>
-            <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
-            <a
-              href="https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!"
-              rel="noopener noreferrer"
-              className=" "
-            >
-              Develop & Maintenance By Mashal Huraira
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+          {/* --- Top Section: Logo & Description --- */}
+          <div className="flex flex-col items-center text-center mb-10">
+            {/* Logo Placeholder */}
+            <a className="mb-6 group cursor-pointer inline-block w-full relative h-[100px]">
+              <Image
+                src="/rukun-al-arooba-used-furniture-yellow.svg"
+                alt="Rukun Al Arooba Used Furniture Logo"
+                fill
+                className="object-contain"
+              />
             </a>
+
+            <p className="max-w-2xl text-sm md:text-base text-gray-300 leading-relaxed font-light">
+              Rukun Al Arooba is Used Furniture Company in Sharjah, We Buy Sell
+              All Kind Of Used Furniture and Appliances All Over Emirates.
+            </p>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex items-center gap-4">
-            {[Facebook, Instagram, Pin, MessageCircle, Store].map(
-              (Icon, idx) => (
-                <a
-                  key={idx}
-                  href={socialLinks[idx]}
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-gray-200 hover:bg-[#ffdb5e] hover:text-[#144e5a] hover:-translate-y-1 transition-all duration-300"
-                >
-                  <Icon size={16} />
+          {/* --- Contact Info Bar --- */}
+          <div className=" mb-16">
+            <div className="flex flex-col md:flex-row justify-center md:items-center items-start gap-4 md:gap-12 text-sm font-medium">
+              <div className="flex items-center gap-3 cursor-pointer ">
+                <div className="p-2 bg-white/5 rounded-full ">
+                  <Phone size={18} className="tert" />
+                </div>
+                <span>055 6461731</span>
+              </div>
+
+              <div className="hidden md:block w-px h-8 bg-white/10" />
+              <div className="flex items-center gap-3 cursor-pointer ">
+                <div className="p-2 bg-white/5 rounded-full ">
+                  <MapPin size={18} className="tert" />
+                </div>
+                <span>Al Estiqlal Street, Bu Shaghara, Hay Al Qasimiah</span>
+              </div>
+
+              <div className="hidden md:block w-px h-8 bg-white/10" />
+
+              <div className="flex items-center gap-3 cursor-pointer ">
+                <div className="p-2 bg-white/5 rounded-full ">
+                  <Clock size={18} className="tert" />
+                </div>
+                <span>Daily 9 AM–11 PM, Mon till 11:30, Wed till 10:30</span>
+              </div>
+            </div>
+          </div>
+
+          {/* --- Main Grid Section --- */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-16">
+            {/* Column 1: Services */}
+            <div className="space-y-6">
+              <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
+                Services
+              </h3>
+              <ul className="space-y-2.5">
+                {servicesList.map((link, index) => (
+                  <li key={index} className="w-max ">
+                    <a
+                      href={link.link}
+                      className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
+                    >
+                      <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-[#ffdb5e] transition-colors"></span>
+                      {link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 2: Locations */}
+            <div className="space-y-6">
+              <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
+                Locations
+              </h3>
+              <ul className="space-y-2.5">
+                {locationList.map((loc, index) => (
+                  <li key={index} className="w-max ">
+                    <a
+                      href={loc.link}
+                      className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
+                    >
+                      <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-yellow-500 transition-colors"></span>
+                      {loc.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 3: Quick Links */}
+            <div className="space-y-6">
+              <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
+                Quick Links
+              </h3>
+              <ul className="space-y-2.5">
+                {quickLinks.map((link, index) => (
+                  <li key={index} className="w-max ">
+                    <a
+                      href={link.link}
+                      className="text-sm hover:text-[#ffdb5e] hover:pl-2 transition-all duration-200 flex items-center gap-2 group"
+                    >
+                      <span className="w-1 h-1 bg-gray-500 rounded-full group-hover:bg-yellow-500 transition-colors"></span>
+                      {link.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Column 4: Visit Store (Map Placeholder) */}
+            <div className="space-y-6">
+              <h3 className="text-lg font-bold text-white uppercase tracking-wider border-l-4 border-[#ffdb5e] pl-3">
+                Visit To Store
+              </h3>
+              <iframe
+                className="w-full h-48  bg-slate-800 rounded-lg overflow-hidden relative group border border-white/10 hover:border-yellow-500/50 transition-colors"
+                title="Our Store Location in Google Maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.8696529263066!2d55.39297417447848!3d25.3421546258158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5b39dde3733b%3A0x70627f406a04df1e!2sRukun%20AL%20arooba%20used%20furniture%20and%20electronics%20trading!5e0!3m2!1sen!2s!4v1757767922306!5m2!1sen!2s"
+                allowFullScreen
+                loading="lazy"
+              />
+              <ul className="flex flex-wrap gap-x-3 text-sm flex-row ">
+                {navItems.map((item, i) => (
+                  <li key={i}>
+                    <Link href={item.link}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* --- Bottom Section --- */}
+          <div className="pt-8 border-t border-white/10 flex flex-col-reverse md:flex-row justify-between items-center gap-6">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6 text-xs text-gray-200">
+              <p className="text-center md:text-left">
+                Copyright © {new Date().getFullYear()}{" "}
+                <span className="text-gray-300 font-medium">
+                  Rukun Al Arooba
+                </span>
+              </p>
+              <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
+              <div className="flex gap-4">
+                <a href="#" className="hover:text-[#ffdb5e] transition-colors">
+                  Privacy Policy
                 </a>
-              ),
-            )}
+                <a href="#" className="hover:text-[#ffdb5e] transition-colors">
+                  Terms & Conditions
+                </a>
+              </div>
+              <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
+              <a
+                href="https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!"
+                rel="noopener noreferrer"
+                className=" "
+              >
+                Develop & Maintenance By Mashal Huraira
+              </a>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex items-center gap-4">
+              {[Facebook, Instagram, Pin, MessageCircle, Store].map(
+                (Icon, idx) => (
+                  <a
+                    key={idx}
+                    href={socialLinks[idx]}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    title="Follow Us On Social Media"
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-white/5 text-gray-200 hover:bg-[#ffdb5e] hover:text-[#144e5a] hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <Icon size={16} />
+                  </a>
+                ),
+              )}
+            </div>
           </div>
         </div>
+      </footer>
+      <div
+        className="blue-bg md:px-20 px-4 py-2 text-sm text-white leading-relaxed"
+        dir="rtl"
+      >
+        <p>
+          <a href="https://buyingusedfurnitureuae.com">شركة شراء أثاث مستعمل</a>{" "}
+          من أقدم الشركات المتخصصة في شراء وبيع الأثاث المستعمل في الإمارات.
+          مقرنا في الشارقة، ونشتغل في هالمجال من أكثر من ١٠ سنوات.
+        </p>
+        <p>
+          نشتري كل أنواع الأثاث والأجهزة المستعملة:{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-الأثاث-المنزلي">
+            الأثاث المنزلي
+          </a>{" "}
+          من غرف نوم وصالونات ومجالس،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-الاثاث-المكتبي-المستعمل">
+            الأثاث المكتبي
+          </a>{" "}
+          بكل أنواعه، أثاث الفنادق،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-الأجهزة-المنزلية">
+            الأجهزة المنزلية
+          </a>{" "}
+          مثل الثلاجات والغسالات والمكيفات،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-الالكترونيات-المستعملة">
+            والإلكترونيات المستعملة
+          </a>{" "}
+          كالتلفزيونات واللابتوبات.
+        </p>
+        <p>
+          خدماتنا تغطي الإمارات كلها:{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-دبي">
+            شراء اثاث مستعمل دبي
+          </a>
+          ،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-الشارقة">
+            شراء اثاث مستعمل الشارقة
+          </a>
+          ،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-ابوظبي">
+            شراء اثاث مستعمل أبوظبي
+          </a>
+          ،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-عجمان">
+            شراء اثاث مستعمل عجمان
+          </a>
+          ،{" "}
+          <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-العين">
+            شراء اثاث مستعمل العين
+          </a>
+          ، وشراء اثاث مستعمل رأس الخيمة.
+        </p>
+        <p>
+          نوفر تقييم مجاني، فك وتغليف احترافي، ورد سريع عبر الواتساب. لو عندك
+          أثاث تبي تبيعه، تواصل معنا وبنوصلك بأسرع وقت. تعرف أكثر عن الشركة.
+        </p>
       </div>
-    </footer>
+    </>
   );
 };
 

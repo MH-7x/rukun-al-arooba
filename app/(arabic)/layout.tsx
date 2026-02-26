@@ -112,6 +112,64 @@ export default function RootLayout({
         <ArNavbar />
         {children}
         <WtChatBox />
+        <div
+          className="blue-bg md:px-20 px-4 py-2 text-sm text-white leading-relaxed"
+          dir="rtl"
+        >
+          <p>
+            <a href="https://buyingusedfurnitureuae.com">
+              شركة شراء أثاث مستعمل
+            </a>{" "}
+            من أقدم الشركات المتخصصة في شراء وبيع الأثاث المستعمل في الإمارات.
+            مقرنا في الشارقة، ونشتغل في هالمجال من أكثر من ١٠ سنوات.
+          </p>
+          <p>
+            نشتري كل أنواع الأثاث والأجهزة المستعملة:{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-الأثاث-المنزلي">
+              الأثاث المنزلي
+            </a>{" "}
+            من غرف نوم وصالونات ومجالس،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-الاثاث-المكتبي-المستعمل">
+              الأثاث المكتبي
+            </a>{" "}
+            بكل أنواعه، أثاث الفنادق،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-الأجهزة-المنزلية">
+              الأجهزة المنزلية
+            </a>{" "}
+            مثل الثلاجات والغسالات والمكيفات،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-الالكترونيات-المستعملة">
+              والإلكترونيات المستعملة
+            </a>{" "}
+            كالتلفزيونات واللابتوبات.
+          </p>
+          <p>
+            خدماتنا تغطي الإمارات كلها:{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-دبي">
+              شراء اثاث مستعمل دبي
+            </a>
+            ،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-الشارقة">
+              شراء اثاث مستعمل الشارقة
+            </a>
+            ،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-ابوظبي">
+              شراء اثاث مستعمل أبوظبي
+            </a>
+            ،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-عجمان">
+              شراء اثاث مستعمل عجمان
+            </a>
+            ،{" "}
+            <a href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-العين">
+              شراء اثاث مستعمل العين
+            </a>
+            ، وشراء اثاث مستعمل رأس الخيمة.
+          </p>
+          <p>
+            نوفر تقييم مجاني، فك وتغليف احترافي، ورد سريع عبر الواتساب. لو عندك
+            أثاث تبي تبيعه، تواصل معنا وبنوصلك بأسرع وقت. تعرف أكثر عن الشركة.
+          </p>
+        </div>
         <footer className="bg-gray-100">
           <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div className="flex justify-center ">

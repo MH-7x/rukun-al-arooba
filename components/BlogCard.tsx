@@ -75,6 +75,7 @@ export default function BlogCard({
         {/* Read more */}
         <a
           href={href}
+          title={`Read more: ${title}`}
           className="mt-4 inline-flex items-center gap-2 text-sm font-medium pri hover:underline"
         >
           READ MORE

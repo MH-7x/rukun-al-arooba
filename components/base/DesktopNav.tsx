@@ -155,13 +155,40 @@ const DesktopNav = () => {
                   <li key={service.title}>
                     <NavigationMenuLink asChild>
                       <Link href={service.link}>
-                        <div className="text-sm leading-none font-medium">
+                        <span className="text-sm leading-none font-medium">
                           {service.title}
-                        </div>
+                        </span>
                       </Link>
                     </NavigationMenuLink>
                   </li>
                 ))}
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="https://buyingusedfurnitureuae.com">
+                      <span className="text-sm leading-none font-medium">
+                        شركة شراء أثاث مستعمل
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-دبي">
+                      <span className="text-sm leading-none font-medium">
+                        شراء اثاث مستعمل دبي
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink asChild>
+                    <Link href="https://buyingusedfurnitureuae.com/شراء-اثاث-مستعمل-عجمان">
+                      <span className="text-sm leading-none font-medium">
+                        شراء اثاث مستعمل عجمان
+                      </span>
+                    </Link>
+                  </NavigationMenuLink>
+                </li>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
