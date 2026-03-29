@@ -26,7 +26,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "How We Work — Rukun Al Arooba | Used Furniture Buyers",
-      desc: "how we inspects, refurbishes and delivers quality used furniture across the UAE — fast WhatsApp quotes, safe pickup with trusted movers, and multiple payment options. ",
+      desc: "See how Rukun Al Arooba inspects, refurbishes & delivers used furniture across the UAE. Fast WhatsApp quotes, trusted movers & multiple payment options. ",
     },
     image: {
       path: "/before-after-refurbishment-furniture.jpg",

@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Used Furniture Abu Dhabi | Rukun Al Arooba Used Furniture",
-      desc: "Rukun Al Arooba Used Furniture Abu Dhabi – 20+ years experience buying & selling quality pre-owned furniture. buy & sell second-hand sofas, beds, dining sets, and more at our Sharjah showroom.",
+      desc: "Buy & sell used furniture in Abu Dhabi with Rukun Al Arooba — 20+ years of experience in pre-owned sofas, beds, dining sets & more. Visit us in Sharjah.",
     },
     image: {
       path: "/furniture/used-furniture-abu-dhabi.jpg",
@@ -112,7 +112,13 @@ const features = [
               className="clr-i-solid clr-i-solid-path-6"
               d="M18.11,20.3A9.69,9.69,0,0,0,11,23l-.25.28v6.33a1.57,1.57,0,0,0,1.6,1.54H23.84a1.57,1.57,0,0,0,1.6-1.54V23.3L25.2,23A9.58,9.58,0,0,0,18.11,20.3Z"
             ></path>{" "}
-            <rect x="0" y="0" width="36" height="36" fillOpacity="0"></rect>{" "}
+            <rect
+              x="0"
+              y="0"
+              width="36"
+              height="36"
+              fillOpacity="0"
+            ></rect>{" "}
           </g>
         </svg>{" "}
       </>
@@ -296,7 +302,7 @@ const values = [
 ];
 
 const FaqsSchema = generateFAQSchema(
-  convertFaqsForSchema(UsedFurnitureFaqsAbuDhabi)
+  convertFaqsForSchema(UsedFurnitureFaqsAbuDhabi),
 );
 const AbuDhabiPage = () => {
   return (

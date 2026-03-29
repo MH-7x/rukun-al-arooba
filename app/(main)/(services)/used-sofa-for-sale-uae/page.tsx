@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "High-Quality Used Sofa For Sale in Dubai, Sharjah & UAE",
-      desc: "Find affordable, stylish used sofas for sale at Rukun Al Arooba. We offer quality-checked, repaired sofas with warranty and delivery across the UAE. Visit our Sharjah store!",
+      desc: "Find affordable used sofas for sale at Rukun Al Arooba, Sharjah. Quality-checked, repaired & warrantied sofas with UAE-wide delivery. Visit us today!",
     },
     image: {
       path: "/service/used-sofa-for-sale-sharjah-dubai.jpg",

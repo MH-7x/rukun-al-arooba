@@ -16,7 +16,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Our Blogs | Rukun Al Arooba Used Furniture",
-      desc: "Stay updated with the latest news, tips, and insights on furniture moving and office relocations. Our blog covers a wide range of topics to help you make informed decisions for your next move.",
+      desc: "Read Rukun Al Arooba's blog for tips on buying & selling used furniture, home appliances, moving guides & smart UAE home décor ideas. Stay informed!",
     },
     path: "/blogs",
     image: {
@@ -38,7 +38,7 @@ async function getBlogs(page = 1) {
           "Content-Type": "application/json",
         },
         cache: "no-store",
-      }
+      },
     );
 
     if (!res.ok) {
@@ -140,7 +140,7 @@ const BlogsPage = async ({
                     {p}
                   </PaginationLink>
                 </PaginationItem>
-              )
+              ),
             )}
 
             {/* Ellipsis (if needed) */}
@@ -151,7 +151,7 @@ const BlogsPage = async ({
               <PaginationNext
                 href={`?page=${Math.min(
                   pagination.totalPages,
-                  pagination.page + 1
+                  pagination.page + 1,
                 )}`}
                 aria-disabled={pagination.page === pagination.totalPages}
               />

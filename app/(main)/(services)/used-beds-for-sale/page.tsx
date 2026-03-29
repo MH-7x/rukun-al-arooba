@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Used Beds for Sale in Sharjah & UAE — Rukun Al Arooba",
-      desc: "Shop quality refurbished used beds for sale in Sharjah, Dubai & Abu Dhabi. Inspected, polished, warranty & fast delivery. Get an instant WhatsApp quote — buy today.",
+      desc: "Shop quality used beds for sale in Sharjah, Dubai & Abu Dhabi. Inspected, polished & warrantied. Get an instant WhatsApp quote & fast delivery today.",
     },
     image: {
       path: "/service/used-beds-for-sale.jpg",

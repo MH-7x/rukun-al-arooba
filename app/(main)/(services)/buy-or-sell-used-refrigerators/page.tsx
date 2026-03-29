@@ -16,7 +16,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Buy & Sell Used Refrigerators in UAE | Rukun Al Arooba",
-      desc: "Find high-quality used refrigerators for sale in Dubai, Sharjah & UAE. All fridges are inspected, repaired & warrantied. We are also top used refrigerator buyers, offering the best prices. Get a fast quote!",
+      desc: "Buy or sell used refrigerators in Dubai, Sharjah & UAE. All fridges are inspected, repaired & warrantied. Get top cash prices & a fast quote today.",
     },
     image: {
       path: "/service/used-bed-buyers-in-dubai.jpg",

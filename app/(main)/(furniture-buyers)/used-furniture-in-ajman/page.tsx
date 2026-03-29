@@ -17,7 +17,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Used Furniture in Ajman | Buy & Sell Quality Second Hand Items",
-      desc: "Buy & sell used furniture in Ajman with over 20 years of trusted experience. Quality refurbished items, warranty, free delivery quotes & multiple payment options.",
+      desc: "Buy & sell used furniture in Ajman with 20+ years of trusted experience. Refurbished items, warranty, free delivery quotes & flexible payment options.",
     },
     image: {
       path: "/abu-shagara-used-furniture-market.jpg",

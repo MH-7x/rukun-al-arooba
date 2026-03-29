@@ -11,7 +11,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Abu Shagara Used Furniture Market - Best Deals in Sharjah",
-      desc: "Discover the best Abu Shagara used furniture market deals in Sharjah. Visit Rukun Al Arooba on Al Estiqlal Street for quality pre-owned furniture, home appliances & more. ✓ Best Prices ✓ Warranty ✓ Same-Day Service",
+      desc: "Explore Abu Shagara used furniture market at Rukun Al Arooba, Sharjah. Pre-owned furniture & appliances with best prices, warranty & same-day service.",
     },
     image: {
       path: "/abu-shagara-used-furniture-market.jpg",

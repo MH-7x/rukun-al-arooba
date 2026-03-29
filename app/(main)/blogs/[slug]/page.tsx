@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export interface Main {
   message: string;
@@ -54,7 +55,7 @@ const getData = async (slug: string) => {
           "Content-Type": "application/json",
         },
         cache: "no-store",
-      }
+      },
     );
 
     if (!res.ok) {
@@ -128,10 +129,7 @@ export async function generateMetadata({
       },
     };
   }
-  return {
-    title: "Blog Not Found",
-    description: "The requested blog post could not be found.",
-  };
+  return notFound();
 }
 
 const SingleBlogPage = async ({
@@ -143,64 +141,54 @@ const SingleBlogPage = async ({
 
   const blog = await getData(slug);
 
-  return (
+  return blog ? (
     <article>
       <main>
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
-          {blog ? (
-            <>
-              <div className="grid-background" />
-              <div className="max-w-3xl mx-auto text-center">
-                <h1 className="md:text-4xl/tight text-3xl blue font-bold text-center capitalize">
-                  <span className="blue border-b-4 border-[#ffdb5e]">
-                    {blog.title}
-                  </span>
-                </h1>
-                <div className="max-w-3xl mx-auto text-center text mt-5">
-                  <p>{blog.caption}</p>
-                </div>
-                <div className=" mt-10 flex items-center justify-center flex-wrap">
-                  <Button
-                    variant={"ghost"}
-                    title={`Author of blog post`}
-                    className="text-muted-foreground font-normal"
-                    size={"sm"}
-                  >
-                    <User2Icon /> Mashal Huraira
-                  </Button>
-                  <Button
-                    variant={"ghost"}
-                    title={`Category ${blog.title}`}
-                    className="text-muted-foreground font-normal"
-                    size={"sm"}
-                  >
-                    <ListTodoIcon /> {blog.category.name}
-                  </Button>
-                  <Button
-                    variant={"ghost"}
-                    title={`Published date`}
-                    className="text-muted-foreground font-normal"
-                    size={"sm"}
-                  >
-                    <CalendarCheck2 />{" "}
-                    {new Date(blog.createdAt).toLocaleDateString("en-US", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </Button>
-                </div>
+          <>
+            <div className="grid-background" />
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="md:text-4xl/tight text-3xl blue font-bold text-center capitalize">
+                <span className="blue border-b-4 border-[#ffdb5e]">
+                  {blog.title}
+                </span>
+              </h1>
+              <div className="max-w-3xl mx-auto text-center text mt-5">
+                <p>{blog.caption}</p>
               </div>
-            </>
-          ) : (
-            <div className="max-w-6xl mx-auto md:p-4">
-              <div className="bg-red-100 p-10 rounded-2xl md:shadow-lg overflow-hidden flex flex-col items-center">
-                <h2 className="text-center text-destructive flex items-center gap-2">
-                  <FileWarningIcon /> {errorMessage}
-                </h2>
+              <div className=" mt-10 flex items-center justify-center flex-wrap">
+                <Button
+                  variant={"ghost"}
+                  title={`Author of blog post`}
+                  className="text-muted-foreground font-normal"
+                  size={"sm"}
+                >
+                  <User2Icon /> Mashal Huraira
+                </Button>
+                <Button
+                  variant={"ghost"}
+                  title={`Category ${blog.title}`}
+                  className="text-muted-foreground font-normal"
+                  size={"sm"}
+                >
+                  <ListTodoIcon /> {blog.category.name}
+                </Button>
+                <Button
+                  variant={"ghost"}
+                  title={`Published date`}
+                  className="text-muted-foreground font-normal"
+                  size={"sm"}
+                >
+                  <CalendarCheck2 />{" "}
+                  {new Date(blog.createdAt).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </Button>
               </div>
             </div>
-          )}
+          </>
         </section>
         {blog && (
           <>
@@ -227,6 +215,8 @@ const SingleBlogPage = async ({
         )}
       </main>
     </article>
+  ) : (
+    notFound()
   );
 };
 

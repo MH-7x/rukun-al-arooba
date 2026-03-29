@@ -6,7 +6,7 @@ export const RukunAlAroobaSchema = {
   name: "Rukun Al Arooba Used Furniture",
   description:
     "Rukun Al Arooba is Sharjah's and UAE's leading supplier of used home furniture and appliances. We have a vast selection of used items ranging from sofas, beds, refrigerators, to office furniture, all with a warranty. We buy and sell used furniture at affordable prices without cutting back on quality and style.",
-  url: "https://rukunalaroobausedfurniture.ae/",
+  url: "https://rukunalaroobausedfurniture.ae",
   telephone: "+971556461731",
   priceRange: "$$",
 
@@ -28,7 +28,7 @@ export const RukunAlAroobaSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
-    reviewCount: "16",
+    reviewCount: "17",
   },
   amenityFeature: [
     {
@@ -81,6 +81,7 @@ export const RukunAlAroobaSchema = {
     "https://www.google.com/maps/place/Rukun+AL+arooba+used+furniture+and+electronics+trading/@25.3377035,55.4123512,15z/data=!4m6!3m5!1s0x3e5f590ac9a2245b:0xb6338b255c468962!8m2!3d25.3377035!4d55.4123512!16s%2Fg%2F11bbr23m8s?entry=ttu",
     "https://www.facebook.com/rukun.al.arooba.used.furniture/",
     "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
+    "https://www.instagram.com/rukun.al.arooba.used.furniture/",
   ],
   potentialAction: {
     "@type": "SearchAction",

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Phone,
   MapPin,
@@ -7,39 +6,12 @@ import {
   Instagram,
   MessageCircle,
   Pin,
-  Navigation,
-  ExternalLink,
-  Store,
+  Linkedin,
 } from "lucide-react";
 import Image from "next/image";
 import { locationList, servicesList } from "@/lib/list";
 import { createEncodedUrl } from "@/lib/utils";
 import Link from "next/link";
-
-// --- Data for Links ---
-const serviceLinks = [
-  "Used Home Appliances",
-  "Used Electronics",
-  "Used Office Furniture",
-  "Used Office Furniture Dealer",
-  "Used Beds For Sale",
-  "Used Refrigerators",
-  "Used Sofa Sets",
-  "Selling Used Furniture",
-  "Buying Used Furniture",
-];
-
-const locationLinks = [
-  "Used Furniture Buyers in Sharjah",
-  "Used Furniture in Dubai",
-  "Used Furniture in Abu Dhabi",
-  "Used Furniture in Ajman",
-  "Used Furniture in Ras Al Khaimah",
-  "Used Furniture in Al Ain",
-  "Used Furniture Abu Shagara",
-  "Used Furniture Mussafah",
-  "Buying Used Furniture",
-];
 
 const quickLinks = [
   { title: "About Us", link: "/about-us" },
@@ -89,10 +61,10 @@ const navItems = [
 
 const socialLinks = [
   "https://www.facebook.com/rukun.al.arooba.used.furniture/",
-  "https://www.instagram.com/",
+  "https://www.linkedin.com/in/rukun-al-arooba-used-furniture",
   "https://www.pinterest.com/rukun_al_arooba_used_furniture/",
   "https://wa.me/+971556461731?text=I%20Contact%20You%20For%20Used%20Furniture",
-  "https://share.google/uLNlamfwJl2DVzPi6",
+  "https://www.instagram.com/rukun.al.arooba.used.furniture/",
 ];
 
 const FooterNew = () => {
@@ -263,7 +235,7 @@ const FooterNew = () => {
 
             {/* Social Icons */}
             <div className="flex items-center gap-4">
-              {[Facebook, Instagram, Pin, MessageCircle, Store].map(
+              {[Facebook, Linkedin, Pin, MessageCircle, Instagram].map(
                 (Icon, idx) => (
                   <a
                     key={idx}

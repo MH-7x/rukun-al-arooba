@@ -15,7 +15,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Used Office Furniture Buyers in Dubai | Top Cash Prices",
-      desc: "Selling used office furniture in Dubai? Rukun Al Arooba offers top cash prices for desks, chairs, & workstations. Get a free, fast quote in 5-10 mins. contact us now!",
+      desc: "Sell used office furniture in Dubai for top cash prices. Rukun Al Arooba buys desks, chairs & workstations. Get your free quote in just 5–10 minutes.",
     },
     image: {
       path: "/service/used-home-appliances-dubai.jpg",
@@ -25,7 +25,7 @@ export const metadata = MetadataTemplate({
   },
 });
 const FaqsSchema = generateFAQSchema(
-  convertFaqsForSchema(OfficeFurnitureBuyersFaqs)
+  convertFaqsForSchema(OfficeFurnitureBuyersFaqs),
 );
 const page = () => {
   return (
