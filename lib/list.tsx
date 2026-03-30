@@ -166,7 +166,7 @@ export const locationList = [
   {
     title: "Used Furniture in Ajman",
     desc: "Shop and sell second-hand furniture and appliances conveniently in Ajman.",
-    link: "used-furniture-in-ajman",
+    link: "/used-furniture-in-ajman",
   },
   {
     title: "Used Furniture in Ras Al Khaimah",
