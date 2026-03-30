@@ -27,16 +27,11 @@ const ModernWayToBuySell = () => {
       <div className="mt-5 flex gap-x-3 w-full justify-center">
         <Link href={"/used-furniture-buyers-in-dubai"}>
           {" "}
-          <Button>
-            {" "}
-            Sell To Us <ArrowUpRight />
-          </Button>
+          <Button>Sell Your Furniture</Button>
         </Link>
         <Link href={"/contact-us"}>
           {" "}
-          <Button variant={"secondary"}>
-            Buy From Us <ArrowUpRight />
-          </Button>
+          <Button variant={"secondary"}>Buy Used Furniture</Button>
         </Link>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-6xl mx-auto mt-10 z-10">

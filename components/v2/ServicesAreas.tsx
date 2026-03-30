@@ -133,7 +133,7 @@ const ServiceAreas = () => {
               </div>
 
               <Button storeBtn size={"lg"} className="mt-auto">
-                Visit Showroom <ArrowRight className="w-4 h-4 ml-2" />
+                Visit Showroom <span className="ml-2">➤</span>
               </Button>
             </div>
           </div>

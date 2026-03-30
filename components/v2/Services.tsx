@@ -255,11 +255,11 @@ const Services = () => {
 
                 <Link href={service.link} target="_blank">
                   <button className="max-w-sm cursor-pointer py-3.5 px-6 rounded-xl bg-[#ff8d3c1b] blue font-medium text-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
-                    <span>{`Contact For ${service.title}`}</span>
-                    <ChevronRight
-                      size={18}
-                      className="group-hover:translate-x-1 transition-transform"
-                    />
+                    <span>{`Contact For ${service.title}`}</span>{" "}
+                    <span className="group-hover:translate-x-1 transition-transform">
+                      {" "}
+                      ➤
+                    </span>{" "}
                   </button>
                 </Link>
               </div>

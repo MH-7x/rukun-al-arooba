@@ -39,7 +39,7 @@ const WhyChooseUs = () => {
           </p>
           <details className="group  rounded-lg mt-5 ">
             <summary className="pri underline flex justify-start items-center cursor-pointer  font-medium ">
-              read more <ArrowDown size={15} />
+              read more &crarr;
             </summary>
             <p className="mt-3 text md:text-base text-[15px] ">
               This level of transparency is uncommon among furniture dealers in
@@ -100,7 +100,7 @@ const WhyChooseUs = () => {
           </p>
           <details className="group  rounded-lg mt-5 ">
             <summary className="pri underline flex justify-start items-center cursor-pointer  font-medium ">
-              read more <ArrowDown size={15} />
+              read more &crarr;
             </summary>
             <p className="mt-3 text md:text-base text-[15px] ">
               Our quick response system is not only fast, but also shows that we
@@ -250,13 +250,12 @@ function QualityRestorationCard({
       aria-labelledby="qrp-heading"
     >
       {/* Left visual */}
-      <div className="relative flex items-center justify-center  rounded-xl md:order-1 order-2">
+      <div className="relative flex items-center justify-center  rounded-xl md:order-1 order-2 aspect-4/3">
         <Image
           src={imageUrl}
           alt="Restored furniture example"
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
-          className="h-80 object-cover rounded-lg"
+          className="object-cover rounded-lg"
         />
         <div className="bg-white/80 backdrop-blur-sm  rounded-2xl overflow-hidden absolute flex justify-center items-center  gap-4 md:w-[80%] w-[95%] p-5 md:bottom-7 -bottom-16">
           <div className="text-center">
@@ -310,15 +309,6 @@ function QualityRestorationCard({
             );
           })}
         </ul>
-
-        <div className="mt-8 flex items-center gap-4">
-          <Button storeBtn size={"lg"}>
-            See Restored Pieces
-          </Button>
-          <span className="text-xs text-slate-600 ">
-            Quality Certification guaranteed
-          </span>
-        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "daily",
     priority: 1.0,
     images: ["/used-furniture-in-sharjah-b.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-30",
   },
   {
     url: "/about-us",
@@ -27,7 +27,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "yearly",
     priority: 0.6,
     images: ["/before-after-refurbishment-furniture.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
 
   // Furniture Buyers
@@ -36,14 +36,14 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.8,
     images: ["/abu-shagara-used-furniture-market.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-furniture-abu-dhabi",
     changeFrequency: "weekly",
     priority: 0.8,
     images: ["/furniture/used-furniture-abu-dhabi.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-furniture-buyers-in-dubai",
@@ -64,7 +64,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.8,
     images: ["/abu-shagara-used-furniture-market.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-furniture-al-ain",
@@ -80,7 +80,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.7,
     images: ["/service/used-bed-buyers-in-dubai.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-beds-buyers-in-dubai",
@@ -94,7 +94,7 @@ const pages: MetadataRoute.Sitemap = [
     changeFrequency: "weekly",
     priority: 0.9,
     images: ["/service/used-beds-for-sale.jpg"],
-    lastModified: "2026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-electronics-buyers-in-dubai",
@@ -114,22 +114,22 @@ const pages: MetadataRoute.Sitemap = [
     url: "/used-office-furniture-buyers-dubai",
     changeFrequency: "monthly",
     priority: 0.7,
-    images: ["/service/used-home-appliances-dubai.jpg"],
-    lastModified: "2026-02-08",
+    images: ["/service/hero-office-furniture-buyers-dubai.jpg"],
+    lastModified: "2026-03-29",
   },
   {
     url: "/used-sofa-for-sale-uae",
     changeFrequency: "weekly",
     priority: 0.9,
     images: ["/images/used-sofa-for-sale.jpg"],
-    lastModified: "2022026-02-08",
+    lastModified: "2026-03-29",
   },
   {
     url: "/blogs",
     changeFrequency: "weekly",
     priority: 0.8,
-    images: ["/images/used-sofa-for-sale.jpg"],
-    lastModified: "2022026-02-08",
+    images: ["/abu-shagara-used-furniture-market.jpg"],
+    lastModified: "2026-03-29",
   },
   {
     url: `/${decodeURIComponent("أثاث-مستعمل")}`,

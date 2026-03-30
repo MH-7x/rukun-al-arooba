@@ -18,8 +18,8 @@ export const metadata = MetadataTemplate({
       desc: "Sell used office furniture in Dubai for top cash prices. Rukun Al Arooba buys desks, chairs & workstations. Get your free quote in just 5–10 minutes.",
     },
     image: {
-      path: "/service/used-home-appliances-dubai.jpg",
-      alt: "rukun al arooba used home appliances dubai",
+      path: "/service/hero-office-furniture-buyers-dubai.jpg",
+      alt: "rukun al arooba used office furniture buyers dubai",
     },
     path: "/used-office-furniture-buyers-dubai",
   },
@@ -44,8 +44,8 @@ const page = () => {
             two: "Get the Best Price Today!",
           }}
           img={{
-            src: "/service/used-home-appliances-dubai.jpg",
-            alt: "Used Home Appliances Dubai",
+            src: "/service/hero-office-furniture-buyers-dubai.jpg",
+            alt: "Modern office interior with executive desks, standing desks and ergonomic chairs — sell used office furniture in Dubai",
           }}
           desc="Are you upgrading, relocating, or liquidating your office space in Dubai? Don't let your valuable assets go to waste. Rukun Al Arooba Furniture are leading used office furniture buyers in Dubai, providing a professional, swift, and profitable way to sell your pre-owned items."
         />
