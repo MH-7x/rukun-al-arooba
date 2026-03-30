@@ -59,12 +59,13 @@ const WhyChooseUs = () => {
           </details>
         </div>
         <div className="md:ml-20">
-          <div className="md:w-96 w-full md:h-96 h-80 bg-[#FFF8DF] rounded-3xl" />
+          <div className="md:w-96 w-full md:h-96 h-80 bg-[#ff8d3c1b] rounded-3xl" />
           <div className="md:w-96 w-11/12 md:h-96 h-80 md:-mt-80 -mt-72 ml-[8.44%] md:ml-16 rounded-3xl relative overflow-hidden">
             <Image
               src={"/storefront-image.jpg"}
               alt="Rukun Al Arroba Used Furniture Store in Sharjah Outer View"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
               className="object-cover object-center "
             />
           </div>
@@ -78,6 +79,7 @@ const WhyChooseUs = () => {
               src={"/response-time-2.jpg"}
               alt="5-to-10 Minute Response Guarantee"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
               className="object-cover object-center "
             />
           </div>
@@ -190,18 +192,13 @@ function PaymentAndDelivery() {
 
               {/* Content */}
               <div className="md:p-8 py-8 px-5">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 bg-[#FFF8DF] rounded-2xl flex items-center justify-center pri ">
-                    <Truck size={28} />
-                  </div>
-                  <div>
-                    <h4 className="font-medium blue md:text-lg">
-                      Abu Muhammad Movers
-                    </h4>
-                    <p className="text-sm text-slate-500">
-                      Professional Pickup & Delivery
-                    </p>
-                  </div>
+                <div className="mb-6">
+                  <h4 className="font-medium blue md:text-lg">
+                    Abu Muhammad Movers
+                  </h4>
+                  <p className="text-sm text-slate-500">
+                    Professional Pickup & Delivery
+                  </p>
                 </div>
 
                 <p className="text-slate-600 mb-8 text-sm leading-relaxed">
@@ -254,10 +251,12 @@ function QualityRestorationCard({
     >
       {/* Left visual */}
       <div className="relative flex items-center justify-center  rounded-xl md:order-1 order-2">
-        <img
+        <Image
           src={imageUrl}
           alt="Restored furniture example"
-          className="w-full h-80 md:h-full object-cover rounded-lg shadow-inner"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
+          className="h-80 object-cover rounded-lg"
         />
         <div className="bg-white/80 backdrop-blur-sm  rounded-2xl overflow-hidden absolute flex justify-center items-center  gap-4 md:w-[80%] w-[95%] p-5 md:bottom-7 -bottom-16">
           <div className="text-center">
@@ -293,7 +292,7 @@ function QualityRestorationCard({
             return (
               <li key={s.id} className="flex gap-4 items-start">
                 <div className="flex-shrink-0">
-                  <div className="w-11 h-11 rounded-xl bg-[#FFF8DF]  flex items-center justify-center ring-1 ring-[#ffdb5e]/60 ">
+                  <div className="w-11 h-11 rounded-xl bg-[#ff8d3c1b]  flex items-center justify-center ring-1 ring-[#ffdb5e]/60 ">
                     {Icon ? (
                       <Icon className="w-5 h-5 pri" />
                     ) : (
@@ -326,7 +325,6 @@ function QualityRestorationCard({
 }
 
 const PaymentOption = ({
-  icon: Icon,
   title,
   description,
 }: {
@@ -334,16 +332,11 @@ const PaymentOption = ({
   title: string;
   description: string;
 }) => (
-  <div className="group relative bg-white p-6 rounded-2xl border border-slate-100 hover:border-[#FFF8DF] transition-all duration-300 ease-in-out transform hover:-translate-y-1">
-    <div className="absolute top-0 left-0 w-1.5 h-full blue-bg rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-    <div className="flex items-start gap-4">
-      <div className="p-3 rounded-xl bg-[#FFF8DF] pri group-hover:bg-blue transition-colors duration-300">
-        <Icon size={24} strokeWidth={1.5} />
-      </div>
-      <div>
-        <h3 className="font-medium blue mb-1">{title}</h3>
-        <p className="text-sm text-slate-500 ">{description}</p>
-      </div>
+  <div className="group relative border bg-white/50 p-6 rounded-2xl">
+    <div className="absolute top-0 left-0 w-1.5 h-full blue-bg rounded-l-2xl opacity-0 " />
+    <div className="">
+      <h3 className="font-medium blue mb-1">{title}</h3>
+      <p className="text-sm text-slate-500 ">{description}</p>
     </div>
   </div>
 );
@@ -370,31 +363,27 @@ const defaultSteps: Step[] = [
     id: "inspection",
     title: "Detailed Inspection",
     desc: "Each item is thoroughly examined for structural integrity and repair needs.",
-    Icon: CheckCircle,
   },
   {
     id: "repairs",
     title: "Professional Repairs",
     desc: "Skilled craftsmen fix loose joints, replace worn hardware and address damage.",
-    Icon: Hammer,
   },
   {
     id: "cleaning",
     title: "Deep Cleaning",
     desc: "Specialized cleaning removes years of accumulated dirt and stains.",
-    Icon: Droplet,
   },
   {
     id: "finishing",
     title: "Polishing & Refinishing",
     desc: "Wood receives professional polishing while upholstery is steam-cleaned.",
-    Icon: Star,
   },
 ];
 
 const BenefitItem = ({ text }: { text: string }) => (
   <li className="flex items-start gap-3 text-slate-600">
-    <div className="mt-1 min-w-5 h-5 rounded-full bg-[#FFF8DF] flex items-center justify-center">
+    <div className="mt-1 min-w-5 h-5 rounded-full bg-[#ff8d3c1b] flex items-center justify-center">
       <div className="w-2 h-2 rounded-full pri-bg" />
     </div>
     <span className="text-sm font-medium">{text}</span>
@@ -407,13 +396,9 @@ import {
   Landmark,
   FileCheck,
   Smartphone,
-  Truck,
   ChevronRight,
   ShieldCheck,
   CheckCircle,
-  Droplet,
-  Hammer,
-  Star,
 } from "lucide-react";
 
 import { Button } from "../ui/button";

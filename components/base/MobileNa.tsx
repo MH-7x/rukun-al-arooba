@@ -9,7 +9,11 @@ const MobileNa = ({ ar }: { ar?: boolean }) => {
       dir="ltr"
       className="bg-[#144E5A] relative  md:hidden md:px-0 px-3 w-full min-h-12 mt-1 flex justify-between items-center py-2"
     >
-      <Link href={"/"} id="Logo" className="h-12 w-[113px]  relative">
+      <Link
+        href={"/"}
+        id="Rukun Al Arooba Used Furniture Logo"
+        className="h-12 w-[113px]  relative"
+      >
         <Image
           src={logoYel}
           loading="eager"

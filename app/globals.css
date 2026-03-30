@@ -112,6 +112,84 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
 }
+
+/* ============================================================
+   Button Utility Classes — add to your globals.css
+   ============================================================ */
+
+/* --- Base --- */
+.btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded-md
+         text-sm font-medium transition-all shrink-0 outline-none
+         disabled:pointer-events-none disabled:opacity-50
+         [&_svg]:pointer-events-none [&_svg]:shrink-0
+         [&_svg:not([class*='size-'])]:size-4
+         focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]
+         aria-invalid:border-destructive aria-invalid:ring-destructive/20
+         dark:aria-invalid:ring-destructive/40;
+}
+
+/* --- Variants --- */
+.btn-default {
+  @apply bg-[#C07D53] text-shadow-2xs text-primary-foreground shadow-xs
+         hover:bg-[#C07D53]/90;
+}
+
+.btn-destructive {
+  @apply bg-destructive text-white shadow-xs
+         hover:bg-destructive/90
+         focus-visible:ring-destructive/20
+         dark:bg-destructive/60 dark:focus-visible:ring-destructive/40;
+}
+
+.btn-outline {
+  @apply border border-[#C07D53] bg-background text-[#C07D53] shadow-xs
+         hover:bg-[#C07D53]/10;
+}
+
+.btn-outline-blue {
+  @apply border border-[#14435a] bg-background text-[#14435a] shadow-xs
+         hover:bg-[#14435a]/10;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-[#353535] shadow-xs hover:bg-secondary/80;
+}
+
+.btn-blue {
+  @apply bg-[#144E5A] text-primary-foreground shadow-xs hover:bg-[#144E5A]/90;
+}
+
+.btn-ghost {
+  @apply text-[#353535] hover:bg-accent hover:text-accent-foreground
+         dark:hover:bg-accent/50;
+}
+
+.btn-link {
+  @apply text-[#C07D53] underline-offset-4 hover:underline;
+}
+
+.btn-link-blue {
+  @apply text-[#14435a] underline-offset-4 hover:underline;
+}
+
+/* --- Sizes --- */
+.btn-size-default {
+  @apply h-9 px-4 py-2 has-[>svg]:px-3;
+}
+
+.btn-size-sm {
+  @apply h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5;
+}
+
+.btn-size-lg {
+  @apply h-10 rounded-md px-6 has-[>svg]:px-4;
+}
+
+.btn-size-icon {
+  @apply size-9;
+}
+
 .sidebar {
   @apply fixed top-0 right-0 z-[999] w-11/12 h-screen bg-white/80 backdrop-blur-md text-[#144E5A] shadow-lg translate-x-full peer-checked:translate-x-0 transition-transform duration-300 ease-in-out overflow-y-auto;
 }

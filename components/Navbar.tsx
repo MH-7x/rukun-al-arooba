@@ -6,49 +6,60 @@ import logo from "../public/rukun-al-arooba-used-furniture.svg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import DesktopNav from "./base/DesktopNav";
 import MobileNa from "./base/MobileNa";
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const [mobileSize, setMobileSize] = useState(false);
+  const lastScrollYRef = useRef(0);
+  const scrollFrameRef = useRef<number | null>(null);
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
-      if (window.scrollY > lastScrollY) {
+  // Throttled scroll handler using requestAnimationFrame
+  const handleScroll = useCallback(() => {
+    if (scrollFrameRef.current !== null) return;
+
+    scrollFrameRef.current = window.requestAnimationFrame(() => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollYRef.current) {
         // Scrolling down
         setShowNavbar(false);
       } else {
         // Scrolling up
         setShowNavbar(true);
       }
-      setLastScrollY(window.scrollY);
-    }
-  };
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }
-    return;
-  }, [lastScrollY]);
+
+      lastScrollYRef.current = currentScrollY;
+      scrollFrameRef.current = null;
+    });
+  }, []);
+
+  // Handle window resize with debouncing
+  const handleResize = useCallback(() => {
+    setMobileSize(window.innerWidth < 768);
+  }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      if (window.innerWidth < 768) {
-        setMobileSize(true);
+    // Initialize mobile size on mount
+    setMobileSize(window.innerWidth < 768);
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Add resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+      if (scrollFrameRef.current !== null) {
+        cancelAnimationFrame(scrollFrameRef.current);
       }
-      window.addEventListener("resize", () => {
-        if (window.innerWidth < 768) {
-          setMobileSize(true);
-        } else {
-          setMobileSize(false);
-        }
-      });
-    }
-  }, []);
+    };
+  }, [handleScroll, handleResize]);
 
   return (
     <header

@@ -1,5 +1,3 @@
-"use client";
-
 import { locationList, servicesList } from "@/lib/list";
 import { Plus, X } from "lucide-react";
 import Link from "next/link";

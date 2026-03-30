@@ -233,7 +233,7 @@ const HowToBuySection = () => {
                     {/* Decorative Dot */}
                     <div className="flex-shrink-0 mt-1.5">
                       <div className="relative flex items-center justify-center w-3 h-3">
-                        <span className="absolute w-full h-full bg-[#FFF8DF] rounded-full opacity-50 animate-pulse"></span>
+                        <span className="absolute w-full h-full bg-[#ff8d3c1b] rounded-full opacity-50 animate-pulse"></span>
                         <span className="relative w-2 h-2 tert-bg rounded-full"></span>
                       </div>
                     </div>
@@ -853,7 +853,7 @@ const AlAinUsedFurniturePage = () => {
                   </div>
 
                   <Link href={service.link} target="_blank">
-                    <button className="max-w-sm cursor-pointer py-3.5 px-6 rounded-xl bg-[#FFF8DF] blue font-medium text-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+                    <button className="max-w-sm cursor-pointer py-3.5 px-6 rounded-xl bg-[#ff8d3c1b] blue font-medium text-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
                       <span>{`Contact For ${service.title}`}</span>
                       <ChevronRight
                         size={18}
@@ -891,7 +891,7 @@ const AlAinUsedFurniturePage = () => {
 
             {/* Step 1: Contact */}
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 relative hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-16 h-16 rounded-full bg-[#FFF8DF] flex items-center justify-center mb-6 mx-auto border-4 border-white shadow-sm relative z-10">
+              <div className="w-16 h-16 rounded-full bg-[#ff8d3c1b] flex items-center justify-center mb-6 mx-auto border-4 border-white shadow-sm relative z-10">
                 <Phone className="w-8 h-8 pri" />
               </div>
               <div className="text-center mb-6">
@@ -904,7 +904,7 @@ const AlAinUsedFurniturePage = () => {
               </div>
               <ul className="space-y-4 text-left bg-slate-50 p-5 rounded-xl">
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#FFF8DF] font-bold text-xs mt-0.5">
+                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#ff8d3c1b] font-bold text-xs mt-0.5">
                     1
                   </div>
                   <span className="text-slate-600 text-sm">
@@ -912,7 +912,7 @@ const AlAinUsedFurniturePage = () => {
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#FFF8DF] font-bold text-xs mt-0.5">
+                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#ff8d3c1b] font-bold text-xs mt-0.5">
                     2
                   </div>
                   <span className="text-slate-600 text-sm">
@@ -920,7 +920,7 @@ const AlAinUsedFurniturePage = () => {
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#FFF8DF] font-bold text-xs mt-0.5">
+                  <div className="w-5 h-5 flex items-center justify-center rounded-full pri bg-[#ff8d3c1b] font-bold text-xs mt-0.5">
                     3
                   </div>
                   <span className="text-slate-600 text-sm">
@@ -946,7 +946,7 @@ const AlAinUsedFurniturePage = () => {
               </div>
 
               <div className="space-y-4">
-                <div className="bg-[#FFF8DF] p-4 rounded-xl border border-[#c07d53]/50">
+                <div className="bg-[#ff8d3c1b] p-4 rounded-xl border border-[#c07d53]/50">
                   <p className="text-sm font-medium blue mb-2 text-center">
                     How we calculate your price:
                   </p>
@@ -977,7 +977,7 @@ const AlAinUsedFurniturePage = () => {
 
             {/* Step 3: Pickup */}
             <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 relative hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-16 h-16 rounded-full bg-[#FFF8DF] flex items-center justify-center mb-6 mx-auto border-4 border-white shadow-sm relative z-10">
+              <div className="w-16 h-16 rounded-full bg-[#ff8d3c1b] flex items-center justify-center mb-6 mx-auto border-4 border-white shadow-sm relative z-10">
                 <Truck className="w-8 h-8 pri" />
               </div>
               <div className="text-center mb-6">

@@ -6,12 +6,13 @@ const Sustainable = () => {
   return (
     <section
       id="Buy-Used-Furniture-in-Sharjah"
-      className="w-full md:h-[500px] h-[540px] relative mt-28"
+      className="w-full md:h-[500px] h-[540px] relative mt-16"
     >
       <Image
         src={"/Sustainable-Furniture-2.jpg"}
         alt="sustainable furniture shopping with rukun al arooba used furniture"
         fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
         className="object-cover object-center"
       />
       <div className="absolute  px-3 top-0 left-0 w-full h-full bg-gradient-to-r from-[#144E5A] to-[#144E5A]/60 flex flex-col items-start justify-center md:px-20">

@@ -46,6 +46,7 @@ const SellUsedFurniture = () => {
               src={"/sell-used-furniture-in-sharjah.jpg"}
               alt="Sell Your Used Furniture in Sharjah"
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
               className="object-cover object-center"
             />
           </div>

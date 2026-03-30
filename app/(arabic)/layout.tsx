@@ -109,7 +109,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ar" dir="rtl">
+    <html lang="ar-AE" dir="rtl" suppressHydrationWarning>
       <head>
         <Script
           id="Business-Schema"
@@ -121,7 +121,10 @@ export default function RootLayout({
           key="Business-Schema"
         />
       </head>
-      <body className={`${NotoSansArabic.className} antialiased`}>
+      <body
+        className={`${NotoSansArabic.className} antialiased`}
+        suppressHydrationWarning
+      >
         <ArNavbar />
         {children}
         <WtChatBox />

@@ -16,8 +16,7 @@ const ServiceAreas = () => {
     {
       id: "sharjah",
       city: "Sharjah",
-      badge: "Headquarters",
-      icon: <Building2 className="w-6 h-6" />,
+
       title: "Used Furniture Buyers in Sharjah",
       description:
         "Our home base with same-day service. Visit our Al Estiqlal Street showroom any day of the week, or request immediate pickup/delivery.",
@@ -29,8 +28,7 @@ const ServiceAreas = () => {
     {
       id: "dubai",
       city: "Dubai",
-      badge: "Next-Day Service",
-      icon: <Clock className="w-6 h-6" />,
+
       title: "Used Furniture in Dubai",
       description:
         "Next-day delivery available. We serve all major districts and residential communities. Special bulk rates available for apartment furnishing.",
@@ -42,8 +40,7 @@ const ServiceAreas = () => {
     {
       id: "abudhabi",
       city: "Abu Dhabi",
-      badge: "Scheduled Runs",
-      icon: <Calendar className="w-6 h-6" />,
+
       title: "Used Furniture in Abu Dhabi",
       description:
         "Professional service for buying and selling in the capital. Whether you are in the city center or on the islands, we coordinate efficient pickups.",
@@ -55,8 +52,7 @@ const ServiceAreas = () => {
     {
       id: "ajman",
       city: "Ajman",
-      badge: "Express Service",
-      icon: <Truck className="w-6 h-6" />,
+
       title: "Used Furniture in Ajman",
       description:
         "Express service with same-day availability. Our proximity allows for quick response times and competitive pricing.",
@@ -72,27 +68,27 @@ const ServiceAreas = () => {
       city: "Ras Al Khaimah",
       detail:
         "Weekly service runs ensure regular availability. Schedule ahead for maximum convenience.",
-      icon: <Calendar className="w-5 h-5 pri" />,
+
       href: "/",
     },
     {
       city: "Al Ain",
       detail:
         "By appointment service for the Garden City. Efficient trips to minimize costs while maintaining quality.",
-      icon: <CheckCircle2 className="w-5 h-5 pri" />,
+
       href: "/",
     },
     {
       city: "UAQ & Fujairah",
       detail:
         "On-demand service for UAQ and scheduled runs for Fujairah residents.",
-      icon: <Truck className="w-5 h-5 pri" />,
+
       href: "/",
     },
   ];
 
   return (
-    <div className="min-h-screen md:py-16 px-3 md:px-0 md:w-11/12 w-full mx-auto mt-36">
+    <div className="min-h-screen md:py-16 px-3 md:px-0 md:w-11/12 w-full mx-auto mt-10">
       {/* Header Section */}
       <div className="max-w-7xl mx-auto text-center mb-16">
         <h2 className="md:text-4xl text-3xl font-bold blue tracking-tight mb-6">
@@ -111,15 +107,6 @@ const ServiceAreas = () => {
           {/* Sharjah Card - Featured (Spans 1 column on LG, but styled distinctly) */}
           <div className="lg:col-span-1 relative group">
             <div className="relative h-full bg-white rounded-3xl p-8 shadow-xl border border-[#FFF8DF] flex flex-col">
-              <div className="flex items-center justify-between mb-6">
-                <div className="p-3 bg-[#FFF8DF]  rounded-2xl pri shadow-lg">
-                  <Building2 className="w-8 h-8" />
-                </div>
-                <span className="px-3 py-1 text-xs font-medium pri bg-[#FFF8DF] rounded-full">
-                  HEADQUARTERS
-                </span>
-              </div>
-
               <Link href="/used-furniture-buyers-in-sharjah">
                 <h3 className="text-xl font-bold blue mb-3">
                   Used Furniture Buyers in Sharjah
@@ -158,17 +145,6 @@ const ServiceAreas = () => {
                 key={service.id}
                 className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:border-slate-200 transition-all duration-300 flex flex-col"
               >
-                <div className="flex items-center justify-between mb-6">
-                  <div className={`p-3 rounded-2xl bg-[#FFF8DF] blue`}>
-                    {service.icon}
-                  </div>
-                  <span
-                    className={`px-3 py-1 text-xs font-medium blue bg-[#FFF8DF] rounded-full`}
-                  >
-                    {service.badge}
-                  </span>
-                </div>
-
                 <Link href={service.href}>
                   <h3 className="text-xl font-bold blue mb-3">
                     Used Furniture in {service.city}
@@ -204,7 +180,6 @@ const ServiceAreas = () => {
             {/* Ajman Highlight */}
             <div className="p-8 bg-gradient-to-br from-[#FFF8DF] to-white">
               <div className="flex items-center mb-4">
-                <Truck className="w-5 h-5 pri mr-2" />
                 <Link href={"/used-furniture-in-ajman"}>
                   <h3 className="text-lg font-bold blue">Ajman</h3>
                 </Link>
@@ -224,7 +199,6 @@ const ServiceAreas = () => {
                 className="p-8 hover:bg-slate-50 transition-colors"
               >
                 <div className="flex items-center mb-4">
-                  {item.icon}
                   <Link href={item.href}>
                     {" "}
                     <h3 className="text-lg font-bold blue ml-2">{item.city}</h3>

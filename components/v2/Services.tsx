@@ -178,17 +178,24 @@ const Services = () => {
   return (
     <>
       <section className="px-3 md:w-11/12 w-full mx-auto mt-36">
-        <div className="max-w-screen-xl mx-auto">
-          <div className="grid lg:grid-cols-2 justify-center gap-6 lg:gap-12 max-lg:max-w-3xl max-lg:mx-auto ">
+        <div className="max-w-screen-xl mx-auto relative overflow-hidden rounded-3xl h-72">
+          <Image
+            src="/buy-used-furniture-in-sharjah.jpg"
+            alt="Buy Used Furniture in Sharjah"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
+            className=" object-cover object-bottom -z-10"
+          />
+          <div className="grid lg:grid-cols-2 justify-center gap-6 lg:gap-12 max-lg:max-w-3xl max-lg:mx-auto bg-[#144e5a]/70 absolute w-fill h-full top-0 left-0 p-8">
             <div className="">
-              <h2 className="blue md:text-4xl text-3xl font-bold !leading-tight ">
+              <h2 className="text-white md:text-4xl text-3xl font-bold !leading-tight ">
                 Buy Used Furniture in Sharjah <br className="md:block hidden" />{" "}
                 - Extensive Collection
               </h2>
             </div>
 
             <div className="max-lg:text-center">
-              <p className="text-slate-600 text-base leading-relaxed">
+              <p className="text-slate-100 text-base leading-relaxed">
                 Our intuitive platform streamlines every aspect of your business
                 operations. Effortlessly manage projects, track inventory, and
                 automate workflows, Connect meaningfully with customers through.
@@ -204,14 +211,6 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:h-96 h-60 mt-12 md:mt-16 relative rounded-3xl overflow-hidden">
-            <Image
-              src="/buy-used-furniture-in-sharjah.jpg"
-              alt="Buy Used Furniture in Sharjah"
-              fill
-              className="absolute object-cover object-bottom"
-            />
-          </div>
         </div>
       </section>
       <section
@@ -222,7 +221,7 @@ const Services = () => {
           <div className="relative" key={service.title}>
             {/* Decorative background blob */}
 
-            <div className="relative bg-white rounded-3xl overflow-hidden border border-slate-100">
+            <div className="relative bg-white/70 rounded-3xl overflow-hidden border border-slate-100">
               {/* Content */}
               <div className="md:p-8 py-8 px-5">
                 <div className="flex md:items-center md:flex-row flex-col gap-4 mb-6">
@@ -246,7 +245,7 @@ const Services = () => {
                   {service.desc}
                 </div>
 
-                <div className="space-y-4 mb-8 bg-slate-50 p-5 rounded-2xl">
+                <div className="space-y-4 mb-8 bg-slate-50/80 p-5 rounded-2xl">
                   <ul className="space-y-3">
                     {service.list.map((item, index) => (
                       <BenefitItem key={index} text={item} />
@@ -255,7 +254,7 @@ const Services = () => {
                 </div>
 
                 <Link href={service.link} target="_blank">
-                  <button className="max-w-sm cursor-pointer py-3.5 px-6 rounded-xl bg-[#FFF8DF] blue font-medium text-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
+                  <button className="max-w-sm cursor-pointer py-3.5 px-6 rounded-xl bg-[#ff8d3c1b] blue font-medium text-sm transition-all active:scale-[0.98] flex items-center justify-center gap-2 group">
                     <span>{`Contact For ${service.title}`}</span>
                     <ChevronRight
                       size={18}
@@ -276,7 +275,7 @@ export default Services;
 
 export const BenefitItem = ({ text }: { text: string }) => (
   <li className="flex items-start gap-3 text-slate-600">
-    <div className="mt-1 min-w-5 h-5 rounded-full bg-[#FFF8DF] flex items-center justify-center">
+    <div className="mt-1 min-w-5 h-5 rounded-full bg-[#ff8d3c1b] flex items-center justify-center">
       <div className="w-2 h-2 rounded-full pri-bg" />
     </div>
     <span className="text-sm font-medium">{text}</span>

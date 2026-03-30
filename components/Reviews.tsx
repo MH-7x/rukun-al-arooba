@@ -11,6 +11,7 @@ const Reviews = () => {
           <Image
             src={"/cta-furniture-img.png"}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
             alt="Single Furniture Image"
             className="object-contain object-top absolute drop-shadow-xl"
           />
@@ -21,37 +22,37 @@ const Reviews = () => {
           </h2>
           <ul className="grid md:grid-cols-2 grid-cols-1 gap-y-2  mt-10 md:pr-10">
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>Checked & Repaired</span>
             </li>
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>Save Money, Keep Style</span>
             </li>
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>20+ Years Experience</span>
             </li>
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>Warranty & Easy Returns</span>
             </li>
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>Quick Buy & Sell</span>
             </li>
             <li className="flex items-center gap-x-2 blue font-medium">
-              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#FFF8DF] rounded-2xl pri">
+              <div className="w-6 h-6 flex items-center justify-center p-1 bg-[#ff8d3c1b] rounded-2xl pri">
                 <Check size={15} />
               </div>{" "}
               <span>Discounted Delivery</span>

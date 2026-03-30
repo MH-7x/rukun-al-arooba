@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <Script
           id="Business-Schema"
@@ -77,6 +77,7 @@ export default function RootLayout({
       </head>
       <body
         className={`${GraphikFont.className} antialiased min-h-screen w-full relative bg-white`}
+        suppressHydrationWarning
       >
         <div
           className="fixed inset-0 top-1/2 -z-10"

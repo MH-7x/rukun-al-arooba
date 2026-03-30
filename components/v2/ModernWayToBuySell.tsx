@@ -40,19 +40,21 @@ const ModernWayToBuySell = () => {
         </Link>
       </div>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-10 max-w-6xl mx-auto mt-10 z-10">
-        <div className="bg-white rounded-2xl md:h-96 h-80 relative overflow-hidden ">
+        <div className="bg-white rounded-2xl aspect-4/3 relative overflow-hidden ">
           <Image
-            src={"/ar/rukun-al-arooba-used-furniture.jpg"}
-            alt="modern furniture showroom sharjah"
+            src={"/ar/rukun-al-arooba-used-furniture-43.jpg"}
+            alt="modern furniture showroom in  sharjah"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
             className="object-cover"
           />
         </div>
-        <div className="bg-white rounded-2xl md:h-96 h-52 relative overflow-hidden ">
+        <div className="bg-white rounded-2xl md:aspect-4/3 aspect-video relative overflow-hidden ">
           <Image
             src={"/used-furniture-store-sharjah-inner-view-2.jpg"}
             alt="used furniture store sharjah inner view"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
             className="object-cover"
           />
         </div>
