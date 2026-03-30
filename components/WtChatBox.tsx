@@ -9,20 +9,7 @@ const WtChatBox = () => {
         dir="ltr"
         title="Contact Us On WhatsApp"
         href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
-        className="fixed md:bottom-24 bottom-[70px] md:right-8 right-3 px-3 py-1.5 bg-white rounded-2xl drop-shadow-xl border flex items-start justify-start gap-y-1 flex-col z-[999] md:text-sm text-xs"
-      >
-        <div className="flex items-center gap-x-2">
-          <User2Icon size={18} className="pri" />
-          <span className="pri">M. Mashal</span>
-        </div>{" "}
-        <span className="font-medium text"> Hi, How Can I Help You today!</span>
-      </Link>
-
-      <Link
-        dir="ltr"
-        title="Contact Us On WhatsApp"
-        href={`https://wa.me/${APP.phone}?text=I%20Contact%20You%20For%20Used%20Furniture`}
-        className="fixed md:bottom-6 bottom-3 md:right-8 right-3 cursor-pointer md:w-14 w-12 md:h-14 h-12 bg-green-500 p-3 rounded-full z-[999] drop-shadow-2xl"
+        className="fixed bottom-6 md:right-8 right-6 cursor-pointer w-14 h-14 bg-green-500 p-3 rounded-full z-[999] drop-shadow-2xl"
       >
         <svg
           fill="#fff"

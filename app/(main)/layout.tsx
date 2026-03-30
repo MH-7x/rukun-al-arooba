@@ -7,6 +7,7 @@ import Script from "next/script";
 import { RukunAlAroobaSchema } from "@/lib/list";
 import GTM from "@/components/GTM";
 import FooterNew from "@/components/FooterNew";
+import WtChatBox from "@/components/WtChatBox";
 
 const GraphikFont = localFont({
   src: [
@@ -99,7 +100,7 @@ export default function RootLayout({
         {/* <WtChatBox /> */}
 
         <FooterNew />
-
+        <WtChatBox />
         <GTM />
       </body>
     </html>
