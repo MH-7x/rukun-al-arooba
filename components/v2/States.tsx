@@ -16,7 +16,7 @@ const States = () => {
       <h2 className="md:text-4xl text-3xl font-bold blue">
         Your All In One <br /> Used Furniture Dealer!
       </h2>
-      <div className="mt-16 grid lg:grid-cols-2 md:grid-cols-1 items-center">
+      <div className="mt-16 grid lg:grid-cols-2 md:grid-cols-1 items-center md:gap-0 gap-10">
         <div className="grid lg:grid-cols-2 grid-cols-1 md:gap-x-5">
           <div className="border-l-2 border-[#ffdb5e] pb-10 px-3 relative">
             <div className="w-16 h-16 bg-white border-2 border-[#ffdb5e] rounded-full absolute top-0 left-0 flex items-center justify-center">

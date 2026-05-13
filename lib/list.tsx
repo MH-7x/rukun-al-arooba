@@ -188,6 +188,16 @@ export const locationList = [
     desc: "Quality used furniture and appliances available in mussafah.",
     link: "/used-furniture-abu-dhabi",
   },
+  {
+    title: "movers and packers in uae",
+    desc: "a fully registered moving company based in Ras Al Khor Industrial Area, Dubai..",
+    link: "https://moversandpackersinuae.com",
+  },
+  {
+    title: "movers and packers in dubai",
+    desc: "a fully registered moving company in dubai based in Ras Al Khor Industrial Area",
+    link: "https://moversandpackersinuae.com/movers-and-packers-in-dubai",
+  },
 ];
 export const HomeFaqs = [
   {

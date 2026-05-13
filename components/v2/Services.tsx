@@ -177,8 +177,8 @@ const servicesList: {
 const Services = () => {
   return (
     <>
-      <section className="px-3 md:w-11/12 w-full mx-auto mt-36">
-        <div className="max-w-screen-xl mx-auto relative overflow-hidden rounded-3xl h-72">
+      <section className=" md:w-11/12 w-full mx-auto mt-36">
+        <div className="max-w-screen-xl mx-auto relative overflow-hidden md:rounded-3xl md:h-72 h-[450px]">
           <Image
             src="/buy-used-furniture-in-sharjah.jpg"
             alt="Buy Used Furniture in Sharjah"
@@ -186,27 +186,25 @@ const Services = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 80vw"
             className=" object-cover object-bottom -z-10"
           />
-          <div className="grid lg:grid-cols-2 justify-center gap-6 lg:gap-12 max-lg:max-w-3xl max-lg:mx-auto bg-[#144e5a]/70 absolute w-fill h-full top-0 left-0 p-8">
-            <div className="">
-              <h2 className="text-white md:text-4xl text-3xl font-bold !leading-tight ">
-                Buy Used Furniture in Sharjah <br className="md:block hidden" />{" "}
-                - Extensive Collection
-              </h2>
-            </div>
+          <div className="grid lg:grid-cols-2 md:justify-center md:items-center  lg:gap-12 bg-[#144e5a]/70 absolute w-full h-full top-0 left-0 md:p-8 pt-12 px-4">
+            <h2 className="text-white md:text-4xl text-3xl font-bold md:!leading-tight">
+              Buy Used Furniture in Sharjah <br className="md:block hidden" /> -
+              Extensive Collection
+            </h2>
 
-            <div className="max-lg:text-center">
+            <div className="max-lg:text-center md:mt-0 -mt-5">
               <p className="text-slate-100 text-base leading-relaxed">
                 Our intuitive platform streamlines every aspect of your business
                 operations. Effortlessly manage projects, track inventory, and
                 automate workflows, Connect meaningfully with customers through.
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-4 max-lg:justify-center">
+              <div className="mt-6 lg:mt-8 flex flex-wrap gap-4 max-lg:justify-center">
                 <Button size={"lg"} wtsBtn>
                   WhatsApp Us
                 </Button>
                 <Button size={"lg"} storeBtn variant={"secondary"}>
-                  Visit Our Showroom
+                  Visit Showroom
                 </Button>
               </div>
             </div>

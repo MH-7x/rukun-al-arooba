@@ -24,7 +24,7 @@ const quickLinks = [
 
   {
     title: "About Web Developer",
-    link: "https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!",
+    link: "https://mashalhuraira.vercel.app",
   },
 ];
 
@@ -225,7 +225,7 @@ const FooterNew = () => {
               </div>
               <div className="hidden md:block w-1 h-1 bg-gray-600 rounded-full" />
               <a
-                href="https://wa.me/+923471309916?text=Hello%20Mashal,%20I%20Need%20Your%20Service%20!"
+                href="https://mashalhuraira.vercel.app"
                 rel="noopener noreferrer"
                 className=" "
               >
