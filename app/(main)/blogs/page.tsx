@@ -1,4 +1,5 @@
 import BlogCard from "@/components/BlogCard";
+import Breadcrumb from "@/components/Breadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 
 import {
@@ -71,6 +72,12 @@ const BlogsPage = async ({
 
   return (
     <main>
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blogs" },
+        ]}
+      />
       <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
         <div className="grid-background" />
         <h1 className="md:text-4xl/tight text-3xl blue font-bold text-center">

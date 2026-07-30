@@ -10,7 +10,8 @@ export const RukunAlAroobaSchema = {
   telephone: "+971556461731",
   priceRange: "$$",
 
-  image: "https://rukunalaroobausedfurniture.ae/path/storefront-image.jpg",
+  image:
+    "https://rukunalaroobausedfurniture.ae/ar/rukun-al-arooba-used-furniture.jpg",
   logo: "https://rukunalaroobausedfurniture.ae/square-logo.png",
   address: {
     "@type": "PostalAddress",
@@ -27,8 +28,8 @@ export const RukunAlAroobaSchema = {
   },
   aggregateRating: {
     "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "17",
+    ratingValue: "4.5",
+    reviewCount: "19",
   },
   amenityFeature: [
     {

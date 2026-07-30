@@ -1,3 +1,4 @@
+import Breadcrumb from "@/components/Breadcrumb";
 import CTA from "@/components/base/CTA";
 import FAQs from "@/components/base/FAQs";
 import LatestsNews from "@/components/LatestsNews";
@@ -63,6 +64,12 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="overflow-hidden">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Used Furniture in Ajman" },
+          ]}
+        />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <div className="grid-background" />
           <h1 className="md:text-4xl/tight text-3xl blue font-bold text-center">

@@ -1,5 +1,6 @@
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { createEncodedUrl } from "@/lib/utils";
+import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 
 import Image from "next/image";
 import React from "react";
@@ -21,6 +22,12 @@ export const metadata = MetadataTemplate({
 export default function RuknAlorobaPage() {
   return (
     <main dir="rtl" lang="ar" className="min-h-screen bg-gray-50 py-10">
+      <ArBreadcrumb
+        items={[
+          { label: "الرئيسية", href: "/" },
+          { label: "اثاث مستعمل" },
+        ]}
+      />
       <div className="max-w-6xl mx-auto bg-white py-8 px-3 md:p-12 rounded-2xl shadow-lg">
         {/* Hero */}
         <header className="mb-8">

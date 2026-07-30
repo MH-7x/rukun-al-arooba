@@ -1,4 +1,5 @@
 import CTA from "@/components/base/CTA";
+import Breadcrumb from "@/components/Breadcrumb";
 import FAQs from "@/components/base/FAQs";
 import LatestsNews from "@/components/LatestsNews";
 import Reviews from "@/components/Reviews";
@@ -47,6 +48,12 @@ const BuyingSellingProcess = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="overflow-hidden">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "How We Work" },
+          ]}
+        />
         <section className=" pt-16 md:w-11/12 w-full mx-auto md:px-0 px-3 grid md:grid-cols-2  items-center">
           <div className="  md:ml-16">
             <span className="px-3 py-2 bg-[#c07d5329] font-medium pri rounded-2xl text-sm">

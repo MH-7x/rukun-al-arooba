@@ -1,5 +1,6 @@
 import ServiceAside from "@/components/base/ServiceAside";
 import ServiceHero from "@/components/base/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import "../styling.css";
 import { Button } from "@/components/ui/button";
@@ -64,6 +65,12 @@ const UsedBeds = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="service-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Used Beds for Sale" },
+          ]}
+        />
         <ServiceHero
           title={{
             one: "Used Beds for Sale",

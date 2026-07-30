@@ -1,6 +1,7 @@
 import ServiceAside from "@/components/base/ServiceAside";
 import "../styling.css";
 import ServiceHero from "@/components/base/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import Image from "next/image";
 import FAQs from "@/components/base/FAQs";
@@ -36,6 +37,12 @@ const UsedRefrigeratorPage = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="service-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Buy or Sell Used Refrigerators" },
+          ]}
+        />
         <ServiceHero
           title={{
             one: "Buy & Sell Used Refrigerators",

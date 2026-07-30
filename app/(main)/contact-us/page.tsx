@@ -1,4 +1,5 @@
 import CTA from "@/components/base/CTA";
+import Breadcrumb from "@/components/Breadcrumb";
 import Form from "@/components/FORM";
 import { APP } from "@/lib/App";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
@@ -55,6 +56,12 @@ export default function ContactForm() {
   return (
     <>
       <main className="">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Contact Us" },
+          ]}
+        />
         <CTA
           title="Contact Us"
           headerUse

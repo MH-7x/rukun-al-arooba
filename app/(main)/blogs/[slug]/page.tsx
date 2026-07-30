@@ -1,4 +1,5 @@
 import LatestsNews from "@/components/LatestsNews";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import {
   CalendarCheck2,
@@ -144,6 +145,13 @@ const SingleBlogPage = async ({
   return blog ? (
     <article>
       <main>
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Blogs", href: "/blogs" },
+            { label: blog.title },
+          ]}
+        />
         <section className="grid-wrapper w-full flex items-center justify-center flex-col py-16 md:px-0 px-3">
           <>
             <div className="grid-background" />

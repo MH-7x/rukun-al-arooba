@@ -1,5 +1,6 @@
 import ServiceAside from "@/components/base/ServiceAside";
 import ServiceHero from "@/components/base/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import React from "react";
 import "../styling.css";
 import Image from "next/image";
@@ -39,6 +40,12 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="service-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Used Home Appliances Dubai" },
+          ]}
+        />
         <ServiceHero
           title={{
             one: "Used Home Appliances Dubai",

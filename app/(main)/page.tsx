@@ -17,6 +17,7 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import Script from "next/script";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -44,6 +45,9 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="">
+        <Breadcrumb items={[
+          { label: "Home" },
+        ]} />
         <HeroSection />
         <BuySellSection />
         <States />

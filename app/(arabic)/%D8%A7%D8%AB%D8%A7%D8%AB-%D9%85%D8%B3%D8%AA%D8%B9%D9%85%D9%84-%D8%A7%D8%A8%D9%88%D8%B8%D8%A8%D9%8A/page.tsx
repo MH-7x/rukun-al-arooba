@@ -1,4 +1,5 @@
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
@@ -15,6 +16,12 @@ export const metadata = MetadataTemplate({
 const ArabicPage = () => {
   return (
     <main>
+      <ArBreadcrumb
+        items={[
+          { label: "الرئيسية", href: "/" },
+          { label: "اثاث مستعمل ابوظبي" },
+        ]}
+      />
       <h1 className="text-5xl text-center mb-20">اثاث مستعمل ابوظبي</h1>
     </main>
   );

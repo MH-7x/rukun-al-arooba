@@ -1,5 +1,6 @@
 import ServiceAside from "@/components/base/ServiceAside";
 import ServiceHero from "@/components/base/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import "../styling.css";
 import FAQs from "@/components/base/FAQs";
@@ -38,6 +39,12 @@ const page = () => {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="service-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Used Office Furniture Buyers Dubai" },
+          ]}
+        />
         <ServiceHero
           title={{
             one: "Used Office Furniture Buyers in Dubai",

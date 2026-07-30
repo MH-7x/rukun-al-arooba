@@ -1,6 +1,7 @@
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 import { createEncodedUrl } from "@/lib/utils";
 import {
   Phone,
@@ -150,6 +151,12 @@ export default function UsedFurnitureDubai() {
       </div>
 
       <main>
+        <ArBreadcrumb
+          items={[
+            { label: "الرئيسية", href: "/" },
+            { label: "اثاث مستعمل دبي" },
+          ]}
+        />
         {/* Hero Section */}
         <section className="relative z-10 bg-gradient-to-br from-[#144e5a] to-[#0d3940] text-white py-20 px-4 overflow-hidden">
           <div className="absolute inset-0 opacity-10">

@@ -1,6 +1,7 @@
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 import { createEncodedUrl } from "@/lib/utils";
 import {
   Phone,
@@ -116,6 +117,12 @@ export default function UsedFurnitureAlAin() {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main dir="rtl" className="text-right font-sans text-[#414141] ">
+        <ArBreadcrumb
+          items={[
+            { label: "الرئيسية", href: "/" },
+            { label: "اثاث مستعمل العين" },
+          ]}
+        />
         {/* --- HERO SECTION --- */}
         {/* Covers PDF Page 1: Intro */}
         <section className="relative w-full py-20 lg:py-32 overflow-hidden">

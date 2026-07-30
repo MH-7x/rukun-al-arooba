@@ -1,6 +1,7 @@
 import { convertFaqsForSchema } from "@/lib/ConvertFaqsInRaw";
 import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
+import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 
 import Image from "next/image";
 import Script from "next/script";
@@ -82,6 +83,12 @@ export default function UsedFurnitureSharjahPage() {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main dir="rtl" className="font-sans bg-gray-50 text text relative">
+        <ArBreadcrumb
+          items={[
+            { label: "الرئيسية", href: "/" },
+            { label: "أثاث مستعمل الشارقة" },
+          ]}
+        />
         <div className="bg-pattern"></div>
 
         {/* Content Container - Added relative and z-10 */}

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Breadcrumb from "@/components/Breadcrumb";
 import {
   Armchair,
   ArrowRight,
@@ -126,6 +127,12 @@ export default function AboutUs() {
   return (
     <>
       <main className="overflow-hidden">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "About Us" },
+          ]}
+        />
         <section className="relative isolate px-3 lg:px-8">
           <div
             aria-hidden="true"

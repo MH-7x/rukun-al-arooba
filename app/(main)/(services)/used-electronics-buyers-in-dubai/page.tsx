@@ -1,5 +1,6 @@
 import ServiceAside from "@/components/base/ServiceAside";
 import ServiceHero from "@/components/base/ServiceHero";
+import Breadcrumb from "@/components/Breadcrumb";
 import MetadataTemplate from "@/lib/MetaDataTemplate";
 import React from "react";
 import "../styling.css";
@@ -58,6 +59,12 @@ function UsedElectronicsBuyers() {
         dangerouslySetInnerHTML={{ __html: FaqsSchema }}
       />
       <main className="service-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Used Electronics Buyers in Dubai" },
+          ]}
+        />
         <ServiceHero
           title={{
             one: "Used Electronics Buyers ",

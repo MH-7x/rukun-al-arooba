@@ -307,6 +307,40 @@ main {
   );
 }
 
+/* ============================================================
+   Breadcrumb
+   ============================================================ */
+.breadcrumb-nav {
+  @apply w-full  mx-auto px-3  pt-4 pb-2;
+}
+
+.breadcrumb-list {
+  @apply flex flex-wrap items-center gap-1 text-sm;
+}
+
+.breadcrumb-item {
+  @apply flex items-center gap-1;
+}
+
+.breadcrumb-link {
+  color: #144e5a;
+  @apply hover:underline underline-offset-2 transition-colors duration-150;
+}
+
+.breadcrumb-link:hover {
+  color: #c07d53;
+}
+
+.breadcrumb-separator {
+  color: #9ca3af;
+  @apply flex-shrink-0;
+}
+
+.breadcrumb-current {
+  color: #6b7280;
+  @apply truncate max-w-[220px] md:max-w-none;
+}
+
 #content p {
   @apply mb-2;
 }
