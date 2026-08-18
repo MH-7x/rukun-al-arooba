@@ -20,7 +20,7 @@ export const metadata = MetadataTemplate({
       desc: "Buy or sell used refrigerators in Dubai, Sharjah & UAE. All fridges are inspected, repaired & warrantied. Get top cash prices & a fast quote today.",
     },
     image: {
-      path: "/service/used-bed-buyers-in-dubai.jpg",
+      path: "/service/used-refrigerators-in-uae.jpg",
       alt: "rukun al arooba used bed buyers in dubai",
     },
     path: "/buy-or-sell-used-refrigerators",

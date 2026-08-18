@@ -3,6 +3,7 @@ import { createEncodedUrl } from "@/lib/utils";
 import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = MetadataTemplate({
@@ -194,8 +195,14 @@ export default function RuknAlorobaPage() {
               مكتبية، خزائن ملفات، وطاولات اجتماعات
             </li>
             <li>
-              <strong>أجهزة كهربائية مستعملة:</strong> ثلاجات، غسالات، مكيفات،
-              أفران، وميكروويف بحالة ممتازة
+              <strong>أجهزة كهربائية مستعملة:</strong> ثلاجات، غسالات، مكيفات (نحن{" "}
+              <Link
+                href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                className="text-[#144e5a] font-bold underline hover:text-[#c07d53]"
+              >
+                مشترو المكيفات المستعملة في دبي
+              </Link>
+              )، أفران، وميكروويف بحالة ممتازة
             </li>
             <li>
               <strong>أثاث حدائق وخارجي:</strong> طقم جلوس خارجي، شمسيات، طاولات

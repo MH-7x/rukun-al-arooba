@@ -4,7 +4,9 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 import ArBreadcrumb from "@/components/arabic/ArBreadcrumb";
 
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
+import { createEncodedUrl } from "@/lib/utils";
 
 export const metadata = MetadataTemplate({
   data: {
@@ -242,8 +244,14 @@ export default function UsedFurnitureSharjahPage() {
                     طاولات اجتماعات.
                   </li>
                   <li>
-                    <strong>الأجهزة المنزلية:</strong> ثلاجات، غسالات، مكيفات،
-                    أفران، شاشات (بحالة جيدة).
+                    <strong>الأجهزة المنزلية:</strong> ثلاجات، غسالات، مكيفات (تعرف أيضاً على خدماتنا كـ{" "}
+                    <Link
+                      href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                      className="text-[#144e5a] font-bold underline hover:text-[#C07D53]"
+                    >
+                      مشترو المكيفات المستعملة في دبي
+                    </Link>
+                    )، أفران، شاشات (بحالة جيدة).
                   </li>
                   <li>
                     <strong>الأثاث الخارجي:</strong> أطقم جلسات، كراسي حدائق،
@@ -492,8 +500,14 @@ export default function UsedFurnitureSharjahPage() {
                   أجهزة منزلية مستعملة
                 </h3>
                 <p className="text">
-                  ثلاجات، غسالات، مكيفات هواء، أفران، وميكروويف، وشاشات تلفزيون.
-                  كلها تعمل بكفاءة.
+                  ثلاجات، غسالات، مكيفات هواء (نحن أيضاً{" "}
+                  <Link
+                    href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                    className="text-[#144e5a] font-bold underline hover:text-[#C07D53]"
+                  >
+                    مشترو المكيفات المستعملة في دبي
+                  </Link>
+                  )، أفران، وميكروويف، وشاشات تلفزيون. كلها تعمل بكفاءة.
                 </p>
               </div>
               {/* Category 6 */}

@@ -143,9 +143,9 @@ export const servicesList = [
     link: "/used-furniture-buyers-in-dubai",
   },
   {
-    title: "Buying Used Furniture",
-    desc: "Purchase quality used furniture at unbeatable prices.",
-    link: "/",
+    title: "Used AC Buyers in Dubai",
+    desc: "Sell Your Old Air Conditioner for Instant Cash",
+    link: "/used-ac-buyers-in-dubai",
   },
 ];
 export const locationList = [
@@ -2572,3 +2572,103 @@ export const AlAinFaqs = [
     ),
   },
 ];
+
+export const AcBuyersFaqs = [
+  {
+    question: "What types of AC units do you buy in Dubai?",
+    answer: (
+      <>
+        <p>
+          We buy all types — split ACs, window ACs, inverter ACs, DC inverter
+          units, central ACs, cassette units, ducted systems, portable ACs, and
+          commercial cooling equipment. All major brands accepted in any
+          condition.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy non-working or damaged ACs?",
+    answer: (
+      <>
+        <p>
+          Yes, we do consider non-working units. They may get a lower offer, but
+          we&apos;ll give you an honest assessment after reviewing the photos.
+          Just send them over and we&apos;ll let you know.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "How fast will I get a price?",
+    answer: (
+      <>
+        <p>
+          Send us photos and details on WhatsApp and we&apos;ll reply with a
+          confirmed price within <strong>5 to 10 minutes</strong>.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Is the pickup really free?",
+    answer: (
+      <>
+        <p>
+          Yes. We work with Abu Muhammad Movers, our logistics partner, to
+          arrange pickup. Depending on your location and the volume of items,
+          it&apos;s often at no cost to you.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer: (
+      <>
+        <p>
+          We pay by cash on the spot, bank transfer, online deposit, or bank
+          cheque — whichever suits you best. We&apos;re not cash-only like most
+          other buyers.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Do you buy ACs outside Dubai — Sharjah, Ajman, Abu Dhabi?",
+    answer: (
+      <>
+        <p>
+          Yes. We&apos;re based in Sharjah but we serve all of Dubai, Sharjah,
+          Ajman, Abu Dhabi, Ras Al Khaimah, Al Ain, and the surrounding areas.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Can you buy my AC and my furniture or other appliances in the same visit?",
+    answer: (
+      <>
+        <p>
+          Absolutely. We buy ACs, home appliances, and all types of furniture in
+          one visit. You don&apos;t need to contact separate buyers for each
+          item.
+        </p>
+      </>
+    ),
+  },
+  {
+    question: "Are you a registered company or just an online service?",
+    answer: (
+      <>
+        <p>
+          Rukun Al Arooba Used Furniture is a government-registered company in
+          the UAE since 2018. We have a real physical store at Al Estiqlal
+          Street, Bu Shaghara, Sharjah. You can visit us in person or contact us
+          remotely — either way works.
+        </p>
+      </>
+    ),
+  },
+];
+

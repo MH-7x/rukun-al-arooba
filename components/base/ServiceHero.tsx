@@ -1,8 +1,13 @@
-import React from "react";
 import { Button } from "../ui/button";
-import { ArrowUpRight } from "lucide-react";
+import {
+  ArrowUpRight,
+  MapPin,
+  MessageSquare,
+  Check,
+  Phone,
+} from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { APP } from "@/lib/App";
 
 const ServiceHero = ({
   title,
@@ -17,66 +22,105 @@ const ServiceHero = ({
   };
 }) => {
   return (
-    <section className="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
-      <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-3 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-        <svg
-          className="absolute left-0 hidden h-full text-white z-20 transform -translate-x-1/2 lg:block"
-          viewBox="0 0 100 100"
-          fill="currentColor"
-          preserveAspectRatio="none slice"
-        >
-          <path d="M50 0H100L50 100H0L50 0Z" />
-        </svg>
-        <div className="object-cover w-full h-80 rounded shadow-lg lg:rounded-none lg:shadow-none over md:h-[500px] bg-gray-200 relative">
-          <Image
-            src={img.src}
-            alt={img.alt}
-            fill
-            className="object-cover"
-            loading="eager"
-          />
-        </div>
-      </div>
-      <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-3 lg:max-w-screen-xl">
-        <div className="mb-16 lg:mb-40 md:mt-24 lg:max-w-xl lg:pr-5">
-          <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider blue uppercase rounded-full bg-teal-accent-400">
-            Rukun Al Arooba
-          </p>
-          <h1 className="mb-5 font-sans text-3xl font-bold tracking-tight headline sm:text-4xl sm:leading-none">
-            {title.one} <span className="blue md:block">{title.two}</span>
-          </h1>
-          <p className="pr-5 mb-5 text">{desc}</p>
-          <div className="flex items-center gap-x-3">
-            <Button wtsBtn size={"sm"}>
-              {" "}
-              <svg
-                fill="#ffffff"
-                version="1.1"
-                viewBox="0 0 30.667 30.667"
-                xmlSpace="preserve"
-                stroke="#ffffff"
-              >
-                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {" "}
-                  <g>
-                    {" "}
-                    <path d="M30.667,14.939c0,8.25-6.74,14.938-15.056,14.938c-2.639,0-5.118-0.675-7.276-1.857L0,30.667l2.717-8.017 c-1.37-2.25-2.159-4.892-2.159-7.712C0.559,6.688,7.297,0,15.613,0C23.928,0.002,30.667,6.689,30.667,14.939z M15.61,2.382 c-6.979,0-12.656,5.634-12.656,12.56c0,2.748,0.896,5.292,2.411,7.362l-1.58,4.663l4.862-1.545c2,1.312,4.393,2.076,6.963,2.076 c6.979,0,12.658-5.633,12.658-12.559C28.27,8.016,22.59,2.382,15.61,2.382z M23.214,18.38c-0.094-0.151-0.34-0.243-0.708-0.427 c-0.367-0.184-2.184-1.069-2.521-1.189c-0.34-0.123-0.586-0.185-0.832,0.182c-0.243,0.367-0.951,1.191-1.168,1.437 c-0.215,0.245-0.43,0.276-0.799,0.095c-0.369-0.186-1.559-0.57-2.969-1.817c-1.097-0.972-1.838-2.169-2.052-2.536 c-0.217-0.366-0.022-0.564,0.161-0.746c0.165-0.165,0.369-0.428,0.554-0.643c0.185-0.213,0.246-0.364,0.369-0.609 c0.121-0.245,0.06-0.458-0.031-0.643c-0.092-0.184-0.829-1.984-1.138-2.717c-0.307-0.732-0.614-0.611-0.83-0.611 c-0.215,0-0.461-0.03-0.707-0.03S9.897,8.215,9.56,8.582s-1.291,1.252-1.291,3.054c0,1.804,1.321,3.543,1.506,3.787 c0.186,0.243,2.554,4.062,6.305,5.528c3.753,1.465,3.753,0.976,4.429,0.914c0.678-0.062,2.184-0.885,2.49-1.739 C23.307,19.268,23.307,18.533,23.214,18.38z"></path>{" "}
-                  </g>{" "}
-                </g>
-              </svg>{" "}
-              WhatsApp Us{" "}
-            </Button>
-            <Link href={"https://share.google/iLEgJq3Qt9DduRnRi"}>
-              <Button variant={"secondary"} size={"sm"}>
-                Visit Shop <ArrowUpRight />
-              </Button>
-            </Link>
+    <section className="relative w-full pt-3 pb-10">
+      <div className="md:w-11/12 w-full max-w-[1360px] mx-auto">
+        {/* Editorial Container Box */}
+        <div className="bg-[#FAF8F5] border border-[#E8E2D8] md:rounded-3xl p-4 sm:p-8 lg:p-10 shadow-xs">
+          {/* Top Trading Header / Metadata Bar */}
+          <div className="flex flex-wrap items-center justify-between gap-y-2 gap-x-4 pb-5 mb-7 border-b border-[#E8E2D8] text-[11px] sm:text-xs font-semibold tracking-wider text-[#6B6358] uppercase">
+            <span>Rukun Al Arooba • Licensed Trader Since 2018</span>
+
+            <div className=" text-slate-500 normal-case font-normal text-xs sm:text-[13px]">
+              <span className="flex items-center gap-1 font-medium text-[#144E5A]">
+                <MapPin className="size-3.5 text-[#C07D53]" /> Used Furniture
+                and Electronics Trading
+              </span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            {/* Content Column (7 cols) */}
+            <div className="lg:col-span-7 flex flex-col items-start">
+              {/* Main Headline */}
+              <h1 className="sm:text-3xl text-2xl font-bold text-[#222222] tracking-tight leading-[1.18]">
+                {title.one}{" "}
+                <span className="text-[#144E5A] block mt-1.5 font-extrabold">
+                  {title.two}
+                </span>
+              </h1>
+
+              {/* Description */}
+              <p className="mt-4 text text-sm sm:text-base ">{desc}</p>
+
+              {/* Physical Trade Guarantee Note */}
+              <div className="md:w-11/12 w-full my-3 p-3 rounded-xl text-xs sm:text-sm text-slate-700 space-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-2 font-medium text-slate-800">
+                  <span className="flex items-center gap-1.5 text-[#144E5A]">
+                    <Check className="size-4 text-[#C07D53] stroke-[3]" />
+                    5–10 Min WhatsApp Quote
+                  </span>
+                  <span className="flex items-center gap-1.5 text-[#144E5A]">
+                    <Check className="size-4 text-[#C07D53] stroke-[3]" />
+                    Instant Pickup and Moving Services
+                  </span>
+                  <span className="flex items-center gap-1.5 text-[#144E5A]">
+                    <Check className="size-4 text-[#C07D53] stroke-[3]" />
+                    Cash / Bank / Cheque
+                  </span>
+                </div>
+              </div>
+
+              {/* Direct Action Hub */}
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <Button
+                  wtsBtn
+                  size="lg"
+                  className="h-11 sm:h-12 px-6 bg-[#C07D53] hover:bg-[#ad6e46] text-white font-medium text-sm sm:text-base rounded-xl transition-colors shadow-xs"
+                >
+                  <MessageSquare className="size-4.5" />
+                  Get Confirmed Quote on WhatsApp
+                </Button>
+
+                <Button
+                  storeBtn
+                  variant="outlineBlue"
+                  size="lg"
+                  className="h-11 sm:h-12 px-5 bg-white border border-[#C6D2D6] text-[#144E5A] hover:bg-[#144E5A]/5 font-medium text-sm sm:text-base rounded-xl"
+                >
+                  <MapPin className="size-4 text-[#C07D53]" />
+                  Visit Showroom
+                  <ArrowUpRight className="size-4 opacity-70" />
+                </Button>
+
+                <Button
+                  callBtn
+                  variant="ghost"
+                  size="sm"
+                  className="text-xs text-slate-600 hover:text-slate-900"
+                >
+                  <Phone className="size-3.5" />
+                  {APP.phone}
+                </Button>
+              </div>
+            </div>
+
+            {/* Media Presentation Column (5 cols) */}
+            <div className="lg:col-span-5 w-full">
+              <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-200 drop-shadow-lg">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
+                  className="object-cover object-center"
+                  priority
+                />
+                {/* Subtle stamp in corner */}
+                <div className="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-xs text-white text-[10px] font-semibold tracking-wider uppercase">
+                  {title.one}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

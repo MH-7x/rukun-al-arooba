@@ -21,7 +21,6 @@
 .section {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: white;
 
   border-radius: 12px;
 }
@@ -114,7 +113,8 @@
   background: #f7f7f7;
   color: #141414;
   border-radius: 8px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
     "Helvetica Neue", monospace;
 }
 

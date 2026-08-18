@@ -54,6 +54,10 @@ const navItems = [
     title: "اثاث مستعمل راس الخيمة",
     link: createEncodedUrl("اثاث-مستعمل-راس-الخيمة"),
   },
+  {
+    title: "مشترو المكيفات المستعملة في دبي",
+    link: createEncodedUrl("مشترو-المكيفات-المستعملة"),
+  },
 ];
 
 const ArFaqs = [
@@ -301,8 +305,14 @@ export default function UsedFurnitureAlAin() {
                 <Monitor className="w-10 h-10 blue mb-4" />
                 <h3 className="text-xl font-bold blue mb-2">أجهزة منزلية</h3>
                 <p className="text-sm text-gray-600">
-                  ثلاجات، غسالات (صغيرة وعائلية)، مكيفات (خاصة في الصيف)، وشاشات
-                  تلفزيون. جميعها مختبرة ومضمونة التشغيل.
+                  ثلاجات، غسالات (صغيرة وعائلية)، مكيفات (تعرف أيضاً على خدماتنا لـ{" "}
+                  <Link
+                    href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                    className="text-[#144e5a] font-bold underline hover:text-[#C07D53]"
+                  >
+                    مشترو المكيفات المستعملة في دبي
+                  </Link>
+                  )، وشاشات تلفزيون. جميعها مختبرة ومضمونة التشغيل.
                 </p>
               </div>
 

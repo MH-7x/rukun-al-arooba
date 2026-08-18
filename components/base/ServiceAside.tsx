@@ -126,6 +126,12 @@ const ServiceAside = () => {
             Used Beds Buyers in Dubai
           </Link>{" "}
         </li>
+        <li className="flex items-center text-sm gap-x-2 text mb-2 hover:underline underline-offset-2 transform duration-300">
+          <ArrowUpRight size={16} />
+          <Link href={"/مشترو-المكيفات-المستعملة"}>
+            مشترو المكيفات المستعملة في دبي
+          </Link>{" "}
+        </li>
       </ul>
     </aside>
   );

@@ -50,6 +50,10 @@ const navItems = [
     title: "اثاث مستعمل راس الخيمة",
     link: createEncodedUrl("اثاث-مستعمل-راس-الخيمة"),
   },
+  {
+    title: "مشترو المكيفات المستعملة في دبي",
+    link: createEncodedUrl("مشترو-المكيفات-المستعملة"),
+  },
 ];
 
 const ArFaqs = [
@@ -388,7 +392,7 @@ export default function UsedFurnitureDubai() {
               الحاجة؟ نحن نشتري كل أنواع الأثاث المستعمل بأسعار عادلة.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {/* Bedroom Furniture */}
               <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                 <div className="w-full md:h-56 h-48 bg-gradient-to-br from-[#144e5a] to-[#0d3940] rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
@@ -515,6 +519,64 @@ export default function UsedFurnitureDubai() {
                     <span>كراسي طعام منفصلة</span>
                   </li>
                 </ul>
+              </div>
+
+              {/* Used AC Buyers */}
+              <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <div className="w-full md:h-56 h-48 bg-gradient-to-br from-[#144e5a] to-[#0d3940] rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+                  <Image
+                    src={"/service/used-air-conditioners.jpg"}
+                    alt="مشترو المكيفات المستعملة في دبي"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-[#144e5a] mb-3">
+                  <Link
+                    href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                    className="hover:text-[#c07d53] transition-colors"
+                  >
+                    مشترو المكيفات المستعملة في دبي
+                  </Link>
+                </h3>
+                <ul className="space-y-2 text-[#414141]">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle
+                      size={18}
+                      className="text-[#c07d53] flex-shrink-0 mt-1"
+                    />
+                    <span>مكيفات سبليت وشباك</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle
+                      size={18}
+                      className="text-[#c07d53] flex-shrink-0 mt-1"
+                    />
+                    <span>مكيفات مركزية ودكت</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle
+                      size={18}
+                      className="text-[#c07d53] flex-shrink-0 mt-1"
+                    />
+                    <span>تقييم فوري خلال 10 دقائق</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle
+                      size={18}
+                      className="text-[#c07d53] flex-shrink-0 mt-1"
+                    />
+                    <span>دفع كاش فوري واستلام مجاني</span>
+                  </li>
+                </ul>
+                <div className="mt-4">
+                  <Link
+                    href={createEncodedUrl("مشترو-المكيفات-المستعملة")}
+                    className="text-[#c07d53] font-bold text-sm inline-flex items-center gap-1 hover:underline"
+                  >
+                    مشترو المكيفات المستعملة في دبي ←
+                  </Link>
+                </div>
               </div>
             </div>
 
